@@ -105,7 +105,9 @@
           <p class="skill__moto">My pro-story</p>
           <ul class="skill__list">
             <li class="skill__item">
-              <a><img src="./img/sert1.jpg" alt="" width="150"></a>
+              <a>
+                <img src="./img/sert1.jpg" alt="Certificate HTML & CSS basic course" width="150">
+              </a>
               <div class="skill__info">
                 <h3>Certificate HTML & CSS basic course</h3>
                 <span>30/10/2017 - 15/12/2017</span>
@@ -113,7 +115,9 @@
               </div>
             </li>
             <li class="skill__item">
-              <a><img src="./img/sert2.jpg" alt="" width="150"></a>
+              <a>
+                <img src="./img/sert2.jpg" alt="" width="150">
+              </a>
               <div class="skill__info">
                 <h3>Professional HTML & CSS, level 2</h3>
                 <span>15/01/2018 - 21/02/2018</span>
@@ -121,7 +125,9 @@
               </div>
             </li>
             <li class="skill__item">
-              <a><img src="./img/sert3.jpg" alt="" width="150"></a>
+              <a>
+                <img src="./img/sert3.jpg" alt="" width="150">
+              </a>
               <div class="skill__info">
                 <h3>Professional JavaScript, level 1</h3>
                 <span>27/03/2018 - 11/05/2018</span>
@@ -129,7 +135,9 @@
               </div>
             </li>
             <li class="skill__item">
-              <a><img src="./img/sert4.jpg" alt="" width="150"></a>
+              <a>
+                <img src="./img/sert4.jpg" alt="" width="150">
+              </a>
               <div class="skill__info">
                 <h3>Professional HTML & CSS, level 1</h3>
                 <span>28/05/2018 - 04/07/2018</span>
@@ -137,7 +145,9 @@
               </div>
             </li>
             <li class="skill__item">
-              <a><img src="./img/sert5.jpg" alt="" width="150"></a>
+              <a>
+                <img src="./img/sert5.jpg" alt="" width="150">
+              </a>
               <div class="skill__info">
                 <h3>Professional HTML & CSS, level 2</h3>
                 <span>24/09/2018 - 31/10/2018</span>
@@ -151,11 +161,55 @@
     
       <footer>
         <section class="contacts">
-          <h2>Contact me</h2>
-          <p>i'll be glad to answer your questions!</p>
-          <form></form>
+          <h2 class="contacts__header">Contact me</h2>
+          <span class="xxx contacts__xxx">xxx</span>
+          <p class="contacts__moto">i'll be glad to answer your questions!</p>
+          <form class="contacts__form">
+            <fieldset class="contacts__fieldset">
+              <input type="text" class="form__input" required name="Name" placeholder="Name">
+              <input class="form__email form__input" type="email" required name="e-mail" placeholder="Email address">
+              <input type="text" class="form__input" name="subject" placeholder="Subject">
+              <textarea class="form__textarea form__input" rows="8" placeholder="Your message"></textarea>
+            </fieldset>
+            <button class="form__button button" type="submit">Send Message</button>
+          </form>
         </section>
       </footer>
+      <div class="fixed-overlay overlay-sert overlay-sert1">
+        <div class="modal">
+          <div class="pop-up skill__pop-up">
+            <img src="./img/sert1.jpg" alt="Certificate HTML & CSS" width="700">
+          </div>
+        </div>
+      </div>
+      <div class="fixed-overlay overlay-sert overlay-sert2">
+        <div class="modal">
+          <div class="pop-up skill__pop-up">
+            <img src="./img/sert2.jpg" alt="Certificate HTML & CSS" width="700">
+          </div>
+        </div>
+      </div>
+      <div class="fixed-overlay overlay-sert overlay-sert3">
+        <div class="modal">
+          <div class="pop-up skill__pop-up">
+            <img src="./img/sert3.jpg" alt="Certificate JS" width="700">
+          </div>
+        </div>
+      </div>
+      <div class="fixed-overlay overlay-sert overlay-sert4">
+        <div class="modal">
+          <div class="pop-up skill__pop-up">
+            <img src="./img/sert4.jpg" alt="Certificate HTML & CSS" width="700">
+          </div>
+        </div>
+      </div>
+      <div class="fixed-overlay overlay-sert overlay-sert5">
+        <div class="modal">
+          <div class="pop-up skill__pop-up">
+            <img src="./img/sert5.jpg" alt="Certificate HTML & CSS" width="700">
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

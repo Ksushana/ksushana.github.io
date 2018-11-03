@@ -185,7 +185,8 @@ body {
 
 .about-me__xxx,
 .portfolio__xxx,
-.skill__xxx {
+.skill__xxx,
+.xxx {
   text-transform: none;
   position: relative;
   font-family: 'Roboto Slab', serif;
@@ -195,7 +196,8 @@ body {
 
 .about-me__xxx::before,
 .portfolio__xxx::before,
-.skill__xxx::before {
+.skill__xxx::before,
+.xxx::before {
   content: "";
   position: absolute;
   width: 42px;
@@ -207,7 +209,8 @@ body {
 
 .about-me__xxx::after,
 .portfolio__xxx::after,
-.skill__xxx::after {
+.skill__xxx::after,
+.xxx::after {
   content: "";
   position: absolute;
   width: 42px;
@@ -388,6 +391,28 @@ body {
   flex-direction: column;
   color: #383a3c;
   border-bottom: 1px solid #b5b1a4;
+  position: relative;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  border-top: 1px dashed rgba(57, 58, 58, 0.25);
+  border-bottom: 1px dashed #e2dfdc;
+  width: 100%;
+  bottom: 8px;
+  left: 0;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  border-top: 1px dashed rgba(57, 58, 58, 0.25);
+  border-bottom: 1px dashed #787a7d;
+  width: 100%;
+  bottom: -11px;
+  left: 0;
+  z-index: 2;
 }
 
 .skill__header {
@@ -415,4 +440,108 @@ body {
 
 .skill__info {
   margin: 0 30px;
+}
+
+.contacts {
+  background-color: #4c5057;
+  background-image: url("./img/pattern-clack.png");
+  font-family: "Oswald", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #f6edd8;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.contacts__header {
+  font-family: "bazar", "Arial", sans-serif;
+  padding-top: 60px;
+  font-size: 90px;
+  line-height: 90px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.contacts__xxx::before,
+.contacts__xxx::after {
+  border-color: #f6edd8;
+}
+
+.contacts__moto {
+  margin: 0 auto;
+}
+
+.contacts__form {
+  width: 480px;
+  margin: 15px auto;
+}
+
+.contacts__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.form__input {
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 37px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form__textarea {
+  height: 165px;
+  padding-top: 9px;
+  resize: none;
+}
+
+.fixed-overlay {
+	position: fixed;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 500;
+}
+
+.form__button {
+  width: 140px;
+  height: 37px;
+  background-color: #fcfaf7;
+  border-radius: 5px;
+  margin-left: 13px;
+  color: #383a3c;
+  font-size: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.overlay-sert {
+	display: none;
+}
+
+.modal-show {
+	display: block;
+}
+
+.modal {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.pop-up {
+  width: 700px;
+	position: absolute;
+  z-index: 1001;
+  left: 50%;
+	margin-left: -350px;
 }
