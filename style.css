@@ -39,6 +39,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  min-width: 900px;
 }
 
 .main-page__header {
@@ -244,6 +245,7 @@ body {
   margin: 0 auto;
   display: flex;
   padding-top: 30px;
+  min-width: 750px;
 }
 
 .about-me__list-item {
@@ -304,9 +306,42 @@ body {
   transform: translateX(-20px);
 }
 
-.about-me__list-item p {
-  padding: 25px;
+.about-me__skills {
+  display: flex;
+  margin: 20px auto;
+  width: 900px;
 }
+
+.about-me__skills p {
+  align-self: center;
+  font-size: 40px;
+  width: 200px;
+  flex-shrink: 0;
+  margin-left: 50px; 
+}
+
+.about-me__skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-me__skills-list li{
+  padding: 20px;
+  margin-top: 7px;
+  position: relative;
+  font-size: 20px;
+
+} 
+
+.about-me__skills-list li::before{
+  content: "";
+  position: absolute;
+  border: 2px solid #d45244;
+  border-radius: 50%;
+  left: 5px;
+  top: 32px;
+} 
 
 .portfolio {
   background-color: #e68966;

@@ -46,24 +46,32 @@
           <p class="about-me__moto">I am a front-end developer from Barcelona, Spain</p>
           <ul class="about-me__list">
             <li class="about-me__list-item about-me__list-item--learner">
-              <h3>Quick learner</h3>
-              <p>During my education i studied a lot about HTML and CSS, about preprocessors and methodologies, about adaptability and cross-browser compatibility. But front-end development is an evolving field requiring the ability to grasp  innovation quickly.</p>
+              <h3>Collaborative</h3>
             </li>
             <li class="about-me__list-item about-me__list-item--motivated">
               <h3>Self-motivated</h3>
-              <p>I have a possitive "can do" attitude to work. I have an immense wish to develop my skills and to make really amazimg projects. My main aim is to write my code as clean as possible, to create convenient interfaces working in different browsers.</p>
             </li>
             <li class="about-me__list-item about-me__list-item--responsible">
               <h3>Responsible</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
             </li>
             <li class="about-me__list-item about-me__list-item--collaborative">
-              <h3>Collaborative</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+              <h3>Quick learner</h3>
             </li>
           </ul>
+          <div class="about-me__skills">
+            <p>My skills:</p>
+            <ul class="about-me__skills-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>SASS</li>
+              <li>JavaScript</li>
+              <li>Version Control/Git</li>
+              <li>Responsive Design</li>
+              <li>BEM</li>
+              <li>SVG</li>
+              <li>GULP</li>
+            </ul>
+          </div>
         </section>
         <section class="portfolio" id="portfolio">
           <h2 class="portfolio__header">Portfolio</h2>
@@ -129,7 +137,7 @@
               <div class="skill__info">
                 <h3>Professional JavaScript, level 1</h3>
                 <span>27/03/2018 - 11/05/2018</span>
-                <p>DOM, </p>
+                <p>DOM, Event Model, AJAX</p>
               </div>
             </li>
             <li class="skill__item">
@@ -162,10 +170,10 @@
           <h2 class="contacts__header">Contact me</h2>
           <span class="xxx contacts__xxx">xxx</span>
           <p class="contacts__moto">i'll be glad to answer your questions!</p>
-          <form class="contacts__form">
+          <form class="contacts__form" action="https://formspree.io/spikeworld@mail.ru" method="POST">
             <fieldset class="contacts__fieldset">
-              <input type="text" class="form__input" required name="Name" placeholder="Name">
-              <input class="form__email form__input" type="email" required name="e-mail" placeholder="Email address">
+              <input type="text" class="form__input" required name="name" placeholder="Name">
+              <input class="form__email form__input" type="email" required name="_replyto" placeholder="Email address" >
               <input type="text" class="form__input" name="subject" placeholder="Subject">
               <textarea class="form__textarea form__input" rows="8" placeholder="Your message"></textarea>
             </fieldset>
