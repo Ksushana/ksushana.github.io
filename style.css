@@ -98,6 +98,14 @@ body {
   color: #f9ebd9;
 }
 
+.main-navigation__item a:hover {
+  opacity: 0.8;
+}
+
+.main-navigation__item a:active {
+  opacity: 0.3;
+}
+
 .main-navigation__item:nth-child(2) {
   padding-right: 200px;
 }
@@ -135,6 +143,11 @@ body {
 .intro img {
   margin: 0 auto;
   padding-bottom: 30px;
+}
+
+.main-photo {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .intro__moto {
@@ -365,6 +378,8 @@ body {
 
 .project-list__item--gllacy {
   background-image: url("./img/gllacy.png");
+  background-size: 140%;
+  background-position-y: 0;
 }
 
 .project-list__item--device {
@@ -373,6 +388,7 @@ body {
 
 .project-list__item--sedona {
   background-image: url("./img/sedona.svg");
+  background-position: top;
 }
 
 .project-list__item--cat {
@@ -432,14 +448,26 @@ body {
   list-style: none;
   width: 900px;
   margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skill__item {
   display: flex;
+  width: 50%;
+  padding-bottom: 30px;
 }
 
 .skill__info {
   margin: 0 30px;
+}
+
+.skill__info h3 {
+  margin: 0;
+}
+
+.skill__info p {
+  font-family: "Oswald", "Arial", sans-serif;
 }
 
 .contacts {
