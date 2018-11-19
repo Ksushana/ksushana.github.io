@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/min.style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="fixed-overlay overlay-write modal-show">
+        <div class="modal">
+          <div class="pop-up pop-up--write">
+            <h2 class="visually-hidden">напишите нам</h2>
+            <form class="pop-up__form" action="https://echo.htmlacademy.ru" method="get">
+              <p>
+                <label for="name" class="pop-up--label">Ваше имя:</label>
+                <input class="form-name pop-up--input input-block" id="name" type="text" name="user-name" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="e-mail" class="pop-up--label">Ваш e-mail:</label>
+                <input class="pop-up--input input-block" id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="text" class="pop-up--label">Текст письма:</label>
+                <textarea id="text" name="text-field" placeholder="В свободной форме" class="input-block"></textarea>
+              </p>
+              <button class="button button-decoration button--pop-up active-button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

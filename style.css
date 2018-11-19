@@ -42,6 +42,10 @@ body {
   min-width: 900px;
 }
 
+.modal-show {
+	display: block;
+}
+
 .main-page__header {
   position: relative;
   width: 94%;
@@ -400,37 +404,72 @@ body {
 }
 
 .project-list__item {
-  font-size: 0;
-  width: 200px;
+  width: 400px;
   height: 200px;
   background-color: #e3dfd7;
   margin-bottom: 30px;
   border: 5px solid #ffffff;
+  
+  display: flex;
+}
+
+.project-list__item-photo {
+   display: block;
+   width: 200px;
+  height: 200px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 0;
+  line-height: 20px;
 }
 
-.project-list__item--gllacy {
+.project-list__item-info {
+  width: 200px;
+  padding: 15px;
+  text-transform: none;
+}
+
+.project-list__item-info h3{
+  margin: 0;
+}
+
+.project-list__item-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-list__item-info a {
+  color: #383a3c;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.project-list__item-info a:hover {
+  opacity: 0.6;
+}
+
+.project-list__item--gllacy .project-list__item-photo {
   background-image: url("./img/gllacy.png");
   background-size: 140%;
   background-position-y: 0;
+  
 }
 
-.project-list__item--device {
+.project-list__item--device .project-list__item-photo{
   background-image: url("./img/device.png");
 }
 
-.project-list__item--sedona {
+.project-list__item--sedona .project-list__item-photo{
   background-image: url("./img/sedona.svg");
   background-position: top;
 }
 
-.project-list__item--cat {
+.project-list__item--cat .project-list__item-photo{
   background-image: url("./img/cat-energy.png");
 }
 
-.project-list__item--keksogram {
+.project-list__item--keksogram .project-list__item-photo{
   background-image: url("./img/keksogram.png");
 }
 
@@ -491,6 +530,10 @@ body {
   display: flex;
   width: 50%;
   padding-bottom: 30px;
+}
+
+.skill__item-photo {
+  cursor: pointer;
 }
 
 .skill__info {
@@ -607,4 +650,32 @@ body {
   z-index: 1001;
   left: 50%;
 	margin-left: -350px;
+}
+
+@media (max-width: 950px) {
+  .container {
+    max-width: 950px;
+  }
+
+  .main-page__header {
+    width: 100%;
+  }
+
+  .main-navigation__list {
+    flex-direction: column;
+    min-width: 320px;
+    padding-top: 70px;
+  }
+
+  .main-navigation__item {
+    margin: 10px auto;
+  }
+
+  .main-navigation__item:nth-child(2) {
+    padding-right: 0;
+  }
+
+  .intro {
+    display: none;
+  }
 }

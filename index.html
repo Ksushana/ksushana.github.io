@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Ksenia Balashova: front-end developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="preload" href="fonts/bazar.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+
   </head>
 
   <body>
@@ -35,6 +37,11 @@
 
       <main class="main-page">
         <section class="intro">
+          <!-- <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="cat energy" width="30" height="38">
+          </picture> -->
           <img class="intro__name" src="./img/ksenia_balashova.png" alt="Ksenia Balashova" height="86" width="925">
           <img src="./img/ribbon.png" alt="front-end developer" height="66" width="611">
           <img src="./img/main-photo.png" alt="photo" height="458" width="963" class="main-photo">
@@ -79,29 +86,67 @@
           <p class="portfolio__moto">Simplicity is the ultimate sophistication</p>
           <ul class="project-list">
             <li class="project-list__item project-list__item--gllacy">
-              <a>
+              <a href="gllacy/index.html" class="project-list__item-photo">
                 Gllacy
               </a>
+              <div class="project-list__item-info">
+                <h3>Project Gllacy</h3>
+                <ul>
+                  <li>Done <a href="gllacy/index.html">main page</a>, <a href="gllacy/catalog.html">catalog page</a> and <a href="gllacy/feedback-gllacy.html">feedback form</a>.</li>
+                </ul>
+              </div>
             </li>
             <li class="project-list__item project-list__item--device">
-              <a>
+              <a href="device/index.html" class="project-list__item-photo">
                 Device
               </a>
+              <div class="project-list__item-info">
+                <h3>Project Device</h3>
+                <ul>
+                  <li>Done <a href="device/index.html">main page</a>, <a href="device/catalog.html">catalog page</a>
+                    and <a href="device/writeus.html">feedback form</a>.</li>
+                  <li>Used JаvaScript in sliders and feedback form</li>
+                </ul>
+              </div>
             </li>
             <li class="project-list__item project-list__item--sedona">
-              <a>
+              <a href="sedona/index.html" class="project-list__item-photo">
                 Sedona
               </a>
+              <div class="project-list__item-info">
+                <h3>Project Sedona</h3>
+                <ul>
+                  <li>Done <a href="sedona/index.html">main page</a>, <a href="sedona/photo.html">photo gallery</a>
+                    and <a href="gllacy/feedback-gllacy.html">form page</a></li>
+                    <li>Responsible design</li>
+                    <li>Used JаvaScript, SCSS, GULP, BEM</li>
+                </ul>
+              </div>
             </li>
             <li class="project-list__item project-list__item--cat">
-              <a>
+              <a href="cat-energy/index.html" class="project-list__item-photo">
                Cat-energy
               </a>
+              <div class="project-list__item-info">
+                <h3>Project Cat-energy</h3>
+                <ul>
+                  <li>Done <a href="Cat-energy/index.html">main page</a>, <a href="Cat-energy/catalog.html">catalog page</a>
+                    и <a href="Cat-energy/form.html">form page</a></li>
+                    <li>Responsible design</li>
+                    <li>Used JаvaScript, SCSS, GULP, BEM</li>
+                </ul>
+              </div>
             </li>
             <li class="project-list__item project-list__item--keksogram">
-              <a>
+              <a href="keksogram/index.html" class="project-list__item-photo">
                 Kekstagram
               </a>
+              <div class="project-list__item-info">
+                <h3>Project Gllacy</h3>
+                <ul>
+                  <li>Done <a href="keksogram/index.html">main page</a> with sorting, photo upload and photo filters using JavaScript</li>
+                </ul>
+              </div>
             </li>
           </ul>
         </section>
@@ -112,7 +157,7 @@
           <ul class="skill__list">
             <li class="skill__item">
               <a>
-                <img src="./img/sert1.jpg" alt="Certificate HTML & CSS basic course" width="150">
+                <img class="skill__item-photo" src="./img/sert1.jpg" alt="Certificate HTML & CSS basic course" width="150">
               </a>
               <div class="skill__info">
                 <h3>Certificate HTML & CSS basic course</h3>
@@ -122,7 +167,7 @@
             </li>
             <li class="skill__item">
               <a>
-                <img src="./img/sert2.jpg" alt="" width="150">
+                <img class="skill__item-photo" src="./img/sert2.jpg" alt="" width="150">
               </a>
               <div class="skill__info">
                 <h3>Professional HTML & CSS, level 2</h3>
@@ -132,7 +177,7 @@
             </li>
             <li class="skill__item">
               <a>
-                <img src="./img/sert3.jpg" alt="" width="150">
+                <img class="skill__item-photo" src="./img/sert3.jpg" alt="" width="150">
               </a>
               <div class="skill__info">
                 <h3>Professional JavaScript, level 1</h3>
@@ -142,7 +187,7 @@
             </li>
             <li class="skill__item">
               <a>
-                <img src="./img/sert4.jpg" alt="" width="150">
+                <img class="skill__item-photo" src="./img/sert4.jpg" alt="" width="150">
               </a>
               <div class="skill__info">
                 <h3>Professional HTML & CSS, level 1</h3>
@@ -152,7 +197,7 @@
             </li>
             <li class="skill__item">
               <a>
-                <img src="./img/sert5.jpg" alt="" width="150">
+                <img class="skill__item-photo" src="./img/sert5.jpg" alt="" width="150">
               </a>
               <div class="skill__info">
                 <h3>Professional HTML & CSS, level 2</h3>
@@ -184,7 +229,7 @@
       <div class="fixed-overlay overlay-sert overlay-sert1">
         <div class="modal">
           <div class="pop-up skill__pop-up">
-            <img src="./img/sert1.jpg" alt="Certificate HTML & CSS" width="700">
+            <img src="./img/sert1.jpg" alt="Certificate HTML & CSS" width="600">
           </div>
         </div>
       </div>
@@ -217,5 +262,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
