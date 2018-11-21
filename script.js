@@ -1,34 +1,46 @@
 var ESC = 27;
 
-var overlay = document.querySelector(".fixed-overlay");
+// var overlay = document.querySelector(".fixed-overlay");
 var popUp = document.querySelector(".pop-up");
-var sert = document.querySelector(".skill__item-photo");
-var serificate = document.querySelector(".overlay-sert");
+var smallSerificates = document.querySelectorAll(".skill__item-photo");
 
-var showModal = function () {
+function showCertificateModal(certificateNumber) {
+  var className = ".overlay-sert" + certificateNumber;
+  var serificate = document.querySelector(className);
   serificate.classList.add("modal-show");
+  addCertificateClickListener(serificate);
+  addEscListener(serificate);
 }
 
-var closeModal = function () {
+function closeCertificateModal(serificate) {
   serificate.classList.remove("modal-show");
 }
 
-sert.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  showModal();
-});
+function addSmallCertificateClickListener(smallCertificate) {
+  var certificateNumber = smallCertificate.getAttribute('data-number');
+  smallCertificate.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    showCertificateModal(certificateNumber);
+  });
+}
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === ESC) {
-    if (serificate.classList.contains("modal-show")) {
-      evt.preventDefault();
-      closeModal();
+function addCertificateClickListener(serificate) {
+  serificate.addEventListener("click", function (evt) {
+    closeCertificateModal(serificate);
+  });
+}
+
+function addEscListener(serificate) {
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === ESC) {
+      if (serificate.classList.contains("modal-show")) {
+        evt.preventDefault();
+        closeCertificateModal(serificate);
+      }
     }
-  }
-});
+  });
+}
 
-overlay.addEventListener("click", function (evt) {
-  if (evt.target === overlay) {
-    closeModal();
-  }
+smallSerificates.forEach(function(smallCertificate) {
+  addSmallCertificateClickListener(smallCertificate);
 });
