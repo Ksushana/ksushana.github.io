@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Bazar";
-	src: url("../fontsweb/bazar.woff") format("woff"), url("../fontsweb/bazar.woff2") format("woff2");
+	src: url("./fontsweb/bazar.woff") format("woff"), url("./fontsweb/bazar.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -8,8 +8,8 @@
 @font-face {
   font-family: "Oswald";
   src: local("Oswald Regular"),
-    url("../fontsweb/oswaldregular.woff2") format("woff2"),
-    url("../fontsweb/oswaldregular.woff") format("woff");
+    url("./fontsweb/oswaldregular.woff2") format("woff2"),
+    url("./fontsweb/oswaldregular.woff") format("woff");
   font-style: normal;
   font-weight: 500;
   font-display: block;
