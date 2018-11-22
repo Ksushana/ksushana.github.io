@@ -649,6 +649,7 @@ body {
 	position: absolute;
   z-index: 1001;
   left: 50%;
+  top: -150px;
 	margin-left: -350px;
 }
 
