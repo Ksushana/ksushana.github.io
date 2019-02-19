@@ -42,14 +42,13 @@ body {
   min-width: 900px;
 }
 
-
 .modal-show {
 	display: block;
 }
 
 .main-page__header {
   position: relative;
-  width: 100%;
+  width: 94%;
   margin: 0 auto;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -97,7 +96,7 @@ body {
   padding-left: 4%;
   padding-right: 4%;
   min-width: 900px;
-} 
+}
 
 .main-navigation__item a {
   text-decoration: none;
@@ -112,9 +111,9 @@ body {
   opacity: 0.3;
 }
 
-/* .main-navigation__item:nth-child(2) {
+.main-navigation__item:nth-child(2) {
   padding-right: 200px;
-} */
+}
 
 .intro {
   position: relative;
@@ -474,10 +473,6 @@ body {
   background-image: url("./img/keksogram.png");
 }
 
-.project-list__item--proconsulting .project-list__item-photo{
-  background-image: url("./img/proconsulting.png");
-}
-
 .skills {
   background-color: #e3e0dd;
   background-image: url("./img/pattern-grey.png");
@@ -682,6 +677,6 @@ body {
   }
 
   .intro {
-    /* display: none; */
+    display: none;
   }
 }

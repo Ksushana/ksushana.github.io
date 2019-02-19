@@ -8,40 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preload" href="./fontsweb/bazar.woff2" as="font">
     <link rel="preload" href="./fontsweb/oswaldregular.woff2" as="font">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous"></script>
 
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <header class="main-page__header">
-        <nav class="main-navigation navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="main-logo">
-                <img alt="логотип" class="main-logo--img img-fluid" src="./img/logo.png" width="100" height="100">
-              </a>
-            </div>
-            <div class="row">
-              <ul class="main-navigation__list nav navbar-nav">
-                <li class="main-navigation__item ">
-                  <a class="main-navigation__item--about-me" href="#about-me">About me</a>
-                </li>
-                <li class="main-navigation__item">
-                  <a class="main-navigation__item--portfolio" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="main-navigation__item">
-                  <a class="main-navigation__item--my-education" href="#my-education">My education</a>
-                </li>
-                <li class="main-navigation__item">
-                  <a class="main-navigation__item--contact-me" href="#contact-me">Contact me</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <a class="main-logo">
+          <img alt="логотип" class="main-logo--img" src="./img/logo.png" width="100" height="100">
+        </a>
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__item--about-me" href="#about-me">About me</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__item--portfolio" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__item--my-education" href="#my-education">My education</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__item--contact-me" href="#contact-me">Contact me</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
@@ -52,26 +42,26 @@
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img src="img/logo-mobile.svg" alt="cat energy" width="30" height="38">
           </picture> -->
-          <img class="intro__name img-fluid" src="./img/ksenia_balashova.png" alt="Ksenia Balashova" height="86" width="550">
-          <img src="./img/ribbon.png" alt="front-end developer" height="66"  class="img-responsive">
-          <img src="./img/main-photo.png" alt="photo" height="458" width="963" class="main-photo img-fluid">
+          <img class="intro__name" src="./img/ksenia_balashova.png" alt="Ksenia Balashova" height="86" width="925">
+          <img src="./img/ribbon.png" alt="front-end developer" height="66" width="611">
+          <img src="./img/main-photo.png" alt="photo" height="458" width="963" class="main-photo">
           <p class="intro__moto">"Hello, i am Ksenia Balashova. Welcome to my portfolio page!"</p>
         </section>
         <section class="about-me" id="about-me">
           <h2 class="about-me__header">About me</h2>
           <span class="about-me__xxx">xxx</span>
           <p class="about-me__moto">I am a front-end developer from Barcelona, Spain</p>
-          <ul class="about-me__list row">
-            <li class="about-me__list-item about-me__list-item--learner col-md-4">
+          <ul class="about-me__list">
+            <li class="about-me__list-item about-me__list-item--learner">
               <h3>Collaborative</h3>
             </li>
-            <li class="about-me__list-item about-me__list-item--motivated col-md-4">
+            <li class="about-me__list-item about-me__list-item--motivated">
               <h3>Self-motivated</h3>
             </li>
-            <li class="about-me__list-item about-me__list-item--responsible col-md-4">
+            <li class="about-me__list-item about-me__list-item--responsible">
               <h3>Responsible</h3>
             </li>
-            <li class="about-me__list-item about-me__list-item--collaborative col-md-4">
+            <li class="about-me__list-item about-me__list-item--collaborative">
               <h3>Quick learner</h3>
             </li>
           </ul>
@@ -155,17 +145,6 @@
                 <h3>Project Gllacy</h3>
                 <ul>
                   <li>Done <a href="keksogram/index.html">main page</a> with sorting, photo upload and photo filters using JavaScript</li>
-                </ul>
-              </div>
-            </li>
-            <li class="project-list__item project-list__item--proconsulting">
-              <a href="proconsulting/index.html" class="project-list__item-photo">
-                PROConsulting
-              </a>
-              <div class="project-list__item-info">
-                <h3>Coming Soon Page for PROConsulting</h3>
-                <ul>
-                  <li>Done <a href="proconsulting/index.html">Coming Soon adaptive Page</a> with with resposive desogn</li>
                 </ul>
               </div>
             </li>
@@ -284,9 +263,5 @@
       </div>
     </div>
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous"></script>
   </body>
 </html>
