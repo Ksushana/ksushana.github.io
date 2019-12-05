@@ -209,7 +209,7 @@ body {
   position: relative;
   font-family: 'Roboto Slab', serif;
   margin: 0 auto;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .about-me__xxx::before,
@@ -321,7 +321,7 @@ body {
   font-size: 40px;
   width: 200px;
   flex-shrink: 0;
-  margin-left: 50px; 
+  margin-left: 50px;
 }
 
 .about-me__skills-list {
@@ -336,7 +336,7 @@ body {
   position: relative;
   font-size: 20px;
 
-} 
+}
 
 .about-me__skills-list li::before{
   content: "";
@@ -345,7 +345,7 @@ body {
   border-radius: 50%;
   left: 5px;
   top: 32px;
-} 
+}
 
 .portfolio {
   background-color: #e68966;
@@ -409,7 +409,7 @@ body {
   background-color: #e3dfd7;
   margin-bottom: 30px;
   border: 5px solid #ffffff;
-  
+
   display: flex;
 }
 
@@ -453,11 +453,33 @@ body {
   background-image: url("./img/gllacy.png");
   background-size: 140%;
   background-position-y: 0;
-  
+
 }
 
 .project-list__item--device .project-list__item-photo{
   background-image: url("./img/device.png");
+}
+
+.project-list__item--ihc .project-list__item-photo{
+  background-image: url("./img/ihc.png");
+  background-size: 140%;
+}
+
+.project-list__item--piterra .project-list__item-photo{
+  background-image: url("./img/piterra.png");
+  background-size: cover;
+}
+
+.project-list__item--fh .project-list__item-photo{
+  background-image: url("./img/fh.png");
+}
+
+.project-list__item--fanat .project-list__item-photo{
+  background-image: url("./img/fanat.jpeg");
+}
+
+.project-list__item--rukami .project-list__item-photo{
+  background-image: url("./img/rukami.jpg");
 }
 
 .project-list__item--sedona .project-list__item-photo{

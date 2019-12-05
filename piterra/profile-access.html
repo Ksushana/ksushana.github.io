@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Наша компания представляет товары для интерьера премиум класса в Москве и Санкт-Петербурге. Интернет-магазин обоев для стен, лепнины, красок и тканей piterra.ru">
+  <meta name="format-detection" content="telephone=no">
+  <title>Авторизация</title>
+  <link rel="preload" href="fonts/OpenSans.woff2" as="font">
+  <link rel="preload" href="fonts/PTSerif.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="profile-access">
+  <main class="profile-main">
+    <div class="container">
+      <h1 class="profile-main__title">Доступ в профиль</h1>
+
+      <div class="profile-main__flex-wrapper">
+        <section class="authorization">
+          <h2 class="visually-hidden">Войти в профиль</h2>
+          <img class="authorization__img" src="https://via.placeholder.com/143x143" alt="Фото профиля" width="143"
+            height="143">
+          <form class="authorization__form" action="#" method="post">
+            <div class="authorization__block">
+              <div class="common-field">
+                <label class="common-field__label common-label common-label--icon common-label--icon-email common-label--icon-opacity authorization__label"
+                  for="email">email</label>
+                <input class="common-field__input authorization__input" id="email" type="email" placeholder="EGolodova@piterra.ru">
+              </div>
+            </div>
+            <div class="authorization__block">
+              <div class="common-field common-field--help">
+                <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-opacity authorization__label"
+                  for="password-login">Пароль</label>
+                <input class="common-field__input common-field__input--padding authorization__input" id="password-login" type="password" placeholder="***************"
+                  required>
+                <div class="input-help">
+                  <a class="common-form-link" href="#">Забыли пароль?</a>
+                </div>
+              </div>
+            </div>
+            <div class="common-checkbox common-checkbox--toggle authorization__checkbox">
+              <input class="visually-hidden" id="remember-me" type="checkbox" name="remember-me">
+              <label class="common-checkbox__label common-label authorization__label" for="remember-me">
+                запомнить меня
+              </label>
+              <div class="common-checkbox__options">
+                <span class="common-checkbox__option common-checkbox__option--true">Да</span>
+                <span class="common-checkbox__option common-checkbox__option--false">Нет</span>
+              </div>
+            </div>
+            <button class="common-button authorization__button" type="submit">Войти</button>
+          </form>
+          <p class="authorization__block authorization__block--flex">
+            <a class="common-form-link authorization__link" href="#">Стать дилером компании?</a>
+            <a class="common-form-link authorization__link" href="#">Подать заявку на сотрудничество</a>
+          </p>
+        </section>
+
+        <section class="new-user">
+          <h2 class="new-user__title">Создать нового пользователя</h2>
+          <div class="profile-main__flex-wrapper">
+            <form class="new-user__form" action="#" method="post">
+              <div class="new-user__block">
+                <div class="common-field">
+                  <label class="common-field__label common-label common-label--icon common-label--icon-email new-user__label"
+                    for="new-email">email</label>
+                  <input class="common-field__input new-user__input" id="new-email" type="email" required>
+                </div>
+              </div>
+              <div class="new-user__block">
+                <div class="common-field">
+                  <label class="common-field__label common-label common-label--icon common-label--icon-phone new-user__label"
+                    for="phone">Телефон</label>
+                  <input class="common-field__input new-user__input" id="phone" type="tel" required>
+                </div>
+              </div>
+              <div class="new-user__block">
+                <div class="common-field">
+                  <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-security new-user__label"
+                    for="new-password">Пароль</label>
+                  <input class="common-field__input common-field__input--padding new-user__input" id="new-password" type="password" required>
+                </div>
+              </div>
+              <div class="new-user__block">
+                <div class="common-field">
+                  <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-hide new-user__label"
+                    for="new-password-repeat">Повторите пароль</label>
+                  <input class="common-field__input common-field__input--padding new-user__input" id="new-password-repeat" type="password" required>
+                </div>
+              </div>
+              <div class="common-checkbox new-user__checkbox">
+                <input class="visually-hidden" id="agreement" type="checkbox" name="agreement" required>
+                <label class="common-checkbox__label common-label new-user__label" for="agreement">
+                  Принимаю условия пользовательского соглашения
+                </label>
+              </div>
+              <button class="common-button new-user__button" type="submit">зарегистрироваться</button>
+            </form>
+            <div class="social-login">
+              <button class="common-button common-button--facebook">войти через facebook</button>
+              <p class="social-login__text common-decoration-lines">или другие</p>
+              <ul class="social-login__list">
+                <li class="social-login__item">
+                  <a class="social-button social-button--vk" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="social-login__item">
+                  <a class="social-button social-button--fb" href="#">
+                    <span class="visually-hidden">Фейсбук</span>
+                  </a>
+                </li>
+                <li class="social-login__item">
+                  <a class="social-button social-button--insta" href="#">
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="common-form-link new-user__link" href="#">уже зарегистрировались? войти сейчас</a>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

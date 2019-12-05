@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Интернет Хостинг Центр </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/rubik.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/rubik-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="is-mouse landing">
+  <header class="header grid"><a class="header__logo"><img src="img/logo-ihc.svg" width="155" height="64" alt="Интернет Хостинг Центр"></a>
+    <div class="header__menu-wrapper"><button class="link-text header__menu-open" type="button"><span>Меню</span></button><button class="button-close header__menu-close" type="button" aria-label="Закрыть меню"><span></span><span></span></button>
+      <div class="header__menu">
+        <div class="header__menu-title">Меню</div>
+        <div class="header__menu-inner">
+          <nav class="header__nav main-nav" aria-label="Основное меню">
+            <ul class="main-nav__list main-nav__list--narrow">
+              <li class="main-nav__item"><a class="link-text header__link" href="#"><span>Хостинг</span></a></li>
+              <li class="main-nav__item main-nav__dropdown"><span class="main-nav__dropdown-title">VPS<svg width="10" height="5" aria-hidden="true"><use xlink:href="img/sprite.svg#triangle"></use></svg></span>
+                <ul class="main-nav__dropdown-list">
+                  <li><a class="link-text header__link" href="#"><span>OpenVZ VPS</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>Мощные KVN VDS на SSD</span></a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item"><a class="link-text header__link" href="domains.html"><span>Домены</span></a></li>
+            </ul>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="link-text header__link" href="service.html"><span>Аренда сервера</span></a></li>
+              <li class="main-nav__item main-nav__dropdown"><span class="main-nav__dropdown-title">Дата-центр<svg width="10" height="5" aria-hidden="true"><use xlink:href="img/sprite.svg#triangle"></use></svg></span>
+                <ul class="main-nav__dropdown-list">
+                  <li><a class="link-text header__link" href="#"><span>Перенос хостинга</span></a></li>
+                  <li><a class="link-text header__link" href="landing.html"><span>Лечение сайта</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>Бэкап хостинга</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>Антивирус</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>Облачные вычисления Облачные вычисления</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>VDS сервера</span></a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item main-nav__dropdown"><span class="main-nav__dropdown-title">Дополнительные услуги<svg width="10" height="5" aria-hidden="true"><use xlink:href="img/sprite.svg#triangle"></use></svg></span>
+                <ul class="main-nav__dropdown-list">
+                  <li><a class="link-text header__link" href="#"><span>Перенос хостинга</span></a></li>
+                  <li><a class="link-text header__link" href="landing.html"><span>Лечение сайта</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>Бэкап хостинга</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>Антивирус</span></a></li>
+                  <li><a class="link-text header__link" href="#"><span>Облачные вычисления</span></a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__dropdown"><span class="main-nav__dropdown-title">О нас<svg width="10" height="5" aria-hidden="true"><use xlink:href="img/sprite.svg#triangle"></use></svg></span>
+                <ul class="main-nav__dropdown-list">
+                  <li><a class="link-text header__link" href="partner.html"><span>Партнерская программа</span></a></li>
+                  <li><a class="link-text header__link" href="contacts.html"><span>Контакты, реквизиты</span></a></li>
+                  <li><a class="link-text header__link" href="feedback.html"><span>Отзывы</span></a></li>
+                  <li><a class="link-text header__link" href="news.html"><span>Новости</span></a></li>
+                  <li><a class="link-text header__link" href="promotions.html"><span>Акции</span></a></li>
+                  <li><a class="link-text header__link" href="careers.html"><span>Вакансии</span></a></li>
+                </ul>
+              </li>
+              <li class="main-nav__item main-nav__item--signup"><a class="link-underlined" href="signup.html">Регистрация и заказ услуг</a></li>
+              <li class="main-nav__item main-nav__item--login"><a class="link-underlined" href="login.html">Войти</a></li>
+            </ul>
+          </nav>
+          <nav class="header__user user-controls" aria-label="Центр управления">
+            <div class="user-controls__title">Центр управления</div>
+            <div class="user-controls__login">
+              <form class="user-controls__form login" action="#" method="post" novalidate>
+                <div class="user-controls__input"><label class="visually-hidden" for="user-login">Логин</label><input id="user-login" type="email" placeholder="Логин" pattern="^[^@]+@[^@]+[.]{1}[^@]{2,}$" required>
+                  <p class="user-controls__message"></p>
+                </div>
+                <div class="user-controls__input"><label class="visually-hidden" for="user-password">Пароль</label><input id="user-password" type="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$" placeholder="Пароль" required>
+                  <p class="user-controls__message"></p>
+                </div><button class="user-controls__login-btn" type="submit" title="Войти" aria-label="Войти"><span class="user-controls__arrow"><svg width="10" height="10.4" aria-hidden="true"><use xlink:href="img/sprite.svg#arrow"></use></svg></span></button>
+              </form>
+              <ul class="user-controls__social">
+                <li><a href="#" title="Войти через mail.ru" aria-label="Войти через mail.ru"><svg width="22" height="22" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#logo-mail-small"></use>
+                    </svg></a></li>
+                <li><a href="#" title="Войти через Яндекс" aria-label="Войти через Яндекс"><svg width="12" height="20" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#logo-yandex-narrow"></use>
+                    </svg></a></li>
+                <li><a class="logo-google-small" href="#" title="Войти через Google" aria-label="Войти через Google"><svg width="21" height="23" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#logo-google-small"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+            <div class="user-controls__links">
+              <div class="user-controls__username">ivan.maximovixh@yandex.ru</div>
+              <div class="user-controls__item"><a class="header__link link-text user-controls__arrow" href="#"><span>Перейти<svg width="10" height="10.4" aria-hidden="true"><use xlink:href="img/sprite.svg#arrow"></use></svg></span></a></div>
+              <div class="user-controls__item"><a class="link-text header__link" href="#"><span>Выйти</span></a></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="header__overlay"></div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="visually-hidden">Интернет Хостинг Центр</h1>
+      <section class="promo-slider grid-block">
+        <div class="promo-slider__slides">
+          <div class="promo-slider__slide square-block square-block--purple enabled" id="slide-1">
+            <div class="promo-slider__inner">
+              <div class="promo-slider__content">
+                <h2 class="promo-slider__title title title--large">Надёжный хостинг с&nbsp;поддержкой по&nbsp;телефону 24/7</h2>
+                <ul class="promo-slider__list">
+                  <li class="promo-slider__item">uptime 99.9% и выше</li>
+                  <li class="promo-slider__item">переезд за наш счёт!</li>
+                  <li class="promo-slider__item">тест 7 дней</li>
+                  <li class="promo-slider__item">домен в подарок</li>
+                  <li class="promo-slider__item">защита от DDoS</li>
+                  <li class="promo-slider__item">от 99 ₽/мес.</li>
+                </ul>
+                <div class="promo-slider__btns"><button class="promo-slider__btn link-text link-text--yellow button js-promo-open" type="button" data-slide="slide-1"><span>Подобрать тариф</span></button><a class="link-text link-text--yellow button promo-slider__btn" href="#"><span>Смотреть детали</span></a></div>
+              </div>
+              <div class="promo-slider__modal slider-plans"><button class="button-close promo-slider__modal-close js-promo-close" type="button" aria-label="Закрыть окно"><span></span><span></span></button>
+                <h2 class="slider-plans__title title title--large">Подбор тарифа</h2>
+                <form class="slider-plans__form" action="/" method="post">
+                  <div class="slider-plans__field"><input class="visually-hidden" id="hosting-sites" type="range" min="0" max="10" value="1" name="hosting_sites">
+                    <div class="slider-plans__range range range--yellow"></div><label class="slider-plans__label" for="hosting-sites">Количество сайтов</label><span class="slider-plans__count range-output">1</span>
+                  </div>
+                  <div class="slider-plans__field"><input class="visually-hidden" id="hosting-storage" type="range" min="0" max="10" value="2" name="hosting_storage">
+                    <div class="slider-plans__range range range--yellow"></div><label class="slider-plans__label" for="hosting-storage">Место под файлы</label><span class="slider-plans__count"><span class="range-output">2</span> Гб</span>
+                  </div>
+                  <div class="slider-plans__field"><input class="visually-hidden" id="hosting-database" type="range" min="0" max="750" step="10" value="100" name="hosting_database">
+                    <div class="slider-plans__range range range--yellow"></div><label class="slider-plans__label" for="hosting-database">Место под все БД</label><span class="slider-plans__count"><span class="range-output">100</span> Мб</span>
+                  </div>
+                  <div class="slider-plans__field"><input class="visually-hidden" id="hosting-ftp" type="range" min="0" max="25" value="10" name="hosting_ftp">
+                    <div class="slider-plans__range range range--yellow"></div><label class="slider-plans__label" for="hosting-ftp">FTP-доступов в&nbsp;отдельные папки</label><span class="slider-plans__count range-output">10</span>
+                  </div>
+                  <div class="slider-plans__action">
+                    <div class="slider-plans__result">
+                      <p>Наиболее подходящий для вас тариф:</p>
+                      <div class="slider-plans__plan-info"><span class="slider-plans__plan-name">Maximum</span><span class="slider-plans__price"><span class="slider-plans__monthly">159 ₽/мес.</span><span class="slider-plans__yearly">1290 ₽/год</span></span></div>
+                    </div><button class="link-text link-text--yellow button slider-plans__btn" type="submit"><span>Заказать</span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="promo-slider__slide square-block square-block--blue" id="slide-4">
+            <div class="promo-slider__inner">
+              <div class="promo-slider__content">
+                <h2 class="promo-slider__title title title--large">Новая услуга:<br> лечение сайтов</h2>
+                  <ul class="promo-slider__list">
+                    <li class="promo-slider__item">Диагностика и сканирование сайта</li>
+                    <li class="promo-slider__item">Лечение файлов и базы данных</li>
+                    <li class="promo-slider__item">Установка защиты от взлома</li>
+                    <li class="promo-slider__item">от 3900 ₽</li>
+                    <li class="promo-slider__item">100% гарантия</li>
+                  </ul>
+                  <div class="promo-slider__btns"><a class="link-text link-text--yellow button promo-slider__btn" href="#"><span>Смотреть детали</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-slider__slide square-block square-block--orange" id="slide-3">
+            <div class="promo-slider__inner">
+              <div class="promo-slider__content">
+                <h2 class="promo-slider__title title title--large">Премиум виртуальный хостинг</h2>
+                <ul class="promo-slider__list">
+                  <li class="promo-slider__item">от 1 125 ₽/мес.</li>
+                  <li class="promo-slider__item">сайтов без ограничения</li>
+                  <li class="promo-slider__item">200 ГБ</li>
+                  <li class="promo-slider__item">PHP</li>
+                  <li class="promo-slider__item">MySQL</li>
+                  <li class="promo-slider__item">Защита от DDoS</li>
+                  <li class="promo-slider__item">отличная замена VPS для посещаемых сайтов</li>
+                </ul>
+                <div class="promo-slider__btns"><a class="link-text link-text--yellow button promo-slider__btn" href="#"><span>Смотреть детали</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-slider__slide square-block square-block--green" id="slide-2">
+            <div class="promo-slider__inner">
+              <div class="promo-slider__content">
+                <h2 class="promo-slider__title title title--large">Новые доменные зоны уже <span>в продаже</span> от&nbsp;540&nbsp;₽</h2>
+                <div class="promo-slider__prices">
+                  <table class="price-table" role="table">
+                    <thead class="visually-hidden">
+                      <tr>
+                        <th>Зона</th>
+                        <th>Цена регистрации (продления) на 1 год</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>.ru</td>
+                        <td>170 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>.com</td>
+                        <td>890 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>.рф</td>
+                        <td>200 ₽</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td>.su</td>
+                        <td>250 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>.net</td>
+                        <td>340 ₽</td>
+                      </tr>
+                      <tr>
+                        <td>.org</td>
+                        <td>400 ₽</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="promo-slider__btns"><a class="link-text link-text--yellow button promo-slider__btn" href="#domain-check"><span>Проверить домен</span></a><a class="link-text link-text--yellow button promo-slider__btn" href="#"><span>Смотреть детали</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promo-slider__controls"><button class="promo-slider__control square-block link-text link-text--purple enabled" type="button" data-slide="slide-1"><span>Надёжный хостинг с&nbsp;поддержкой по&nbsp;телефону 24/7</span></button><button class="promo-slider__control square-block link-text link-text--orange" type="button" data-slide="slide-3" data-row="2"><span>Премиум виртуальный хостинг</span></button><button class="promo-slider__control square-block link-text link-text--green" type="button" data-slide="slide-2" data-row="3"><span>Новые доменные зоны уже в&nbsp;продаже от&nbsp;540&nbsp;₽</span></button><button class="promo-slider__control square-block link-text link-text--blue" type="button" data-slide="slide-4" data-col="2"><span>Новая услуга: лечение сайтов</span></button>
+          <div class="squares squares--colorful promo-slider__tablet-squares">
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+          </div>
+          <div class="squares squares--colorful promo-slider__squares">
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+          </div>
+        </div>
+      </section>
+      <section class="offers grid-block">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="offers__list">
+          <li class="offers__item squares-area">
+            <div class="offers__card js-squares-neighbour">
+              <h3 class="offers__title title title--medium">Виртуальный хостинг</h3>
+              <p class="offers__subtitle title title--small">от <span>99&nbsp;₽</span> в&nbsp;год</p>
+              <ul class="offers__desc">
+                <li>— 14&nbsp;дней бесплатно</li>
+                <li>— 1&nbsp;домен .RU/.РФ в&nbsp;подарок</li>
+                <li>— 3000 рублей от&nbsp;Google</li>
+                <li>— SSL-сертификат бесплатно</li>
+                <li>— автоматическая установка CMS</li>
+                <li>— есть тарифы для компаний и&nbsp;гос. учреждений</li>
+              </ul><a class="link-text link-text--yellow button offers__btn" href="#"><span>Подобрать тариф</span></a>
+            </div>
+            <div class="squares squares--grey offers__squares">
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+            </div>
+          </li>
+          <li class="offers__item squares-area">
+            <div class="offers__card js-squares-neighbour">
+              <h3 class="offers__title title title--medium">Надёжный VPS</h3>
+              <p class="offers__subtitle title title--small">от <span>199&nbsp;₽</span> в&nbsp;год</p>
+              <ul class="offers__desc">
+                <li>— неограниченный трафик</li>
+                <li>— до&nbsp;3&nbsp;доменов .RU/.РФ в&nbsp;подарок</li>
+                <li>— 3000 рублей от&nbsp;Google</li>
+                <li>— ISPmanager 5&nbsp;Lite</li>
+                <li>— 5&nbsp;Гб под backup бесплатно</li>
+                <li>— есть тарифы с&nbsp;администрированием</li>
+              </ul><a class="link-text link-text--yellow button offers__btn" href="#"><span>Заказать VPS</span></a>
+            </div>
+            <div class="squares squares--grey offers__squares">
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+            </div>
+          </li>
+          <li class="offers__item squares-area">
+            <div class="offers__card js-squares-neighbour">
+              <h3 class="offers__title title title--medium">Мощный VDS&nbsp;на&nbsp;SSD</h3>
+              <p class="offers__subtitle title title--small">от <span>3500&nbsp;₽</span> в&nbsp;месяц</p>
+              <ul class="offers__desc">
+                <li>— неограниченный трафик</li>
+                <li>— до&nbsp;3&nbsp;доменов .RU/.РФ в&nbsp;подарок</li>
+                <li>— 3000 рублей от&nbsp;Google</li>
+                <li>— ISPmanager 5&nbsp;Lite</li>
+                <li>— 5&nbsp;Гб под backup бесплатно</li>
+                <li>— есть тарифы с&nbsp;администрированием</li>
+              </ul><a class="link-text link-text--yellow button offers__btn" href="#"><span>Сконфигурировать <span class='mobile-hidden'>VDS</span></span></a>
+            </div>
+            <div class="squares squares--grey offers__squares">
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+              <div class="squares__item"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="domain-check grid-block squares-area" id="domain-check">
+        <div class="domain-check__card square-block square-block--grey js-squares-neighbour">
+          <div class="domain-check__content">
+            <h2 class="title title--medium">Проверка домена</h2>
+            <form class="domain-check__form form" action="/" method="GET">
+              <div class="domain-check__field form__field"><input class="form__input form__input--grey" id="isDomain" type="text"><label class="form__label domain-check__label" for="isDomain">Введите домен</label></div><button class="link-text link-text--yellow button form__submit domain-check__btn" type="submit"><span>Проверить</span></button>
+            </form>
+            <div class="domain-check__prices">
+              <h3 class="domain-check__subtitle">Стоимость регистрации популярных доменов, ₽&nbsp;/&nbsp;год</h3>
+              <table class="price-table price-table--large" role="table">
+                <thead class="visually-hidden">
+                  <tr>
+                    <th>Зона</th>
+                    <th>Цена регистрации (продления) на 1 год</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>.ru</td>
+                    <td>170</td>
+                  </tr>
+                  <tr>
+                    <td>.com</td>
+                    <td>890</td>
+                  </tr>
+                  <tr>
+                    <td>.рф</td>
+                    <td>200</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>.su</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>.net</td>
+                    <td>340</td>
+                  </tr>
+                  <tr>
+                    <td>.org</td>
+                    <td>400</td>
+                  </tr>
+                </tbody>
+              </table><a class="link-underlined domain-check__link" href="#">Смотреть список доступных зон</a>
+            </div>
+          </div>
+        </div>
+        <div class="squares squares--grey domain-check__squares">
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+        </div>
+      </section>
+      <section class="advantages grid-block">
+        <h2 class="advantages__title title title--light text-parallax">Почему хостинг IHC стоит внимания?</h2>
+        <div class="advantages__item">
+          <div class="advantages__content square-block square-block--orange">
+            <p><span class="advantages__item-top">Uptime</span> <b class="advantages__number">99.9%</b> и выше</p>
+          </div>
+          <div class="squares squares--orange advantages__squares">
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__content square-block square-block--green">
+            <p>Техническая поддержка <b>24/7</b></p>
+          </div>
+          <div class="squares squares--green advantages__squares">
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+          </div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__content square-block square-block--red">
+            <p>Хостинг работает при&nbsp;балансе <b>0 ₽</b></p>
+          </div>
+          <div class="squares squares--red advantages__squares">
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+            <div class="squares__item"></div>
+          </div>
+        </div>
+      </section>
+      <section class="banner grid-block">
+        <div class="banner__wrapper">
+          <h2 class="visually-hidden">Специальное предложение</h2>
+          <div class="banner__content">
+            <p class="banner__lead title title--large">Перенесём ваш сайт бесплатно и&nbsp;подарим 3&nbsp;месяца хостинга!</p><a class="link-text link-text--purple button" href="#"><span>Заказать перенос</span></a>
+          </div>
+          <div class="banner__icon"></div>
+        </div>
+      </section>
+      <section class="payment grid-block squares-area">
+        <h2 class="visually-hidden">Способы оплаты</h2>
+        <p class="payment__title title title--light text-parallax text-parallax--desktop">Принимаем рубли, доллары и биткоины. Работаем со множеством систем.</p>
+        <ul class="payment__list js-squares-neighbour">
+          <li class="payment__item square-block square-block--grey"><a href="#"><img src="img/logo-qiwi@1x.png" srcset="img/logo-qiwi@2x.png 2x" alt="Киви"></a></li>
+          <li class="payment__item square-block square-block--grey"><a href="#"><img src="img/logo-bitcoin@1x.png" srcset="img/logo-bitcoin@2x.png 2x" alt="Биткоин"></a></li>
+          <li class="payment__item square-block square-block--grey"><a href="#"><img src="img/logo-webmoney@1x.png" srcset="img/logo-webmoney@2x.png 2x" alt="Вебмани"></a></li>
+          <li class="payment__item square-block square-block--grey"><a href="#"><img src="img/logo-yandex-money@1x.png" srcset="img/logo-yandex-money@2x.png 2x" alt="Яндекс"></a></li>
+          <li class="payment__item square-block square-block--grey"><a href="#"><img src="img/logo-mastercard@1x.png" srcset="img/logo-mastercard@2x.png 2x" alt="Мастеркард"></a></li>
+          <li class="payment__item square-block square-block--grey"><a href="#"><img src="img/logo-visa@1x.png" srcset="img/logo-visa@2x.png 2x" alt="Виза"></a></li>
+        </ul>
+        <div class="squares squares--grey payment__squares">
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer container grid">
+    <div class="footer__wrapper">
+      <div class="footer__contacts">
+        <div class="square-block square-block--black">
+          <div class="footer__content">
+            <h2 class="visually-hidden">Контакты</h2>
+            <div class="footer__section">
+              <h3 class="title title--small">Адрес</h3>
+              <p>127055, Москва, ул.&nbsp;Образцова,&nbsp;д.&nbsp;7</p>
+            </div>
+            <div class="footer__section">
+              <h3 class="title title--small">Телефоны</h3>
+              <ul class="footer__list footer__list--phones">
+                <li><a class="link-text footer__link" href="tel:+74956486033"><span>+7 (495) 648-60-33</span></a></li>
+                <li><a class="link-text footer__link" href="tel:+78123855648"><span>+7 (812) 385-56-48</span></a></li>
+                <li><a class="link-text footer__link" href="tel:+78003330217"><span>+7 (800) 333-02-17</span></a></li>
+              </ul>
+            </div>
+            <div class="footer__section footer__section--small">
+              <h3 class="title title--small">Соцсети</h3>
+              <p><a class="link-text footer__link" href="#"><span>Twitter</span></a>, <a class="link-text footer__link" href="#"><span>VK</span></a></p>
+            </div>
+            <div class="footer__section footer__section--small">
+              <h3 class="title title--small">Отдел продаж</h3><a class="link-text footer__link" href="mailto:sales@ihc.ru"><span>sales@ihc.ru</span></a>
+            </div>
+            <div class="footer__section footer__section--small">
+              <h3 class="title title--small">Общие вопросы</h3><a class="link-text footer__link" href="mailto:info@ihc.ru"><span>info@ihc.ru</span></a>
+            </div>
+            <div class="footer__section footer__section--small">
+              <h3 class="title title--small">Бухгалтерия</h3><a class="link-text footer__link" href="mailto:bill@ihc.ru"><span>bill@ihc.ru</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__docs">
+        <div class="square-block square-block--black">
+          <div class="footer__content">
+            <h2 class="visually-hidden">Документы</h2>
+            <ul class="footer__list">
+              <li><a class="link-text footer__link lightbox-link popup-open" href="img/news-1@2x.jpg"><span>Свидетельство на товарный знак</span></a></li>
+              <li><a class="link-text footer__link" href="#"><span>Публичная оферта</span></a></li>
+              <li><a class="link-text footer__link" href="#"><span>Политика работы с&nbsp;персональными данными</span></a></li>
+              <li><a class="link-text footer__link" href="#"><span>Правила подачи и рассмотрения жалоб</span></a></li>
+              <li><a class="link-text footer__link" href="#"><span>Помощь</span></a></li>
+            </ul>
+            <div class="footer__standard">
+              <p>Работаем по ГОСТ Р 57489-2017</p>
+            </div>
+          </div>
+        </div>
+        <div class="squares squares--black footer__squares">
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+          <div class="squares__item"></div>
+        </div>
+      </div>
+      <div class="squares squares--black footer__squares">
+        <div class="squares__item"></div>
+        <div class="squares__item"></div>
+        <div class="squares__item"></div>
+        <div class="squares__item"></div>
+        <div class="squares__item"></div>
+        <div class="squares__item"></div>
+        <div class="squares__item"></div>
+        <div class="squares__item"></div>
+      </div>
+      <div class="footer__copyright">
+        <div class="square-block square-block--black">
+          <div class="footer__content footer__content--small">
+            <p>Дизайн и вёрстка сайта — <a class="link-text footer__link" href="http://glyf.ru"><span>GLYF</span></a></p>
+            <p>© 2009-2018 <br>
+ООО&nbsp;«Интернет&#8209;Хостинг»</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="popup"><button class="button-close popup__close" type="button" aria-label="Закрыть"><span></span><span></span></button>
+    <div class="popup__image">
+      <div class="popup__info"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.0198 11.649C0.352846 10.4796 0.000307083 9.1463 0.000307083 7.79297C0.000307083 3.49596 3.49628 0 7.79329 0C12.0903 0 15.5863 3.49596 15.5863 7.79297C15.5863 9.68352 14.9093 11.4187 13.7854 12.7695L18.7812 17.7312L18.7969 17.7473L17.7449 18.7939L17.7351 18.7844C15.764 16.862 12.7328 13.816 12.7328 13.816C11.3872 14.9214 9.66644 15.5859 7.79329 15.5859C6.45633 15.5859 5.13706 15.2415 3.97826 14.5896L3.96727 14.5832L4.69512 13.29L4.70596 13.2959C5.64312 13.823 6.71074 14.1016 7.79329 14.1016C11.2719 14.1016 14.1019 11.2715 14.1019 7.79297C14.1019 4.3144 11.2719 1.48438 7.79329 1.48438C4.31471 1.48438 1.48468 4.3144 1.48468 7.79297C1.48468 8.88886 1.76982 9.96793 2.30906 10.9135L2.31444 10.9231L1.02798 11.663L1.0198 11.649Z" fill="black"></path>
+          <path d="M8.47526 7.0545H10.0317V8.37363H8.47526V10.1583H7.03746V8.37363H5.47641V7.0545H7.03746V5.32001H8.47526V7.0545Z" fill="black"></path>
+        </svg>
+        <p>Нажмите дважды, чтобы увеличить</p>
+      </div>
+    </div>
+  </div><template id="tooltip">
+    <div class="tooltip">
+      <p class="tooltip__text"></p><button class="button-close tooltip__close" type="button" aria-label="Закрыть попап"><span></span><span></span></button>
+    </div>
+  </template><template id="error-message">
+    <div class="error-message">
+      <div class="error-message__wrapper">
+        <p class="error-message__text"></p><button class="button-close error-message__button" type="button" aria-label="Закрыть попап"><span></span><span></span></button>
+      </div>
+    </div>
+  </template>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

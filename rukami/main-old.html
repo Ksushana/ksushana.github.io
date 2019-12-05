@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Руками</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--meta( name="format-detection" content="telephone=no")-->
+  <link rel="preload" href="fonts/rkm-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.documentElement.classList.remove(`no-js`);
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo"><a href="main.html" aria-label="Руками"><svg width="152" height="32" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#logo-rukami"></use>
+        </svg></a></div>
+  </header>
+  <nav class="main-nav"><button class="main-nav__btn" type="button" aria-label="Меню"><svg width="91" height="69" viewBox="-2 -2 91 69" aria-hidden="true">
+        <g>
+          <path d="M46.7295 58.8025C69.5563 55.9997 81.5115 42.5782 79.7279 28.0518C77.9443 13.5253 62.442 3.47519 40.2704 6.19752C18.0988 8.91985 5.48839 22.4218 7.27202 36.9482C9.05564 51.4747 23.9027 61.6052 46.7295 58.8025Z" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+        </g>
+        <g>
+          <path d="M45.1863 21.6213C46.3579 20.4497 46.3579 18.5503 45.1863 17.3787C44.0148 16.2071 42.1153 16.2071 40.9437 17.3787C39.7721 18.5503 39.7721 20.4497 40.9437 21.6213C42.1153 22.7929 44.0148 22.7929 45.1863 21.6213Z"></path>
+          <path d="M45.1863 34.6213C46.3579 33.4497 46.3579 31.5503 45.1863 30.3787C44.0148 29.2071 42.1153 29.2071 40.9437 30.3787C39.7721 31.5503 39.7721 33.4497 40.9437 34.6213C42.1153 35.7929 44.0148 35.7929 45.1863 34.6213Z"></path>
+          <path d="M58.1863 34.6213C59.3579 33.4497 59.3579 31.5503 58.1863 30.3787C57.0148 29.2071 55.1153 29.2071 53.9437 30.3787C52.7721 31.5503 52.7721 33.4497 53.9437 34.6213C55.1153 35.7929 57.0148 35.7929 58.1863 34.6213Z"></path>
+          <path d="M32.1863 34.6213C33.3579 33.4497 33.3579 31.5503 32.1863 30.3787C31.0148 29.2071 29.1153 29.2071 27.9437 30.3787C26.7721 31.5503 26.7721 33.4497 27.9437 34.6213C29.1153 35.7929 31.0148 35.7929 32.1863 34.6213Z"></path>
+          <path d="M45.1863 47.6213C46.3579 46.4497 46.3579 44.5503 45.1863 43.3787C44.0148 42.2071 42.1153 42.2071 40.9437 43.3787C39.7721 44.5503 39.7721 46.4497 40.9437 47.6213C42.1153 48.7929 44.0148 48.7929 45.1863 47.6213Z"></path>
+        </g>
+      </svg></button>
+    <div class="main-nav__inner">
+      <p class="main-nav__info">Уровни сайта можно менять с&nbsp;помощью <span class="main-nav__arrows" aria-label="стрелок"><svg width="29" height="30" aria-hidden="true"><use xlink:href="img/sprite.svg#arrows"></use></svg></span> на клавиатуре или&nbsp;кликом мыши, когда видны маркеры перехода</p>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--top"><a class="main-nav__link" href="about.html"><span>О проекте</span>
+            <div class="main-nav__circle"></div></a>
+          <div class="main-nav__line"></div>
+        </li>
+        <li class="main-nav__item main-nav__item--left"><a class="main-nav__link" href="programm.html"><span>Обмен практиками</span>
+            <div class="main-nav__circle"></div></a></li>
+        <li class="main-nav__item main-nav__item--center"><a class="main-nav__link" href="main.html">
+            <div class="main-nav__circle"></div><span>Rukami</span>
+          </a>
+          <div class="main-nav__line"></div>
+        </li>
+        <li class="main-nav__item main-nav__item--right"><a class="main-nav__link" href="region.html">
+            <div class="main-nav__circle"></div><span>Фестивали в&nbsp;регионах</span>
+          </a></li>
+      </ul>
+      <div class="main-nav__about">
+        <div class="main-nav__news"><a class="btn-oval btn-oval--other" href="news.html">Новости</a></div>
+        <div class="main-nav__events"><a class="btn-oval btn-oval--other" href="all-events.html">Все события</a></div>
+      </div>
+      <div class="main-nav__buttons"><a class="btn-oval btn-oval--main" href="#">Посетить фестиваль Rukami</a></div><a class="main-nav__contacts btn-oval btn-oval--other" href="contacts.html">Контакты</a>
+      <div class="main-nav__social social">
+        <ul class="social__list">
+          <li><a href="#" target="_blank" title="ВКонтакте" aria-label="ВКонтакте"><svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg></a></li>
+          <li><a href="#" target="_blank" title="Фейсбук" aria-label="Фейсбук"><svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg></a></li>
+          <li><a href="#" target="_blank" title="Инстаграм" aria-label="Инстаграм"><svg width="16" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#insta"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="page-short main">
+      <div class="cropped-image main__image">
+        <div class="cropped-image__wrapper main__image-wrapper"><img src="img/bg-main@1x.png" srcset="img/bg-main@2x.png 2x" width="922" height="800" alt="Девушка и юноша"></div><svg width="1260" height="700" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#shape-1"></use>
+        </svg>
+      </div>
+      <div class="page-short__content page-short__content--bottom">
+        <p class="page-short__title main__title">Ruk<em>a</em>mi — свобода созд<em>a</em>в<em>a</em>ть будущее</p><a class="btn-oval btn-oval--main main__link main__link--main" href="#">ВСЕ СОБЫТИЯ<img src="img/oval.svg" width="234" height="50" alt="овал"></a>
+      </div><a class="nav-button nav-button--bottom" href="#more">Про фестиваль Rukami</a><a class="nav-button nav-button--top" href="about.html">Кратко о нас</a><a class="nav-button nav-button--left" href="programm.html">Обмен практиками</a><a class="nav-button nav-button--right" href="region.html">Фестивали в регионах</a>
+    </div>
+    <div class="page-full main-full" tabindex="0">
+      <section class="main-full__container">
+        <div class="cropped-image main-full__image">
+          <div class="cropped-image__wrapper main-full__image-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/main-full-bg@1x.png 1x, img/main-full-bg@2x.png 2x"><img src="img/main-full-bg-mobile@1x.png" srcset="img/main-full-bg-mobile@2x.png 2x" width="793" height="621" alt="Фестиваль"></picture>
+          </div><svg width="983" height="869" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#shape-2"></use>
+          </svg><svg width="480" height="470" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#shape-2-mobile"></use>
+          </svg>
+        </div>
+        <div class="container">
+          <p class="main-full__date">31 августа—1 сентября<span>Москва, ВДНХ</span></p>
+          <div class="main-full__block">
+            <h1 class="main-full__title">Rukami — фестиваль идей и&nbsp;технологий</h1><a class="main-full__link-info btn-oval" href="#info">Что там будет?</a>
+            <div class="link-download"><a href="#" download>Скачать расписание</a><span>1 MB</span></div>
+            <div class="link-download"><a href="#" download>Карта фестиваля</a><span>1 MB</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="partners partners--general partners--show" data-btn-select="0">
+        <div class="container">
+          <h2 class="partners__title">Генеральные партнёры</h2>
+          <div class="partners__arrows"><button class="partners__button swiper-button-prev" type="button" aria-label="Кнопка предыдущий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button><button class="partners__button swiper-button-next" type="button" aria-label="Кнопка следующий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button></div>
+          <div class="swiper-container">
+            <ul class="partners__list swiper-wrapper">
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner2.png" width="170" height="96" alt="Яндекс"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner3.png" width="293" height="63" alt="PlayStation"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner1.png" width="140" height="48" alt="Google"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner2.png" width="170" height="96" alt="Яндекс"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner3.png" width="293" height="63" alt="PlayStation"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner1.png" width="140" height="48" alt="Google"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="go-section">
+        <div class="container">
+          <h2 class="go-section__title">Тема фестиваля</h2>
+          <p class="go-section__text">Цифровая эволю&shy;ция развернулась во&nbsp;всех&nbsp;сферах жизни: от общения и&nbsp;развлечений до образования и <br>бизнес&#8209;процессов. Эти перемены бросают технологи&shy;ческий вызов обществу и дарят сверхвозможности тем, кто готов этот вызов принять!</p><a class="go-section__btn btn-oval" href="#">Я иду</a>
+        </div>
+      </section>
+      <section class="partners partners--gen-info" data-btn-select="1">
+        <div class="container">
+          <h2 class="partners__title">Генеральные информационные партнёры</h2>
+          <div class="partners__arrows"><button class="partners__button swiper-button-prev" type="button" aria-label="Кнопка предыдущий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button><button class="partners__button swiper-button-next" type="button" aria-label="Кнопка следующий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button></div>
+          <div class="swiper-container">
+            <ul class="partners__list swiper-wrapper">
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner5.png" width="107" height="107" alt="Lays"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner6.png" width="84" height="73" alt="Splat"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner7.png" width="180" height="180" alt="Snickers"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner5.png" width="107" height="107" alt="Lays"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner6.png" width="84" height="73" alt="Splat"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner7.png" width="180" height="180" alt="Snickers"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main-about">
+        <div class="cropped-image main-about__image">
+          <div class="cropped-image__wrapper main-about__image-wrapper"><img src="img/main-about-bg@1x.jpg" srcset="img/main-about-bg@2x.jpg 2x" width="1065" height="827" alt="Девочка"></div><svg width="715" height="392" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#shape-6"></use>
+          </svg>
+        </div>
+        <div class="cropped-image main-about__image main-about__image--mobile">
+          <div class="cropped-image__wrapper main-about__image-wrapper"><img src="img/bg-main@1x.png" srcset="img/bg-main@2x.png 2x" width="922" height="800" alt="Девушка и юноша"></div><svg width="1260" height="700" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#shape-6-mobile"></use>
+          </svg>
+        </div>
+        <div class="container">
+          <h2 class="main-about__title">Наш фестиваль называется Rukami, потому что на нём нет места простым зрителям</h2>
+          <p class="main-about__descr">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+          <p class="main-about__descr">Вместе мы будем создавать невероятные устройства, инсталляции и перфомансы — прямо на фестивале, своими руками!</p>
+        </div>
+      </section>
+      <section class="tracks tracks--pink">
+        <div class="container">
+          <h2 class="tracks__title">Треки</h2>
+          <div class="tracks__switch__btns"><button class="tracks__tab tracks__tab--mobile tracks__tab--man" type="button" data-tab="1">Человек</button>
+            <div class="tracks__list"><button class="tracks__tab tracks__tab--man tracks__tab--active" type="button" data-tab="1">Человек</button><button class="tracks__tab tracks__tab--env" type="button" data-tab="2">Среда обитания</button><button class="tracks__tab tracks__tab--space" type="button" data-tab="3">Космос</button><button class="tracks__tab tracks__tab--fun" type="button" data-tab="4">Fun</button></div>
+          </div>
+          <div class="tracks__tab-block tracks__tab-block--opened" data-tab="1">
+            <p>Нейроинтерфейсы, кибер-люди, цифровой портрет ДНК, био-хакинг: трек посвящен изобретениям, которые повышают функциональность, прокачивают наше тело и сознание, до уровня супер-героев!</p>
+          </div>
+          <div class="tracks__tab-block" data-tab="2">
+            <p>Текст второго блока</p>
+          </div>
+          <div class="tracks__tab-block" data-tab="3">
+            <p>Текст третьего блока</p>
+          </div>
+          <div class="tracks__tab-block" data-tab="4">
+            <p>Текст четвертого блока</p>
+          </div>
+        </div>
+        <div class="tracks__container"><a class="tracks__block tracks__block--big" href="popup.html" data-popup>
+            <div class="cropped-image tracks__image">
+              <div class="cropped-image__wrapper tracks__image-wrapper"><img src="img/main-info1@1x.jpg" srcset="img/main-info1@1x.jpg 2x" width="924" height="949" alt="Парень в VR очках"></div><svg width="924" height="705" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#shape-4"></use>
+              </svg>
+            </div>
+            <p class="tracks__tag tracks__tag--wow">Wow</p>
+            <h3 class="tracks__text tracks__text--big">Название активности или объекта</h3>
+          </a><a class="tracks__block" href="popup2.html" data-popup>
+            <p class="tracks__tag">Лекция</p>
+            <h3 class="tracks__text">Название активности или объекта</h3>
+          </a><a class="tracks__block" href="popup.html" data-popup>
+            <p class="tracks__tag">Лекция</p>
+            <h3 class="tracks__text">Название активности или объекта</h3>
+          </a><a class="tracks__block" href="popup2.html" data-popup>
+            <p class="tracks__tag">Мастер-класс</p>
+            <h3 class="tracks__text">Название активности или объекта</h3>
+          </a><a class="tracks__block tracks__block--long" href="popup.html" data-popup>
+            <div class="cropped-image tracks__image">
+              <div class="cropped-image__wrapper tracks__image-wrapper"><img src="img/main-info5-1@1x.jpg" srcset="img/main-info5-1@2x.jpg 2x" width="490" height="556" alt="Компьютеры"></div><svg width="516" height="707" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#shape-5"></use>
+              </svg><svg width="375" height="375" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#shape-5-mobile"></use>
+              </svg>
+            </div>
+            <p class="tracks__tag tracks__tag--wow">Wow</p>
+            <h3 class="tracks__text">Название активности или объекта</h3>
+          </a></div><button class="tracks__btn" type="button">Показать ещё</button>
+      </section>
+      <section class="partners partners--info" data-btn-select="2">
+        <div class="container">
+          <h2 class="partners__title">Информационные партнёры</h2>
+          <div class="partners__arrows"><button class="partners__button swiper-button-prev" type="button" aria-label="Кнопка предыдущий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button><button class="partners__button swiper-button-next" type="button" aria-label="Кнопка следующий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button></div>
+          <div class="swiper-container">
+            <ul class="partners__list swiper-wrapper">
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner4.png" width="368" height="216" alt="Манн, Иванов и Фербер"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner3.png" width="293" height="63" alt="PlayStation"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner2.png" width="170" height="96" alt="Яндекс"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner4.png" width="368" height="216" alt="Манн, Иванов и Фербер"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner3.png" width="293" height="63" alt="PlayStation"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner2.png" width="170" height="96" alt="Яндекс"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="vk-block"><a class="vk-block__link" href="#" aria-label="Вконтакте"><img src="img/vk-logo.svg" width="57" height="57" alt="Вконтакте">
+          <h2 class="vk-block__title">ВКонтакте</h2>
+        </a>
+        <p class="vk-block__text">Официальная социальная сеть фестиваля</p>
+      </section>
+      <section class="headliners">
+        <div class="container">
+          <h2 class="headliners__title">Хедлайнеры</h2>
+          <div class="headliners__slider"><button class="headliners__button headliners__button--prev" type="button" aria-label="Кнопка предыдущий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button>
+            <div class="swiper-container">
+              <ul class="headliners__list swiper-wrapper">
+                <li class="headliners__item swiper-slide">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/headliner2@1x.jpg 1x, img/headliner2@2x.jpg 2x"><img src="img/headliner2-mobile@1x.jpg" srcset="img/headliner2-mobile@2x.jpg 2x" alt="Билл Симонс"></picture>
+                  <p class="headliners__name">Билл&nbsp;Симонс</p>
+                  <p class="headliners__descr">Главный инженер Boston Dynamic</p>
+                </li>
+                <li class="headliners__item swiper-slide"><img src="img/headliner3@1x.jpg" srcset="img/headliner3@2x.jpg 2x" alt="Данила Крастер">
+                  <p class="headliners__name">Данила Крастер</p>
+                  <p class="headliners__descr">Звёзды You-Tube с лучшими хитами вживую!</p>
+                </li>
+                <li class="headliners__item swiper-slide"><img src="img/headliner1@1x.jpg" srcset="img/headliner1@1x.jpg 2x" alt="Compressorheads">
+                  <p class="headliners__name">Comressor&shy;heads</p>
+                  <p class="headliners__descr">Звёзды You-Tube с лучшими хитами вживую!</p>
+                </li>
+                <li class="headliners__item swiper-slide">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/headliner2@1x.jpg 1x, img/headliner2@2x.jpg 2x"><img src="img/headliner2-mobile@1x.jpg" srcset="img/headliner2-mobile@2x.jpg 2x" alt="Билл Симонс"></picture>
+                  <p class="headliners__name">Билл&nbsp;Симонс</p>
+                  <p class="headliners__descr">Главный инженер Boston Dynamic</p>
+                </li>
+                <li class="headliners__item swiper-slide"><img src="img/headliner3@1x.jpg" srcset="img/headliner3@2x.jpg 2x" alt="Данила Крастер">
+                  <p class="headliners__name">Данила Крастер</p>
+                  <p class="headliners__descr">Звёзды You-Tube с лучшими хитами вживую!</p>
+                </li>
+                <li class="headliners__item swiper-slide"><img src="img/headliner1@1x.jpg" srcset="img/headliner1@1x.jpg 2x" alt="Compressorheads">
+                  <p class="headliners__name">Comressor&shy;heads</p>
+                  <p class="headliners__descr">Звёзды You-Tube с лучшими хитами вживую!</p>
+                </li>
+              </ul>
+            </div><button class="headliners__button headliners__button--next" type="button" aria-label="Кнопка следующий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button>
+          </div>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <h2 class="program__title">Программа</h2>
+          <div class="program__tabs"><button class="program__date program__date--active" type="button" data-program-tab="1">31 августа</button><button class="program__date" type="button" data-program-tab="2">1 сентября</button></div>
+          <div class="program__table" data-program-tab="1">
+            <div><button class="program__button-mobile program__text program__text--head" type="button" data-col="2" data-program-tab="1">Главная сцена</button>
+              <div class="program__hidden-block">
+                <div class="program__col program__col--time"><img src="img/clock.svg" alt="Часы"></div>
+                <div class="program__col program__col--scene" data-col="2"><button class="program__text program__text--head" type="button" data-col="2" data-program-tab="1">Главная сцена</button></div>
+                <div class="program__col program__col--first-lect" data-col="3"><button class="program__text program__text--head" type="button" data-col="3" data-program-tab="1">I лекторий</button></div>
+                <div class="program__col program__col--second-lect" data-col="4"><button class="program__text program__text--head" type="button" data-col="4" data-program-tab="1">II лекторий</button></div>
+                <div class="program__col program__col--first-playground" data-col="5"><button class="program__text program__text--head" type="button" data-col="5" data-program-tab="1">I площадка</button></div>
+                <div class="program__col program__col--second-playground" data-col="6"><button class="program__text program__text--head" type="button" data-col="6" data-program-tab="1">II площадка</button></div>
+              </div>
+            </div>
+            <div>
+              <div class="program__col program__col--time">
+                <p class="program__text program__text--big">11:00</p>
+              </div>
+              <div class="program__col program__col--scene" data-col="2"><span class="program__time">11:00</span>
+                <p class="program__text program__text--big">Начало работы интерактивных площадок и детской зоны</p>
+              </div>
+              <div class="program__col program__col--first-playground" data-col="5"><span class="program__time">11:00</span>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p>
+              </div>
+              <div class="program__col program__col--second-playground" data-col="6"><span class="program__time">11:00</span>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p>
+              </div>
+            </div>
+            <div>
+              <div class="program__col program__col--time">
+                <p class="program__text program__text--big">13:00</p>
+              </div>
+              <div class="program__col program__col--scene" data-col="2"><span class="program__time">13:00</span>
+                <p class="program__text program__text--big">Открытие фестиваля</p>
+              </div>
+            </div>
+            <div>
+              <div class="program__col program__col--time">
+                <p class="program__text program__text--big">14:00</p>
+              </div>
+              <div class="program__col program__col--scene" data-col="2"><span class="program__time">14:00</span>
+                <p class="program__text program__text--big">Имя спикера</p>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p>
+              </div>
+              <div class="program__col program__col--first-lect" data-col="3"><span class="program__time">14:00</span>
+                <p class="program__text program__text--big">Имя спикера</p>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p><span class="tag tag--pink">Человек</span>
+                <div class="program__info">
+                  <div class="program__popap">
+                    <div><img src="img/icon-partner4.png" width="200" height="117" alt="Манн, Иванов и Фербер"></div>
+                    <div><img src="img/icon-partner3.png" width="149" height="32" alt="PlayStation"></div>
+                    <div><img src="img/icon-partner2.png" width="90" height="51" alt="Яндекс"></div>
+                    <div><img src="img/icon-partner5.png" width="61" height="61" alt="Lays"></div>
+                  </div><button class="tag tag--info" type="button" aria-label="Кнопка Информации"><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info"></use>
+                    </svg><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info-black"></use>
+                    </svg></button>
+                </div>
+              </div>
+              <div class="program__col program__col--second-lect" data-col="4"><span class="program__time">14:00</span>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p><span class="tag tag--purple">Космос</span>
+                <div class="program__info">
+                  <div class="program__popap">
+                    <div><img src="img/icon-partner4.png" width="200" height="117" alt="Манн, Иванов и Фербер"></div>
+                    <div><img src="img/icon-partner3.png" width="149" height="32" alt="PlayStation"></div>
+                    <div><img src="img/icon-partner2.png" width="90" height="51" alt="Яндекс"></div>
+                    <div><img src="img/icon-partner5.png" width="61" height="61" alt="Lays"></div>
+                  </div><button class="tag tag--info" type="button" aria-label="Кнопка Информации"><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info"></use>
+                    </svg><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info-black"></use>
+                    </svg></button>
+                </div>
+              </div>
+              <div class="program__col program__col--first-playground" data-col="5"><span class="program__time">14:00</span>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p>
+              </div>
+              <div class="program__col program__col--second-playground" data-col="6"><span class="program__time">14:00</span>
+                <p class="program__text program__text--small">Ещё какое-нибудь мероприятие с довольно длинным названием и довольно длинным именем спикера</p>
+              </div>
+            </div>
+            <div>
+              <div class="program__col program__col--time">
+                <p class="program__text program__text--big">16:00</p>
+              </div>
+              <div class="program__col program__col--scene" data-col="2"><span class="program__time">16:00</span>
+                <p class="program__text program__text--big">Билл Симонс</p>
+                <p class="program__text program__text--small">Ещё какое-нибудь мероприятие с довольно длинным названием и довольно длинным именем спикера</p>
+                <div class="program__info">
+                  <div class="program__popap">
+                    <div><img src="img/icon-partner4.png" width="200" height="117" alt="Манн, Иванов и Фербер"></div>
+                    <div><img src="img/icon-partner3.png" width="149" height="32" alt="PlayStation"></div>
+                    <div><img src="img/icon-partner2.png" width="90" height="51" alt="Яндекс"></div>
+                    <div><img src="img/icon-partner5.png" width="61" height="61" alt="Lays"></div>
+                  </div><button class="tag tag--info" type="button" aria-label="Кнопка Информации"><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info"></use>
+                    </svg><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info-black"></use>
+                    </svg></button>
+                </div>
+              </div>
+              <div class="program__col program__col--first-lect" data-col="3"><span class="program__time">16:00</span>
+                <p class="program__text program__text--small">Ещё какое-нибудь мероприятие с довольно длинным названием и довольно длинным именем спикера</p><span class="tag tag--yellow">Среда обитания</span>
+                <div class="program__info">
+                  <div class="program__popap">
+                    <div><img src="img/icon-partner4.png" width="200" height="117" alt="Манн, Иванов и Фербер"></div>
+                    <div><img src="img/icon-partner3.png" width="149" height="32" alt="PlayStation"></div>
+                    <div><img src="img/icon-partner2.png" width="90" height="51" alt="Яндекс"></div>
+                    <div><img src="img/icon-partner5.png" width="61" height="61" alt="Lays"></div>
+                  </div><button class="tag tag--info" type="button" aria-label="Кнопка Информации"><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info"></use>
+                    </svg><svg width="24" height="24" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#tag-info-black"></use>
+                    </svg></button>
+                </div>
+              </div>
+              <div class="program__col program__col--second-lect" data-col="4"><span class="program__time">16:00</span>
+                <p class="program__text program__text--big">Имя спикера</p>
+                <p class="program__text program__text--small">Ещё какое-нибудь мероприятие с довольно длинным названием и довольно длинным именем спикера</p><span class="tag tag--blue">Fun</span></div>
+              <div class="program__col program__col--first-playground" data-col="5"><span class="program__time">16:00</span>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p>
+              </div>
+              <div class="program__col program__col--second-playground" data-col="6"><span class="program__time">16:00</span>
+                <p class="program__text program__text--small">Ещё какое-нибудь мероприятие с довольно длинным названием и довольно длинным именем спикера</p>
+              </div>
+            </div>
+            <div>
+              <div class="program__col program__col--button"><button class="program__more btn-oval">Посмотреть всю программу</button></div>
+            </div>
+            <div class="visually-hidden">
+              <div class="program__col program__col--time"></div>
+              <div class="program__col program__col--scene"></div>
+            </div>
+            <div>
+              <div class="program__col program__col--time">
+                <p class="program__text program__text--big">21:00</p>
+              </div>
+              <div class="program__col program__col--scene" data-col="2"><span class="program__time">21:00</span>
+                <p class="program__text program__text--big">Comressorheads</p>
+                <p class="program__text program__text--big">Вечерний концерт и инженерное шоу.</p>
+                <p class="program__text program__text--big">Продолжается работа интерактивных площадок</p>
+              </div>
+            </div>
+          </div>
+          <div class="program__table closed" data-program-tab="2">
+            <div><button class="program__button-mobile program__text program__text--head" type="button" data-col="2" data-program-tab="2">Главная сцена</button>
+              <div class="program__hidden-block">
+                <div class="program__col program__col--time"><img src="img/clock.svg" alt="Часы"></div>
+                <div class="program__col program__col--scene" data-col="2"><button class="program__text program__text--head" type="button" data-col="2" data-program-tab="2">Главная сцена</button></div>
+                <div class="program__col program__col--first-lect" data-col="3"><button class="program__text program__text--head" type="button" data-col="3" data-program-tab="2">I лекторий</button></div>
+                <div class="program__col program__col--second-lect" data-col="4"><button class="program__text program__text--head" type="button" data-col="4" data-program-tab="2">II лекторий</button></div>
+                <div class="program__col program__col--first-playground" data-col="5"><button class="program__text program__text--head" type="button" data-col="5" data-program-tab="2">I площадка</button></div>
+                <div class="program__col program__col--second-playground" data-col="6"><button class="program__text program__text--head" type="button" data-col="6" data-program-tab="2">II площадка</button></div>
+              </div>
+            </div>
+            <div>
+              <div class="program__col program__col--time">
+                <p class="program__text program__text--big">11:00</p>
+              </div>
+              <div class="program__col program__col--scene" data-col="2"><span class="program__time">11:00</span>
+                <p class="program__text program__text--big">Начало работы интерактивных площадок и детской зоны</p>
+              </div>
+              <div class="program__col program__col--first-playground" data-col="5"><span class="program__time">11:00</span>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p>
+              </div>
+              <div class="program__col program__col--second-playground" data-col="6"><span class="program__time">11:00</span>
+                <p class="program__text program__text--small">Выступление профессора Селезнёва с названием темы на четыре строки</p>
+              </div>
+            </div>
+            <div>
+              <div class="program__col program__col--time">
+                <p class="program__text program__text--big">21:00</p>
+              </div>
+              <div class="program__col program__col--scene" data-col="2"><span class="program__time">21:00</span>
+                <p class="program__text program__text--big">Comressorheads</p>
+                <p class="program__text program__text--big">Вечерний концерт и инженерное шоу.</p>
+                <p class="program__text program__text--big">Продолжается работа интерактивных площадок</p>
+              </div>
+            </div>
+          </div>
+          <div class="program__add">
+            <p>В расписании возможны изменения. Уточняйте актуальное расписание на&nbsp;входе.</p>
+            <p>На входе могут быть очереди. Советуем приходить за полчаса до начала события</p>
+            <div class="link-download link-download"><a href="#" download>Скачать расписание</a><span>1 MB</span></div>
+          </div>
+        </div>
+      </section>
+      <section class="partners partners--theme" data-btn-select="3">
+        <div class="container">
+          <h2 class="partners__title">Тематические партнёры</h2>
+          <div class="partners__arrows"><button class="partners__button swiper-button-prev" type="button" aria-label="Кнопка предыдущий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button><button class="partners__button swiper-button-next" type="button" aria-label="Кнопка следующий слайд"><svg width="25" height="16" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg></button></div>
+          <div class="swiper-container">
+            <ul class="partners__list swiper-wrapper">
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner5.png" width="107" height="107" alt="Lays"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner6.png" width="84" height="73" alt="Splat"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner7.png" width="180" height="180" alt="Snickers"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner5.png" width="107" height="107" alt="Lays"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner6.png" width="84" height="73" alt="Splat"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+              <li class="partners__item swiper-slide">
+                <div class="partners__img"><img src="img/icon-partner7.png" width="180" height="180" alt="Snickers"></div>
+                <p class="partners__descr">Найдётся всё!</p>
+                <p class="partners__text">Каждый станет участником большого движения технологических энтузиастов и изобретателей.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts main-contacts">
+        <div class="container">
+          <div class="contacts__block">
+            <h2 class="contacts__title">Ждём вас</h2>
+            <p class="contacts__ref">Для справок</p><a href="tel:+7(931)1234567">+7 (931) 123 45 67</a><a class="contacts__email" href="mailto:rukamifest@gmail.com">rukamifest@gmail.com</a>
+            <div class="link-download"><a href="#" download>Карта фестиваля</a><span>1 MB</span></div>
+          </div>
+          <div class="contacts__table">
+            <div>
+              <div class="contacts__col">
+                <p>Участие в программе фестиваля</p>
+              </div>
+              <div class="contacts__col">
+                <p class="contacts__name">Антон Шарыпов</p><a class="contacts__email" href="mailto:Sharypov.AV@ntifund.rvc.ru">Sharypov.AV@ntifund.rvc.ru</a>
+              </div>
+            </div>
+            <div>
+              <div class="contacts__col">
+                <p>Партнёрство</p>
+              </div>
+              <div class="contacts__col">
+                <p class="contacts__name">Елена Субботина</p><a class="contacts__tel" href="tel:+7(919)7707289">+7 (919) 770 72 89</a><a class="contacts__email" href="mailto:subbotina.El@ntifund.rvc.ru">subbotina.El@ntifund.rvc.ru</a>
+              </div>
+            </div>
+            <div>
+              <div class="contacts__col">
+                <p>По вопросам СМИ</p>
+              </div>
+              <div class="contacts__col"><a class="contacts__tel" href="tel:+7(926)6005475">+7 (926) 600 54 75</a><a class="contacts__email" href="mailto:rovinskaya.mm@ntifund.rvc.ru">rovinskaya.mm@ntifund.rvc.ru</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="share">
+        <h2 class="share__title">Прикоснитесь к&nbsp;будущему своими руками!</h2>
+        <div class="cropped-image share__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/share-bg@1x.png 1x, img/share-bg@1x.png 2x"><img src="img/share-bg-mobile@1x.png" srcset="img/share-bg-mobile@1x.png 2x" alt="Девушка со скейтом"></picture>
+        </div>
+        <div class="container">
+          <div class="share__block social">
+            <p class="share__text">И не забудьте поделиться с&nbsp;друзьями</p>
+            <ul class="share__list social__list">
+              <li><button type="button" title="Фейсбук" aria-label="Фейсбук" data-sharer="facebook" data-url="#"><svg width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg></button></li>
+              <li><button type="button" title="ВКонтакте" aria-label="ВКонтакте" data-sharer="vk" data-url="#"><svg width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#vk"></use>
+                  </svg></button></li>
+              <li><button type="button" title="Твиттер" aria-label="Твиттер" data-sharer="twitter" data-url="#"><svg width="16" height="16" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg></button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="main-full__bottom">
+        <section class="faq">
+          <div class="container">
+            <h2 class="faq__title">FAQ</h2>
+            <div class="faq__acc">
+              <div class="faq__col">
+                <div class="faq__block faq__block--opened" data-faq="1">
+                  <h3 class="faq__question" data-faq="1">Можно ли брать с собой напитки и еду на фестиваль ?<span><svg width="19" height="19" aria-hidden="true"><use xlink:href="img/sprite.svg#plus"></use></svg><svg width="19" height="19" aria-hidden="true"><use xlink:href="img/sprite.svg#minus"></use></svg></span></h3>
+                  <p class="faq__answer">Требования службы безопасности запрещают пронос пищевых продуктов и жидкостей на фестиваль. На территории будет работать фудкорт, в котором будут действовать средние рыночные цены.</p>
+                </div>
+                <div class="faq__block" data-faq="2">
+                  <h3 class="faq__question" data-faq="2">Где можно оставить маленького ребёнка?<span><svg width="19" height="19" aria-hidden="true"><use xlink:href="img/sprite.svg#plus"></use></svg><svg width="19" height="19" aria-hidden="true"><use xlink:href="img/sprite.svg#minus"></use></svg></span></h3>
+                  <p class="faq__answer">Требования службы безопасности запрещают пронос пищевых продуктов и жидкостей на фестиваль. На территории будет работать фудкорт, в котором будут действовать средние рыночные цены.</p>
+                </div>
+                <div class="faq__block" data-faq="3">
+                  <h3 class="faq__question" data-faq="3">Вход в день фестиваля платный?<span><svg width="19" height="19" aria-hidden="true"><use xlink:href="img/sprite.svg#plus"></use></svg><svg width="19" height="19" aria-hidden="true"><use xlink:href="img/sprite.svg#minus"></use></svg></span></h3>
+                  <p class="faq__answer">Требования службы безопасности запрещают пронос пищевых продуктов и жидкостей на фестиваль. На территории будет работать фудкорт, в котором будут действовать средние рыночные цены.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="manifest">
+          <div class="container">
+            <h2 class="manifest__title">Манифест фестиваля</h2>
+            <div class="link-download"><a href="#" download>Посмотреть манифест</a><span>1 MB</span></div>
+            <div class="manifest__text">Мы хотим, чтобы каждый пришедший зарядился новыми идеями и вдохновился на создание чего-то своими руками.</div>
+            <div class="manifest__text">Делать что-то особенное, свое — одна из самых больших радостей в жизни.</div>
+          </div>
+        </section>
+      </div>
+      <div class="switch-btns"><button class="switch-btns__btn-select" type="button" data-btn-select="0">Генеральные партнёры</button>
+        <div class="switch-btns__hidden-block"><button class="switch-btns__btn-select" type="button" data-btn-select="1">Генеральные информационные партнёры</button><button class="switch-btns__btn-select" type="button" data-btn-select="2">Информационные партнёры</button><button class="switch-btns__btn-select" type="button" data-btn-select="3">Тематические партнёры</button></div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top"><a class="footer__link-logo" href="#" target="_blank"><img src="img/footer-logo.svg" width="261" height="40" alt="Интегратор сообществ кружкового движения"></a>
+            <div class="social footer__social">
+              <ul class="social__list footer__social-list">
+                <li><a href="#" target="_blank" title="Facebook" aria-label="Facebook"><svg width="7" height="12" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#fb"></use>
+                    </svg></a></li>
+                <li><a href="#" target="_blank" title="Vkontakte" aria-label="Vkontakte"><svg width="14" height="8" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#vk-icon"></use>
+                    </svg></a></li>
+                <li><a href="#" target="_blank" title="Twitter" aria-label="Twitter"><svg width="13" height="10" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#twitter"></use>
+                    </svg></a></li>
+                <li><a href="#" target="_blank" title="Instagramm" aria-label="Instagramm"><svg width="12" height="12" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#insta"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__developer"><a href="#" target="_blank" title="Made by shishki.collective" aria-label="Made by shishki.collective">Made by shishki.collective</a></div>
+            <div class="footer__links">
+              <ul class="footer__document-list">
+                <li><a href="buying.html" title="История закупок" aria-label="История закупок">История закупок</a></li>
+                <li><a href="#" target="_blank" title="Пользовательское соглашение" aria-label="Пользовательское соглашение">Пользовательское соглашение</a></li>
+              </ul>
+            </div>
+            <div class="footer__copyright">2019, Rukami</div>
+          </div>
+        </div>
+        <div class="footer__buttons"><a href="#">Представить проект</a><a href="#">Посетить фестиваль</a></div>
+      </footer>
+    </div>
+  </main>
+  <div class="popup-container closed">
+    <div class="popup-container__background"></div><button class="popup-container__close" type="button" aria-label="Закрыть попап"><svg width="47" height="33" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#icon-close"></use>
+      </svg></button>
+  </div>
+  <div class="loader"><svg width="152" height="32" aria-hidden="true">
+      <use xlink:href="img/sprite.svg#logo-rukami"></use>
+    </svg></div>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

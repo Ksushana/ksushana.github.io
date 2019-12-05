@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Прайс-лист интернет-магазина обоев для стен, лепнины, красок и тканей piterra.ru">
+  <meta name="format-detection" content="telephone=no">
+  <title>Прайс-лист</title>
+  <link rel="preload" href="fonts/OpenSans.woff2" as="font">
+  <link rel="preload" href="fonts/PTSerif.woff2" as="font">
+
+  <link rel="stylesheet" href="./vendor/select2/select2.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__navigation">
+      <div class="header__container container">
+        <ul class="header__list">
+          <li class="header__item"><a href="https://www.piterra.ru/catalog/oboi/" rel="noopener">Обои</a></li>
+          <li class="header__item"><a href="https://www.piterra.ru/catalog/lepnina/" rel="noopener">Лепной декор</a></li>
+          <li class="header__item"><a href="https://www.piterra.ru/catalog/tekstil/" rel="noopener">Текстиль</a></li>
+          <li class="header__item"><a href="https://www.piterra.ru/catalog/kraska/" rel="noopener">Краски</a></li>
+        </ul>
+        <ul class="header__actions">
+          <li class="header__action header__action--menu">
+            <a class="header__action-link" href="#" aria-label="Меню"><img class="header__action-img" src="img/icons/icon-burger-menu.svg" alt="Меню" width="30" height="30"></a>
+          </li>
+          <li class="header__action header__action--search">
+            <a class="header__action-link" href="#" aria-label="Поиск"><img class="header__action-img" src="img/icons/icon-search.svg" alt="Поиск"></a>
+          </li>
+          <li class="header__action">
+            <a class="header__action-link" href="#" aria-label="Избранное"><img class="header__action-img" src="img/icons/icon-like.svg" alt="Избранное"></a>
+          </li>
+          <li class="header__action header__action--notifications">
+            <a class="header__action-link" href="#" aria-label="Уведомления">
+              <div class="header__notify"><img class="header__action-img" src="img/icons/icon-notifcation.svg" alt="Уведомления"><span class="header__notify-number">1</span></div>
+            </a>
+
+            <!-- окно уведомлений -->
+            <div class="header__notifications common-list">
+              <div class="common-list__title">
+                <span class="common-list__title-text">Уведомления</span>
+                <div class="header__notifications-settings">
+                  <img class="header__notifications-filter" src="img/icons/icon-settings.svg" alt="Настройки уведомлений">
+                  <ul class="header__notifications-list">
+                    <li class="header__notifications-item"><a href="#">Новости</a></li>
+                    <li class="header__notifications-item"><a href="#">Информационные письма</a></li>
+                    <li class="header__notifications-item"><a href="#">Прайсы</a></li>
+                    <li class="header__notifications-item"><a href="#">Каталоги</a></li>
+                    <li class="header__notifications-item"><a href="#">3D</a></li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="common-list__content">
+                <li>
+                  <a class="common-list__link" href="#">
+                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <div class="common-list__date">
+                      <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
+                    </div>
+                    <p class="common-list__caption">Энергия тропиков — коллекция Zapara от Harlequin</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="common-list__link" href="#">
+                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <div class="common-list__date">
+                      <span class="common-list__day">27</span><span class="common-list__month">08/2018</span>
+                    </div>
+                    <p class="common-list__caption">Английская Индия — Коллекция Palampore от Anna French</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="common-list__link" href="#">
+                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <div class="common-list__date">
+                      <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
+                    </div>
+                    <p class="common-list__caption">Очарование декаданса — The Muse от Zoffany</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="common-list__link" href="#">
+                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <div class="common-list__date">
+                      <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
+                    </div>
+                    <p class="common-list__caption">Энергия тропиков — коллекция Zapara от Harlequin</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="common-list__link" href="#">
+                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <div class="common-list__date">
+                      <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
+                    </div>
+                    <p class="common-list__caption">Английская Индия — Коллекция Palampore от Anna French</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="common-list__link" href="#">
+                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <div class="common-list__date">
+                      <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
+                    </div>
+                    <p class="common-list__caption">Очарование декаданса — The Muse от Zoffany</p>
+                  </a>
+                </li>
+                <li>
+                  <a class="common-list__link" href="#">
+                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <div class="common-list__date">
+                      <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
+                    </div>
+                    <p class="common-list__caption">Энергия тропиков — коллекция Zapara от Harlequin</p>
+                  </a>
+                </li>
+              </ul>
+              <a class="common-list__more" href="#">Посмотреть все &rarr;</a>
+            </div>
+          </li>
+          <li class="header__action header__action--basket">
+            <a class="header__action-link" href="#">
+              <div class="header__notify"><img class="header__action-img" src="img/icons/icon-cart.svg" alt="Корзина"><span class="header__notify-number">5</span></div>
+              <span class="header__basket">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header__content">
+      <div class="header__container container">
+        <a class="header__logo" href="https://piterra.ru" rel="noopener">
+          <img src="img/logo.png" alt="Логотип компании">
+        </a>
+        <div class="header__phone-sm">
+          <a class="header__caption header__caption--phone" href="tel:+78123198888">+7 812 319 88 88</a>
+          <a class="header__caption" href="#">Позвоните мне</a>
+        </div>
+        <div class="header__wrap">
+          <div class="header__manager">
+            <div class="header__caption">Ваш менеджер</div>
+            <div class="header__manager-name">Топорская Екатерина&nbsp;Викторовна</div>
+          </div>
+          <div class="header__manager header__manager--contacts">
+            <div class="header__caption"><a href="tel:+78123198888">+7 812 319 88 88</a>,&nbsp;доб.&nbsp;235</div>
+            <a class="header__caption" href="tel:+79623831249">+7 962 383 12 49</a>
+            <a class="header__caption" href="mailto:EToporskaja@piterra.ru">EToporskaja@piterra.ru</a>
+          </div>
+          <div class="header__search">
+            <form action="#" method="post">
+              <label class="visually-hidden" for="search">Поиск по артикулу</label>
+              <input class="header__field" type="text" placeholder="Поиск по артикулу" id="search">
+              <img class="header__field-icon" src="img/icons/icon-search.svg" alt="Заглушка">
+            </form>
+          </div>
+          <div class="header__user">
+            <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
+            <a class="header__user-link" href="#"><span>Голодова Е. М.</span></a>
+          </div>
+        </div>
+        <button class="header__sign-out" type="button" aria-label="Выход">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#edd9b7" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- меню в мобильной версии -->
+    <div class="header__menu">
+      <div class="header__menu-user">
+        <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
+        <div>
+          <span class="header__user-name">Голодова Екатерина</span>
+          <a class="header__profile-link" href="#">Мой профиль</a>
+        </div>
+      </div>
+      <ul class="header__menu-list">
+        <li class="header__menu-item">
+          <a href="https://www.piterra.ru/catalog/oboi/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Обои">Обои</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="https://www.piterra.ru/catalog/lepnina/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Декор">Лепной декор</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="https://www.piterra.ru/catalog/tekstil/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Текстиль">Текстиль</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="https://www.piterra.ru/catalog/kraska/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Краски">Краски</a>
+        </li>
+      </ul>
+      <ul class="header__menu-list">
+        <li class="header__menu-item"><a href="history.html"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="История">История заказа</a></li>
+        <li class="header__menu-item"><a href="#"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Справочные материалы">Справочные материалы</a></li>
+        <li class="header__menu-item"><a href="#"><img class="header__menu-icon" src="img/icons/icon-news.svg" alt="Новости">Новости</a></li>
+      </ul>
+      <button class="header__menu-signout" type="button"><img class="header__menu-icon" src="img/icons/icon-news.svg" alt="Выйти">Выйти из профиля</button>
+    </div>
+  </header>
+  <main>
+    <div class="main-breadcrumbs">
+      <div class="main-breadcrumbs__container container">
+        <ul class="main-breadcrumbs__list">
+          <li class="main-breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="main-breadcrumbs__item main-breadcrumbs__item--active">Личный кабинет</li>
+        </ul>
+      </div>
+    </div>
+    <div class="common-page">
+      <div class="common-page__container container">
+        <div class="common-page__sidebar sidebar">
+          <div class="sidebar__content">
+            <div class="sidebar__header">
+              <a class="sidebar__header-title" href="#">Личный кабинет</a>
+            </div>
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a href="history.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Товары"><span>Заказ товара</span></a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-catalog.svg" alt="Заказ каталогов"><span>Заказ каталогов</span></a>
+              </li>
+              <li class="sidebar__item sidebar__item--active">
+                <a href="price-list.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-price.svg" alt="Прайсы"><span>Прайсы</span><span class="sidebar__notify-number">1</span></a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Справочные материалы"><span>Справочные материалы</span><span class="sidebar__notify-number">6</span></a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-3d.svg" alt="3D библиотека"><span>3D библиотека</span><span class="sidebar__notify-number">10</span></a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-news.svg" alt="Новости"><span>Новости</span></a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Контакты"><span>Контакты менеджеров</span><span class="sidebar__notify-number">7</span></a>
+              </li>
+            </ul>
+            <div class="sidebar__user">
+              <img class="sidebar__avatar" src="https://via.placeholder.com/45x45" alt="Заглушка">
+              <a class="sidebar__user-name" href="#">Голодова Екатерина</a>
+              <button class="sidebar__sign-out" type="button" aria-label="Выход">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#ffffff" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <section class="common-page__content price-list-content">
+          <div class="breadcrumbs breadcrumbs--no-margin">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
+              <li class="breadcrumbs__item"><a href="#">Прайс-листы</a></li>
+              <li class="breadcrumbs__item"><a href="#">Обои</a></li>
+              <li class="breadcrumbs__item"><a href="#">Прайс-листы</a></li>
+            </ul>
+          </div>
+          <h1 class="visually-hidden">Раздел с прайс-листами</h1>
+          <div class="price-list-content__tabs">
+            <section class="tabs">
+              <h2 class="visually-hidden">Переключение между разделами</h2>
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <a class="tabs__link tabs__link--active" href="#">Обои</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link tabs__link--big-width" href="#">Лепной декор</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#">Текстиль</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#">Краски</a>
+                </li>
+                <li class="tabs__item">
+                  <a class="tabs__link" href="#">Клей</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <form>
+            <div class="price-list-content__filters">
+              <section class="filters">
+                <h2 class="visually-hidden">Фильтры</h2>
+                <ul class="filters__list">
+                  <li class="filters__item">
+                    <p class="filters__block">
+                      <label class="common-label common-label--select-triangle filters__label" for="brand">бренд</label>
+                      <select class="common-select filters__select" id="brand" name="brand">
+                        <option value="" label="Выберите значение"></option>
+                        <option value="all" selected>всe</option>
+                      </select>
+                    </p>
+                  </li>
+                  <li class="filters__item">
+                    <p class="filters__block">
+                      <label class="common-label common-label--select-triangle filters__label" for="collection">коллекция</label>
+                      <select class="common-select filters__select" id="collection" name="collection">
+                        <option value="" label="Выберите значение"></option>
+                        <option value="all" selected>все</option>
+                      </select>
+                    </p>
+                  </li>
+                  <li class="filters__item">
+                    <p class="filters__block">
+                      <label class="common-label common-label--select-triangle filters__label" for="status">статус</label>
+                      <select class="common-select filters__select" id="status" name="status">
+                        <option value="" label="Выберите значение"></option>
+                        <option value="all" selected>все</option>
+                      </select>
+                    </p>
+                  </li>
+                  <li class="filters__item">
+                    <p class="filters__block">
+                      <label class="common-label common-label--select-triangle filters__label" for="year">год выпуска</label>
+                      <select class="common-select filters__select" id="year" name="year">
+                        <option value="" label="Выберите значение"></option>
+                        <option value="all" selected>все</option>
+                      </select>
+                    </p>
+                  </li>
+                </ul>
+                <a class="common-button filters__button" href="#" download>скачать все</a>
+              </section>
+            </div>
+            <div class="price-list-content__multi-selects">
+              <section class="multi-selects">
+                <h2 class="visually-hidden">Фильтрация по тегам</h2>
+                <ul class="multi-selects__list">
+                  <li class="multi-selects__item">
+                    <p class="multi-selects__block">
+                      <label class="common-label multi-selects__label" for="brands">Бренды</label>
+                      <select class="common-select custom-select" id="brands" name="brands[]" multiple="multiple">
+                        <option value="all" selected>Text</option>
+                        <option value="all" selected>Text</option>
+                      </select>
+                    </p>
+                  </li>
+                  <li class="multi-selects__item">
+                    <p class="multi-selects__block">
+                      <label class="common-label multi-selects__label" for="collections">коллекции</label>
+                      <select class="common-select custom-select" id="collections" name="collections[]" multiple="multiple">
+                        <option value="all" selected>Text</option>
+                        <option value="all" selected>Text</option>
+                      </select>
+                    </p>
+                  </li>
+                  <li class="multi-selects__item">
+                    <p class="multi-selects__block">
+                      <label class="common-label multi-selects__label" for="years">год</label>
+                      <select class="common-select custom-select" id="years" name="years[]" multiple="multiple">
+                        <option value="all" selected>Text</option>
+                        <option value="all" selected>Text</option>
+                      </select>
+                    </p>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </form>
+          <div class="price-list-content__flex-wrapper">
+            <section class="list-prices">
+              <table class="common-table list-prices__table">
+                <caption class="list-prices__talbe-heading">
+                  <h2 class="list-prices__title">Список прайсов</h2>
+                </caption>
+                <thead>
+                  <tr class="list-prices__tr">
+                    <td class="list-prices__td list-prices__td--header list-prices__td--first">бренд</td>
+                    <td class="list-prices__td list-prices__td--header list-prices__td--second">Коллекция</td>
+                    <td class="list-prices__td list-prices__td--header list-prices__td--third">год</td>
+                    <td class="list-prices__td list-prices__td--header list-prices__td--fourth">добавить</td>
+                  </tr>
+                </thead>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">4 Seasons</td>
+                  <td class="list-prices__td list-prices__td--second">Autunno</td>
+                  <td class="list-prices__td list-prices__td--third">2013</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button add-button--added"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">4 Seasons</td>
+                  <td class="list-prices__td list-prices__td--second">Primavera</td>
+                  <td class="list-prices__td list-prices__td--third">2012</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button add-button--added"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button add-button--added"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button add-button--added"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+                <tr class="list-prices__tr">
+                  <td class="list-prices__td list-prices__td--first">Бренд</td>
+                  <td class="list-prices__td list-prices__td--second">Коллекция</td>
+                  <td class="list-prices__td list-prices__td--third">год</td>
+                  <td class="list-prices__td list-prices__td--fourth">
+                    <button class="add-button"><span class="visually-hidden">Добавить</span></button>
+                  </td>
+                </tr>
+              </table>
+
+            </section>
+            <div class="price-list-content__buttons">
+              <button class="arrow-button arrow-button--left"><span class="visually-hidden">Убрать из списка своих
+                  прайсов</span></button>
+              <button class="arrow-button arrow-button--right"><span class="visually-hidden">Добавить в свой список
+                  прайсов</span></button>
+            </div>
+            <section class="make-price">
+              <table class="common-table make-price__table">
+                <caption class="make-price__table-heading">
+                  <h2 class="make-price__title">Сформировать свой прайс</h2>
+                </caption>
+                <tr class="make-price__tr">
+                  <td class="make-price__td make-price__td--first">4 Season | Autuno | 2013</td>
+                  <td class="make-price__td make-price__td--second">
+                    <a class="make-price__button make-price__button--download" href="#" download><span class="visually-hidden">Скачать
+                        прайс-лист</span></a>
+                  </td>
+                  <td class="make-price__td make-price__td--third">
+                    <button class="make-price__button make-price__button--delete"><span class="visually-hidden">Удалить
+                        прайс-лист</span></button>
+                  </td>
+                </tr>
+                <tr class="make-price__tr">
+                  <td class="make-price__td make-price__td--first">Бренд | Коллекция | Год</td>
+                  <td class="make-price__td make-price__td--second">
+                    <a class="make-price__button make-price__button--download" href="#" download><span class="visually-hidden">Скачать
+                        прайс-лист</span></a>
+                  </td>
+                  <td class="make-price__td make-price__td--third">
+                    <button class="make-price__button make-price__button--delete"><span class="visually-hidden">Удалить
+                        прайс-лист</span></button>
+                  </td>
+                </tr>
+                <tr class="make-price__tr">
+                  <td class="make-price__td make-price__td--first">Бренд | Коллекция | Год</td>
+                  <td class="make-price__td make-price__td--second">
+                    <a class="make-price__button make-price__button--download" href="#" download><span class="visually-hidden">Скачать
+                        прайс-лист</span></a>
+                  </td>
+                  <td class="make-price__td make-price__td--third">
+                    <button class="make-price__button make-price__button--delete"><span class="visually-hidden">Удалить
+                        прайс-лист</span></button>
+                  </td>
+                </tr>
+                <tr class="make-price__tr">
+                  <td class="make-price__td make-price__td--first">Бренд | Коллекция | Год</td>
+                  <td class="make-price__td make-price__td--second">
+                    <a class="make-price__button make-price__button--download" href="#" download><span class="visually-hidden">Скачать
+                        прайс-лист</span></a>
+                  </td>
+                  <td class="make-price__td make-price__td--third"> 
+                    <button class="make-price__button make-price__button--delete"><span class="visually-hidden">Удалить
+                        прайс-лист</span></button>
+                  </td>
+                </tr>
+              </table>
+              <div class="make-price__button-wrapper">
+                <a class="common-button make-price__download-button" href="#" download> Скачать архив</a>
+              </div>
+            </section>
+          </div>
+          <div class="price-list-content__pagination">
+            <section class="pagination">
+              <h2 class="visually-hidden">Навигация по страницам</h2>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">«</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">&#8249;</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">2</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">…</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">&#8250;</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">»</a>
+                </li>
+              </ul>
+              <div class="row-amount">
+                <label class="common-label row-amount__label" for="page-amount">На странице</label>
+                <select class="common-select row-amount__select" id="page-amount" name="page-amount">
+                  <option value="" label="Выберите значение"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10" selected>10</option>
+                </select>
+              </div>
+            </section>
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__copyright">© 2018, Piterra</div>
+          <div class="footer__number">Номер подключения <span>763919</span></div>
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#">Конфиденциальность</a></li>
+              <li class="footer__item"><a href="#">Дилерам</a></li>
+              <li class="footer__item"><a href="#">Оплата</a></li>
+              <li class="footer__item"><a href="#">Помощь</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/select2/select2.min.js"></script>
+  <script src="js/form-select.min.js"></script>
+  <script src="js/menu.min.js"></script>
+</body>
+
+</html>
