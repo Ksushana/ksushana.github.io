@@ -467,7 +467,6 @@ body {
 
 .project-list__item--piterra .project-list__item-photo{
   background-image: url("./img/piterra.png");
-  background-size: cover;
 }
 
 .project-list__item--fh .project-list__item-photo{
