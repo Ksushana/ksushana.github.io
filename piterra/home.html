@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,20 @@
   <link rel="preload" href="fonts/OpenSans.woff2" as="font">
   <link rel="preload" href="fonts/PTSerif.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
 </head>
 
 <body>
+    <svg style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="icon-cart" viewBox="0 0 24 27">
+        <path d="M18.9 24.5c-.7 0-1.3.6-1.3 1.3s.6 1.3 1.3 1.3c.7 0 1.3-.6 1.3-1.3 0-.7-.6-1.3-1.3-1.3m-12.7 0c-.7 0-1.3.6-1.3 1.3S5.4 27 6.1 27s1.3-.6 1.3-1.3c0-.6-.5-1.2-1.2-1.2m7.4-11c.3.4.8.4 1.1 0 1.4-1.6 2.7-3.2 4.1-4.7.3-.3.3-.7 0-1-.3-.3-.7-.2-1 .1-.4.4-.7.9-1.1 1.3-.6.7-1.2 1.4-1.9 2.2V5.8v-5c0-.3-.1-.5-.4-.7-.5-.2-1 .1-1 .6v10.6c-.2-.1-.3-.3-.5-.5-.9-1-1.7-2-2.6-2.9-.2-.2-.4-.3-.7-.2-.1 0-.2.2-.3.5 0 .2.1.4.3.6 1.3 1.6 2.7 3.1 4 4.7m9.8-3.3h-3.1c-.4.5-.9 1-1.3 1.5h3.3l-1.7 5.8c-.3.7-1 1.2-1.8 1.2H8.3l-2.3-7h3.5l-1.3-1.5H5.5l-.4-1.3c-.1-.5-.4-1-.8-1.3-.5-.5-1.1-.7-1.7-.7h-.8c-.4 0-.8.3-.8.8 0 .4.4.7.8.7h.8c.2 0 .5.1.6.2.2.2.3.5.4.7l3.1 9.5c-.5.2-.9.6-1.2 1-.5.8-.7 1.8-.7 2.8 0 .4.3.7.8.8h13.8c.4 0 .8-.3.8-.7 0-.4-.3-.8-.7-.8h-13c0-.4.2-.8.4-1.2.1-.3.4-.5.8-.5h11c1.5 0 2.8-.9 3.3-2.3l2.1-6.8c0-.4-.3-.8-.7-.9"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="icon-heart" viewBox="0 0 24 24">
+        <path d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="icon-share" viewBox="0 0 384 384"><path d="M312 144c39.703 0 72-32.297 72-72S351.703 0 312 0s-72 32.297-72 72c0 7.16 1.078 14.063 3.04 20.594l-113.255 56.62C116.648 131.528 95.672 120 72 120c-39.703 0-72 32.297-72 72s32.297 72 72 72c23.672 0 44.656-11.535 57.785-29.223l113.254 56.63A71.465 71.465 0 0 0 240 312c0 39.703 32.297 72 72 72s72-32.297 72-72-32.297-72-72-72c-21.04 0-39.938 9.121-53.113 23.55l-116.2-58.1c.833-4.36 1.313-8.848 1.313-13.45 0-4.61-.48-9.098-1.305-13.457l116.2-58.094C272.062 134.88 290.96 144 312 144zm0-112c22.055 0 40 17.945 40 40s-17.945 40-40 40-40-17.945-40-40 17.945-40 40-40zM72 232c-22.055 0-40-17.945-40-40s17.945-40 40-40 40 17.945 40 40-17.945 40-40 40zm240 40c22.055 0 40 17.945 40 40s-17.945 40-40 40-40-17.945-40-40 17.945-40 40-40zm0 0"/></symbol>
+  </svg>
+
   <header class="header">
     <nav class="header__navigation">
       <div class="header__container container">
@@ -24,38 +36,42 @@
         </ul>
         <ul class="header__actions">
           <li class="header__action header__action--menu">
-            <a class="header__action-link" href="#" aria-label="Меню"><img class="header__action-img" src="img/icons/icon-burger-menu.svg" alt="Меню" width="30" height="30"></a>
+            <a class="header__action-link" href="#" aria-label="Меню"><img class="header__action-img" src="img/icons/icon-burger-menu.svg"
+                alt="Меню" width="30" height="30"></a>
           </li>
           <li class="header__action header__action--search">
-            <a class="header__action-link" href="#" aria-label="Поиск"><img class="header__action-img" src="img/icons/icon-search.svg" alt="Поиск"></a>
+            <a class="header__action-link" href="#" aria-label="Поиск"><img class="header__action-img" src="img/icons/icon-search.svg"
+                alt="Поиск"></a>
           </li>
           <li class="header__action">
-            <a class="header__action-link" href="#" aria-label="Избранное"><img class="header__action-img" src="img/icons/icon-like.svg" alt="Избранное"></a>
+            <a class="header__action-link" href="#" aria-label="Избранное"><img class="header__action-img" src="img/icons/icon-like.svg"
+                alt="Избранное"></a>
           </li>
           <li class="header__action header__action--notifications">
             <a class="header__action-link" href="#" aria-label="Уведомления">
-              <div class="header__notify"><img class="header__action-img" src="img/icons/icon-notifcation.svg" alt="Уведомления"><span class="header__notify-number">1</span></div>
+              <div class="header__notify"><img class="header__action-img" src="img/icons/icon-notifcation.svg" alt="Уведомления"><span
+                  class="header__notify-number">1</span></div>
             </a>
 
             <!-- окно уведомлений -->
             <div class="header__notifications common-list">
               <div class="common-list__title">
                 <span class="common-list__title-text">Уведомления</span>
-                <div class="header__notifications-settings">
+                <div class="header__notifications-settings notifications">
                   <img class="header__notifications-filter" src="img/icons/icon-settings.svg" alt="Настройки уведомлений">
-                  <ul class="header__notifications-list">
-                    <li class="header__notifications-item"><a href="#">Новости</a></li>
-                    <li class="header__notifications-item"><a href="#">Информационные письма</a></li>
-                    <li class="header__notifications-item"><a href="#">Прайсы</a></li>
-                    <li class="header__notifications-item"><a href="#">Каталоги</a></li>
-                    <li class="header__notifications-item"><a href="#">3D</a></li>
+                  <ul class="header__notifications-list notifications__list">
+                    <li class="notifications__item"><a href="#">Новости</a></li>
+                    <li class="notifications__item"><a href="#">Информационные письма</a></li>
+                    <li class="notifications__item"><a href="#">Прайсы</a></li>
+                    <li class="notifications__item"><a href="#">Каталоги</a></li>
+                    <li class="notifications__item"><a href="#">3D</a></li>
                   </ul>
                 </div>
               </div>
               <ul class="common-list__content">
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/1.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -64,7 +80,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/2.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">08/2018</span>
                     </div>
@@ -73,7 +89,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/6.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -82,7 +98,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/3.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -91,7 +107,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/4.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -100,7 +116,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/5.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -109,7 +125,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/8.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -117,12 +133,14 @@
                   </a>
                 </li>
               </ul>
-              <a class="common-list__more" href="#">Посмотреть все &rarr;</a>
+              <a class="common-list__more" href="#">Посмотреть все <img src="img/icons/icon-right.svg" alt="Больше"
+                  width="13" height="13"></a>
             </div>
           </li>
           <li class="header__action header__action--basket">
             <a class="header__action-link" href="#">
-              <div class="header__notify"><img class="header__action-img" src="img/icons/icon-cart.svg" alt="Корзина"><span class="header__notify-number">5</span></div>
+              <div class="header__notify"><img class="header__action-img" src="img/icons/icon-cart.svg" alt="Корзина"><span
+                  class="header__notify-number">5</span></div>
               <span class="header__basket">Корзина</span>
             </a>
           </li>
@@ -152,16 +170,17 @@
             <form action="#" method="post">
               <label class="visually-hidden" for="search">Поиск по артикулу</label>
               <input class="header__field" type="text" placeholder="Поиск по артикулу" id="search">
-              <img class="header__field-icon" src="img/icons/icon-search.svg" alt="Заглушка">
+              <img class="header__field-icon" src="img/icons/icon-search.svg" alt="Поиск">
             </form>
           </div>
           <div class="header__user">
-            <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
-            <a class="header__user-link" href="#"><span>Голодова Е. М.</span></a>
+            <img class="header__avatar" src="./img/user-base.svg" alt="Аватар" width="60" height="60">
+            <a class="header__user-link" href="user-settings.html"><span>Голодова Е. М.</span></a>
           </div>
         </div>
         <button class="header__sign-out" type="button" aria-label="Выход">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#edd9b7" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path fill="#edd9b7" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z" /></svg>
         </button>
       </div>
     </div>
@@ -169,7 +188,7 @@
     <!-- меню в мобильной версии -->
     <div class="header__menu">
       <div class="header__menu-user">
-        <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
+        <img class="header__avatar" src="./img/user-photo.jpg" alt="Аватар" width="60" height="60">
         <div>
           <span class="header__user-name">Голодова Екатерина</span>
           <a class="header__profile-link" href="#">Мой профиль</a>
@@ -177,24 +196,31 @@
       </div>
       <ul class="header__menu-list">
         <li class="header__menu-item">
-          <a href="https://www.piterra.ru/catalog/oboi/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Обои">Обои</a>
+          <a href="https://www.piterra.ru/catalog/oboi/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg"
+              alt="Обои">Обои</a>
         </li>
         <li class="header__menu-item">
-          <a href="https://www.piterra.ru/catalog/lepnina/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Декор">Лепной декор</a>
+          <a href="https://www.piterra.ru/catalog/lepnina/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg"
+              alt="Декор">Лепной декор</a>
         </li>
         <li class="header__menu-item">
-          <a href="https://www.piterra.ru/catalog/tekstil/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Текстиль">Текстиль</a>
+          <a href="https://www.piterra.ru/catalog/tekstil/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg"
+              alt="Текстиль">Текстиль</a>
         </li>
         <li class="header__menu-item">
-          <a href="https://www.piterra.ru/catalog/kraska/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Краски">Краски</a>
+          <a href="https://www.piterra.ru/catalog/kraska/" rel="noopener"><img class="header__menu-icon" src="img/icons/icon-product.svg"
+              alt="Краски">Краски</a>
         </li>
       </ul>
       <ul class="header__menu-list">
-        <li class="header__menu-item"><a href="history.html"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="История">История заказа</a></li>
-        <li class="header__menu-item"><a href="#"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Справочные материалы">Справочные материалы</a></li>
+        <li class="header__menu-item"><a href="history.html"><img class="header__menu-icon" src="img/icons/icon-product.svg"
+              alt="История">История заказа</a></li>
+        <li class="header__menu-item"><a href="#"><img class="header__menu-icon" src="img/icons/icon-product.svg" alt="Справочные материалы">Справочные
+            материалы</a></li>
         <li class="header__menu-item"><a href="#"><img class="header__menu-icon" src="img/icons/icon-news.svg" alt="Новости">Новости</a></li>
       </ul>
-      <button class="header__menu-signout" type="button"><img class="header__menu-icon" src="img/icons/icon-news.svg" alt="Выйти">Выйти из профиля</button>
+      <button class="header__menu-signout" type="button"><img class="header__menu-icon" src="img/icons/icon-news.svg"
+          alt="Выйти">Выйти из профиля</button>
     </div>
   </header>
 
@@ -202,7 +228,7 @@
     <div class="main-breadcrumbs">
       <div class="main-breadcrumbs__container container">
         <ul class="main-breadcrumbs__list">
-          <li class="main-breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="main-breadcrumbs__item"><a href="/">Главная</a></li>
           <li class="main-breadcrumbs__item main-breadcrumbs__item--active">Личный кабинет</li>
         </ul>
       </div>
@@ -214,36 +240,47 @@
         <div class="common-page__sidebar sidebar">
           <div class="sidebar__content">
             <div class="sidebar__header">
-              <a class="sidebar__header-title" href="#">Личный кабинет</a>
+              <a class="sidebar__header-title" href="home.html">Личный кабинет</a>
             </div>
             <ul class="sidebar__list">
-              <li class="sidebar__item">
-                <a href="history.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Товары"><span>Заказ товара</span></a>
+              <li class="sidebar__item sidebar__item--more">
+                <a href="order-booking.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Товары"><span>Заказ товара</span><img class="sidebar__more" src="./img/icons/icon-up.svg" alt="Показать/скрыть сабменю"></a>
+                <ul class="sidebar__sublist">
+                  <li class="sidebar__subitem"><a href="order-booking.html">Заказ</a></li>
+                  <li class="sidebar__subitem"><a href="history.html">История</a></li>
+                  <li class="sidebar__subitem"><a href="activity.html">Активность</a></li>
+                </ul>
               </li>
               <li class="sidebar__item">
-                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-catalog.svg" alt="Заказ каталогов"><span>Заказ каталогов</span></a>
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-catalog.svg" alt="Заказ каталогов"><span>Заказ
+                    каталогов</span></a>
               </li>
               <li class="sidebar__item">
-                <a href="price-list.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-price.svg" alt="Прайсы"><span>Прайсы</span><span class="sidebar__notify-number">1</span></a>
+                <a href="price-list.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-price.svg" alt="Прайсы"><span>Прайсы</span><span
+                    class="sidebar__notify-number">1</span></a>
               </li>
               <li class="sidebar__item">
-                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Справочные материалы"><span>Справочные материалы</span><span class="sidebar__notify-number">6</span></a>
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Справочные материалы"><span>Справочные
+                    материалы</span><span class="sidebar__notify-number">6</span></a>
               </li>
               <li class="sidebar__item">
-                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-3d.svg" alt="3D библиотека"><span>3D библиотека</span><span class="sidebar__notify-number">10</span></a>
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-3d.svg" alt="3D библиотека"><span>3D
+                    библиотека</span><span class="sidebar__notify-number">10</span></a>
               </li>
               <li class="sidebar__item">
                 <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-news.svg" alt="Новости"><span>Новости</span></a>
               </li>
               <li class="sidebar__item">
-                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Контакты"><span>Контакты менеджеров</span><span class="sidebar__notify-number">7</span></a>
+                <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Контакты"><span>Контакты
+                    менеджеров</span><span class="sidebar__notify-number">7</span></a>
               </li>
             </ul>
             <div class="sidebar__user">
-              <img class="sidebar__avatar" src="https://via.placeholder.com/45x45" alt="Заглушка">
-              <a class="sidebar__user-name" href="#">Голодова Екатерина</a>
+              <img class="sidebar__avatar" src="img/user-photo.jpg" alt="Аватар">
+              <a class="sidebar__user-name" href="user-settings.html">Голодова Екатерина</a>
               <button class="sidebar__sign-out" type="button" aria-label="Выход">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="#ffffff" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path fill="#ffffff" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z" /></svg>
               </button>
             </div>
           </div>
@@ -251,7 +288,23 @@
 
         <div class="common-page__content">
           <section class="home-intro">
-            <img class="home-intro__img" src="https://via.placeholder.com/1085x300" alt="Заглушка">
+            <div class="common-page__swiper-container swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source media="(max-width: 450px)" srcset="./img/brand_collection/slider-1-sm.jpg">
+                    <img class="home-intro__img" src="./img/brand_collection/slider-1.jpg" alt="Везем Thibaut за две недели">
+                  </picture>
+                </div>
+                <div class="swiper-slide "><img class="home-intro__img" src="./img/brand_collection/slider.jpg" alt="Заглушка"></div>
+                <div class="swiper-slide"><img class="home-intro__img" src="./img/brand_collection/slider-2.jpg" alt="Заглушка"></div>
+              </div>
+              <div class="common-page__swiper-pagination wiper-pagination"></div>
+              <div class="swiper-btns">
+                <div class="common-page__swiper-button-prev swiper-button-prev"></div>
+                <div class="common-page__swiper-button-next swiper-button-next"></div>
+              </div>
+            </div>
 
             <div class="home-intro__documents">
               <h2 class="home-intro__subtitle">Создайте свой интернет-магазин с Piterra</h2>
@@ -273,7 +326,7 @@
                         </label>
                         <input class="home-intro__copy" type="button" value="Скопировать">
                       </div>
-                      <!-- <button class="home-intro__close" type="button"></button> -->
+                      <button class="home-intro__close" type="button"></button>
                     </div>
                   </div>
                 </li>
@@ -294,7 +347,7 @@
                         </label>
                         <input class="home-intro__copy" type="button" value="Скопировать">
                       </div>
-                      <!-- <button class="home-intro__close" type="button"></button> -->
+                      <button class="home-intro__close" type="button"></button>
                     </div>
                   </div>
                 </li>
@@ -315,14 +368,17 @@
                         </label>
                         <input class="home-intro__copy" type="button" value="Скопировать">
                       </div>
-                      <!-- <button class="home-intro__close" type="button"></button> -->
+                      <button class="home-intro__close" type="button"></button>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="home-intro__greeting">
-              <p>Рады приветствовать Вас на&nbsp;новой версии личного кабинета, где&nbsp;Вы сможете посмотреть наличие товаров на&nbsp;складах Компании PITERRA, скачать действующие прайс-листы, ознакомиться с&nbsp;презентациями новых коллекций, а&nbsp;также скачать бланк заказа и&nbsp;форму действующего договора.</p>
+              <p>Рады приветствовать Вас на&nbsp;новой версии личного кабинета, где&nbsp;Вы сможете посмотреть наличие
+                товаров на&nbsp;складах Компании PITERRA, скачать действующие прайс-листы, ознакомиться
+                с&nbsp;презентациями новых коллекций, а&nbsp;также скачать бланк заказа и&nbsp;форму действующего
+                договора.</p>
               <p>Надеемся, что обновлённый личный кабинет станет удобным инструментом для нашего сотрудничества.</p>
             </div>
           </section>
@@ -357,7 +413,7 @@
                   <div class="common-list__date">
                     <span class="common-list__time">10:00</span><span class="common-list__timezone">Мск</span>
                   </div>
-                  <p class="common-list__caption">Новая коллекция обоев Edison от  Casadeco </p>
+                  <p class="common-list__caption">Новая коллекция обоев Edison от Casadeco </p>
                 </a>
                 <a class="common-list__link" href="#">
                   <div class="common-list__date">
@@ -378,7 +434,8 @@
                   <p class="common-list__caption">Новая коллекция обоев Kerala 601 от Jannelli&nbsp;&&nbsp;Volpi</p>
                 </a>
               </div>
-              <a class="common-list__more" href="#">Посмотреть все 41 &rarr;</a>
+              <a class="common-list__more" href="#">Посмотреть все 41 <img src="img/icons/icon-right.svg" alt="Больше"
+                  width="13" height="13"></a>
             </div>
 
             <div class="common-list home-main__list home-main__list--presentation">
@@ -391,31 +448,36 @@
                     <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                   </div>
                   <p class="common-list__caption">Elizabeth Ockford — Gingko</p>
-                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download.svg" alt="Скачать презентацию" width="24" height="24"></a>
+                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download--dark.svg" alt="Скачать презентацию"
+                      width="24" height="24"></a>
                 </div>
                 <div class="common-list__link">
                   <div class="common-list__date">
                     <span class="common-list__day">14</span><span class="common-list__month">08/2018</span>
                   </div>
                   <p class="common-list__caption">Magnolia Home — Volume 2</p>
-                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download.svg" alt="Скачать презентацию" width="24" height="24"></a>
+                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download--dark.svg" alt="Скачать презентацию"
+                      width="24" height="24"></a>
                 </div>
                 <div class="common-list__link">
                   <div class="common-list__date">
                     <span class="common-list__day">16</span><span class="common-list__month">12/2018</span>
                   </div>
                   <p class="common-list__caption">Armani Casa — Refined Structures 2</p>
-                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download.svg" alt="Скачать презентацию" width="24" height="24"></a>
+                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download--dark.svg" alt="Скачать презентацию"
+                      width="24" height="24"></a>
                 </div>
                 <div class="common-list__link">
                   <div class="common-list__date">
                     <span class="common-list__day">18</span><span class="common-list__month">12/2018</span>
                   </div>
                   <p class="common-list__caption">Altagamma — Rainbow</p>
-                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download.svg" alt="Скачать презентацию" width="24" height="24"></a>
+                  <a class="common-list__icon" href="#"><img src="img/icons/icon-download--dark.svg" alt="Скачать презентацию"
+                      width="24" height="24"></a>
                 </div>
               </div>
-              <a class="common-list__more" href="#">Посмотреть все 150 &rarr;</a>
+              <a class="common-list__more" href="#">Посмотреть все 150 <img src="img/icons/icon-right.svg" alt="Больше"
+                  width="13" height="13"></a>
             </div>
 
             <div class="home-links home-links--main">
@@ -424,41 +486,42 @@
                   <p>Недавно опубликованные</p>
                   <span>20 документов</span>
                 </div>
-                <img class="home-links__icon" src="img/icons/icon-arrow-right.svg" alt="Заглушка" width="24" height="24">
+                <img class="home-links__icon" src="img/icons/icon-arrow-right.svg" alt="Больше документовы" width="20"
+                  height="20">
               </a>
               <div class="home-links__images">
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/1.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/4.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/2.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/3.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/5.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/6.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/7.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/8.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/1.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/2.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/3.jpg" alt="Превью">
                 </a>
               </div>
             </div>
@@ -490,32 +553,96 @@
             <ul class="cards">
               <li class="cards__item">
                 <section class="cards__card">
-                  <div class="cards__menu"><img src="img/icons/icon-more.svg" alt="Заглушка"></div>
-                  <img class="cards__img" src="https://via.placeholder.com/203x182" alt="Заглушка картинки">
+                  <div class="cards__menu notifications">
+                    <img src="img/icons/icon-more--dark.svg" alt="Меню>">
+                    <ul class="notifications__list">
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="21"><use xlink:href="#icon-cart"></use></svg>
+                        В корзину</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="18"><use xlink:href="#icon-heart"></use></svg>
+                        В избранное</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="16" height="16"><use xlink:href="#icon-share"></use></svg>
+                        Поделиться</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="cards__img" src="./img/wallpaper/pattern-4.jpg" alt="Товар">
                   <h3 class="cards__title">Thibaut Grasscloth Resource IV арт. T72812</h3>
                   <span class="cards__cost">5 711 ₽</span>
                 </section>
               </li>
               <li class="cards__item">
                 <section class="cards__card">
-                  <div class="cards__menu"><img src="img/icons/icon-more.svg" alt="Заглушка"></div>
-                  <img class="cards__img" src="https://via.placeholder.com/203x182" alt="Заглушка картинки">
+                  <div class="cards__menu notifications">
+                    <img src="img/icons/icon-more--dark.svg" alt="Меню>">
+                    <ul class="notifications__list">
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="21"><use xlink:href="#icon-cart"></use></svg>
+                        В корзину</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="18"><use xlink:href="#icon-heart"></use></svg>
+                        В избранное</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="16" height="16"><use xlink:href="#icon-share"></use></svg>
+                        Поделиться</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="cards__img" src="./img/wallpaper/pattern-5.jpg" alt="Товар">
                   <h3 class="cards__title">Thibaut Grasscloth Resource IV арт. T72812</h3>
                   <span class="cards__cost">5 711 ₽</span>
                 </section>
               </li>
               <li class="cards__item">
                 <section class="cards__card">
-                  <div class="cards__menu"><img src="img/icons/icon-more.svg" alt="Заглушка"></div>
-                  <img class="cards__img" src="https://via.placeholder.com/203x182" alt="Заглушка картинки">
+                  <div class="cards__menu notifications">
+                    <img src="img/icons/icon-more--dark.svg" alt="Меню>">
+                    <ul class="notifications__list">
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="21"><use xlink:href="#icon-cart"></use></svg>
+                        В корзину</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="18"><use xlink:href="#icon-heart"></use></svg>
+                        В избранное</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="16" height="16"><use xlink:href="#icon-share"></use></svg>
+                        Поделиться</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="cards__img" src="./img/wallpaper/pattern-6.jpg" alt="Товар">
                   <h3 class="cards__title">Thibaut Grasscloth Resource IV арт. T72812</h3>
                   <span class="cards__cost">5 711 ₽</span>
                 </section>
               </li>
               <li class="cards__item">
                 <section class="cards__card">
-                  <div class="cards__menu"><img src="img/icons/icon-more.svg" alt="Заглушка"></div>
-                  <img class="cards__img" src="https://via.placeholder.com/203x182" alt="Заглушка картинки">
+                  <div class="cards__menu notifications">
+                    <img src="img/icons/icon-more--dark.svg" alt="Меню>">
+                    <ul class="notifications__list">
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="21"><use xlink:href="#icon-cart"></use></svg>
+                        В корзину</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="18" height="18"><use xlink:href="#icon-heart"></use></svg>
+                        В избранное</a>
+                      </li>
+                      <li class="notifications__item"><a href="#">
+                        <svg class="notifications__icon" width="16" height="16"><use xlink:href="#icon-share"></use></svg>
+                        Поделиться</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <img class="cards__img" src="./img/wallpaper/pattern-7.jpg" alt="Товар">
                   <h3 class="cards__title">Thibaut Grasscloth Resource IV арт. T72812</h3>
                   <span class="cards__cost">5 711 ₽</span>
                 </section>
@@ -528,41 +655,33 @@
                   <p>Специальное предложение</p>
                   <span>10 товаров</span>
                 </div>
-                <img class="home-links__icon" src="img/icons/icon-arrow-right.svg" alt="Заглушка" width="24" height="24">
+                <img class="home-links__icon" src="img/icons/icon-arrow-right.svg" alt="Больше предложений" width="20"
+                  height="20">
               </a>
               <div class="home-links__images">
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/8.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/7.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/6.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/5.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/4.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/3.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/2.jpg" alt="Превью">
                 </a>
                 <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
-                </a>
-                <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
-                </a>
-                <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
-                </a>
-                <a class="home-links__image" href="#">
-                  <img src="https://via.placeholder.com/102x102" alt="Заглушка картинки">
+                  <img src="./img/collection/1.jpg" alt="Превью">
                 </a>
               </div>
             </div>
@@ -591,7 +710,12 @@
     </div>
   </footer>
 
-  <script src="js/menu.min.js"></script>
-  <script src="js/copy-link.min.js"></script>
+  <script src="./vendor/focus-visible/focus-visible.min.js" defer></script>
+  <script src="./vendor/swiper/swiper.min.js" defer></script>
+  <script src="js/menu.min.js" defer></script>
+  <script src="js/sidebar.min.js" defer></script>
+  <script src="js/copy-link.min.js" defer></script>
+  <script src="js/swiper.min.js" defer></script>
 </body>
+
 </html>

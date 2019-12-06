@@ -33,6 +33,7 @@
 
     window.addEventListener('keydown', function (evt) {
       if (evt.keyCode === KEYCODES.ESC && modalHistory.classList.contains('modal--show')) {
+        document.body.style.overflow = 'auto';
         window.modals.closeModal(modalHistory);
       }
     });

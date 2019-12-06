@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Личный кабинет интернет-магазина обоев для стен, лепнины, красок и тканей piterra.ru">
+  <meta name="format-detection" content="telephone=no">
+  <title>Личный кабинет</title>
+  <link rel="preload" href="fonts/OpenSans.woff2" as="font">
+  <link rel="preload" href="fonts/PTSerif.woff2" as="font">
+  <link rel="stylesheet" href="vendor/swiper/swiper.min.css">
+  <link rel="stylesheet" href="vendor/accordion/jquery-ui.css">
+  <link rel="stylesheet" href="./vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="./vendor/select2/select2.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+  <main>
+    <div class="container product-card__outer">
+      <section class="product-card">
+        <div class="product-card__photo-block">
+          <div class="card-slider__container swiper-container">
+            <ul class="swiper-wrapper card-slider">
+              <li class="swiper-slide card-slider__slide">
+                <img class="cover" src="./img/wallpaper/pattern-3.jpg" alt="" width="595" height="595">
+              </li>
+              <li class="swiper-slide card-slider__slide">
+                <img class="cover" src="./img/wallpaper/pattern-1.jpg" alt="" width="595" height="595">
+              </li>
+              <li class="swiper-slide card-slider__slide">
+                <img class="cover" src="./img/wallpaper/pattern-2.jpg" alt="" width="595" height="595">
+              </li>
+            </ul>
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="product-card__photo-additional">
+              <a class="product-card__interior product-card__btn" href="#">в интерьере</a>
+              <div></div>
+              <div class="card-slider__btns">
+                <button class="card-slider__button card-slider__button--prev" name="slide-back" aria-label="back">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <defs>
+                      <path d="M19.087 13H1.5v-2h17.887l-7.05-6.252 1.326-1.496 9.652 8.558-9.636 8.924-1.358-1.468z" />
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                      <mask fill="#fff">
+                        <use xlink:href="#a" />
+                      </mask>
+                      <use fill="#000" fill-rule="nonzero" xlink:href="#a" />
+                      <g fill="#000" mask="url(#b)">
+                        <path d="M0 0h24v24H0z" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                <button class="card-slider__button card-slider__button--next" name="slide-next" aria-label="next">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <defs>
+                      <path id="a"
+                        d="M19.087 13H1.5v-2h17.887l-7.05-6.252 1.326-1.496 9.652 8.558-9.636 8.924-1.358-1.468z" />
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                      <mask id="b" fill="#fff">
+                        <use xlink:href="#a" />
+                      </mask>
+                      <use fill="#000" fill-rule="nonzero" xlink:href="#a" />
+                      <g fill="#000" mask="url(#b)">
+                        <path d="M0 0h24v24H0z" />
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <p class="product-card__note">*Цвет изображения на сайте может не совпадать с оригиналом.</p>
+
+        </div>
+        <div class="product-card__info-block">
+          <div class="product-card__header-outer">
+            <p class="product-card__brand">CARL ROBINSON</p>
+            <h2 class="product-card__header">Обои флизелиновые Carl Robinson Edition 1 арт. 10807 CB</h2>
+            <span>238 965 ₽</span>
+            <a href="#">в избранное</a>
+          </div>
+          <ul class="product-card__order-list">
+            <li class="product-card__order-number">
+              <span class="minus">-</span>
+              <input class="number" type="number" min="1" value="1" size="5" />
+              <span class="plus">+</span>
+            </li>
+            <li class="product-card__order-instock">
+              <span>в наличии</span>
+              <span>34 рул.</span>
+            </li>
+            <li class="product-card__order-item product-card__order-item--3d">
+              <a href="#">скачать 3D</a>
+            </li>
+            <li class="product-card__order-item product-card__order-item--sample">
+              <a href="#">Образец</a>
+            </li>
+          </ul>
+        </div>
+        <div class="product-card__info">
+        </div>
+      </section>
+    </div>
+
+    <div class="sticky-buttons">
+      <button class="sticky-button sticky-button--click">купить в 1 клик</button>
+      <button class="sticky-button sticky-button--cart">добавить в корзину</button>
+    </div>
+
+  </main>
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/moment/moment.min.js"></script>
+  <script src="./vendor/moment/locale/ru.js"></script>
+  <script src="./vendor/select2/select2.min.js"></script>
+  <script src="./vendor/daterangepicker/daterangepicker.min.js"></script>
+  <script src="./vendor/swiper/swiper.min.js"></script>
+  <script src="./vendor/accordion/jquery-ui.js"></script>
+  <script src="./vendor/focus-visible/focus-visible.min.js" defer></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/input-number.min.js"></script>
+  <script src="js/quantity.min.js"></script>
+</body>
+
+</html>

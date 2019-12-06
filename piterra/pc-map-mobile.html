@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Rodecor</title>
+  <link rel="preload" href="fonts/OpenSans.woff2" as="font">
+  <link rel="preload" href="fonts/PTSerif.woff2" as="font">
+  <link rel="preload" href="fonts/SFUIText-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/SFUIDisplay-Bold.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<main style="height: 100%; min-height: 100%;">
+		<section data-component="map-component" class="section none-horizontal-spaced" style="padding-bottom: 26px;">
+      <div class="common-heading-sm">
+        <a class="common-heading-sm__link" href="product-card-instock.html" title="Вернуться назад"><img
+            src="img/icons/icon-arrow-left.svg" alt="Назад"></a>
+        <h1 class="pc-mobile__header">Наличие образцов</h1>
+      </div>
+      <div class="content map">
+
+				<div class="map-tabs" data-tabs="#mapTab1">
+					<!-- 1 -->
+					<div class="item tab-item active" data-lat="59.95325" data-lng="30.26057" data-zoom="8">Санкт-Петербург</div>
+					<!-- 2 -->
+					<div class="item tab-item" data-lat="55.70961" data-lng="37.65359" data-zoom="8">Москва</div>
+
+				</div>
+				<div class="map-cover">
+					<!-- map -->
+          <div class="google-map" data-zoom="12" id="map1"></div>
+					<!-- zoom -->
+					<div class="zoom-buttons">
+						<button type="button" class="btn btn-round-primary small" data-zoomin><i class="icon icon-add"></i></button>
+						<button type="button" class="btn btn-round-primary small" data-zoomout><i class="icon icon-substract"></i></button>
+					</div>
+					<!-- tabs -->
+					<div class="tab-content" id="mapTab1">
+						<!-- 1 -->
+						<div class="carousel-outer scroller-map">
+							<ul class="map-carousel clear">
+								<li class="item" data-id="0">
+									<a href="#/map/saloncard1" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon1.jpg" alt="Магазин&Склад Пулково">
+										</figure>
+										<div class="caption">
+											<div class="bold">Магазин&Склад «Пулково»</div>
+											Пулковское шоссе, 5-й Предпортовый проезд, 22 Б
+										</div>
+									</a>
+								</li>
+								<li class="item" data-id="0">
+									<a href="#/map/saloncard2" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon2.jpg" alt="salon">
+										</figure>
+										<div class="caption">
+											<div class="bold">Салон<br> Piterra Home</div>
+											ул. Уральская д.13
+										</div>
+									</a>
+								</li>
+								<li class="item" data-id="0">
+									<a href="#/map/saloncard3" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon7.jpg" alt="salon">
+										</figure>
+										<div class="caption">
+											<div class="bold">ТК «Ланской»</div>
+											ул. Студенческая д. 10 лит. В
+										</div>
+									</a>
+								</li>
+								<li class="item" data-id="0">
+									<a href="#/map/saloncard4" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon6.jpg" alt="salon">
+										</figure>
+										<div class="caption">
+											<div class="bold">ТК «Интерио»</div>
+											ул. Полевая Сабировская д.54 лит. А мод. 245
+										</div>
+									</a>
+								</li>
+								<li class="item" data-id="0">
+									<a href="#/map/saloncard5" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon5.jpg" alt="salon">
+										</figure>
+										<div class="caption">
+											<div class="bold">СМ «Василеостровский»</div>
+											ул. Железноводская д.3 секция 86
+										</div>
+									</a>
+								</li>
+								<li class="item" data-id="0">
+									<a href="#/map/saloncard6" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon2.jpg" alt="salon">
+										</figure>
+										<div class="caption">
+											<div class="bold">Московский 111</div>
+											Московский пр. д.111 лит. А
+										</div>
+									</a>
+								</li>
+								<!-- 2 -->
+								<li class="item hidden" data-id="1">
+									<a href="#/map/saloncard7" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon8.jpg" alt="salon">
+										</figure>
+										<div class="caption">
+											<div class="bold">Салон Piterra Home</div>
+											ул. Ленинская Слобода, д. 26
+										</div>
+									</a>
+								</li>
+								<li class="item hidden" data-id="1">
+									<a href="#/map/saloncard8" class="salon-card">
+										<figure class="salon-cover">
+											<img src="img/salons/salon4.jpg" alt="salon">
+										</figure>
+										<div class="caption">
+											<div class="bold">ТВК «Экспострой» (504)</div>
+											Нахимовский пр. д. 24 стр 1 пав.3, этаж 1, стенд 504/1
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpKZxw5kh0YQOr9lc_2iUE7wnqd8dQYQY"></script>
+
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="js/map-mobile.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        $(document).keydown(function (event) {
+          if (event.ctrlKey == true && (event.which == '107' || event.which == '109')) {
+            alert('disabling zooming ! ');
+            event.preventDefault();
+          }
+        });
+      })
+  </script>
+
+	<!-- places for map -->
+	<script>
+		var places = [
+		{ title: 'Магазин&Склад «Пулково», Пулковское шоссе, 2 линия торговой зоны ТРК "Лето", "Метро", "OBI". 5-й Предпортовый проезд, 22 Б', position: [59.824954, 30.313308]},
+		{ title: 'Салон Piterra Home, ул. Уральская д.13', position: [59.953164257795095, 30.263011499999937]},
+		{ title: 'ТК «Ланской», ул. Студенческая д. 10 лит. В', position: [59.98926575760561, 30.32761800000002]},
+		{ title: 'ТК «Интерио», ул. Полевая Сабировская д.54 лит. А мод. 245', position: [59.998645747022124, 30.267015751312208]},
+		{ title: 'СМ «Василеостровский», ул. Железноводская д.3 секция 86', position: [59.952934257792705, 30.259058499999878]},
+		{ title: 'Московский 111, Московский пр. д.111 лит. А', position: [59.88903825813196, 30.318769499999977]},
+		{ title: 'Салон Piterra Home, ул. Ленинская Слобода, д. 26', position: [55.70999177734071, 37.654286499999884]},
+		{ title: 'ТВК «Экспострой» (504), Нахимовский пр. д. 24 стр 1 пав.3, этаж 1, стенд 504/1', position: [55.67202127748542, 37.58389449999999]},
+		{ title: 'ТВК «Экспострой» (259), Нахимовский пр. д. 24 стр 1 пав. 2, этаж 2, стенд 259', position: [55.67202127748542, 37.58389449999999]}
+		];
+	</script>
+
+</body>
+</html>

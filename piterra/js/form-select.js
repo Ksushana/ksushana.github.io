@@ -4,7 +4,7 @@
 (function ($) {
   $(document).ready(function () {
     $('.custom-select').select2({
-      width: '332px'
+      width: '334px'
     });
   });
 })(window.jQuery);

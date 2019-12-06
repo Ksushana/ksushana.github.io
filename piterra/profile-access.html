@@ -21,8 +21,7 @@
       <div class="profile-main__flex-wrapper">
         <section class="authorization">
           <h2 class="visually-hidden">Войти в профиль</h2>
-          <img class="authorization__img" src="https://via.placeholder.com/143x143" alt="Фото профиля" width="143"
-            height="143">
+          <img class="authorization__img" src="img/user-photo.jpg" alt="Фото профиля" width="143" height="143">
           <form class="authorization__form" action="#" method="post">
             <div class="authorization__block">
               <div class="common-field">
@@ -35,8 +34,8 @@
               <div class="common-field common-field--help">
                 <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-opacity authorization__label"
                   for="password-login">Пароль</label>
-                <input class="common-field__input common-field__input--padding authorization__input" id="password-login" type="password" placeholder="***************"
-                  required>
+                <input class="common-field__input common-field__input--padding authorization__input" id="password-login"
+                  type="password" placeholder="***************" required>
                 <div class="input-help">
                   <a class="common-form-link" href="#">Забыли пароль?</a>
                 </div>
@@ -61,7 +60,7 @@
         </section>
 
         <section class="new-user">
-          <h2 class="new-user__title">Создать нового пользователя</h2>
+          <h2 class="title-line new-user__title">Создать нового пользователя</h2>
           <div class="profile-main__flex-wrapper">
             <form class="new-user__form" action="#" method="post">
               <div class="new-user__block">
@@ -82,14 +81,18 @@
                 <div class="common-field">
                   <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-security new-user__label"
                     for="new-password">Пароль</label>
-                  <input class="common-field__input common-field__input--padding new-user__input" id="new-password" type="password" required>
+                  <input class="common-field__input common-field__input--padding new-user__input" id="new-password"
+                    type="password" required>
                 </div>
               </div>
               <div class="new-user__block">
                 <div class="common-field">
                   <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-hide new-user__label"
                     for="new-password-repeat">Повторите пароль</label>
-                  <input class="common-field__input common-field__input--padding new-user__input" id="new-password-repeat" type="password" required>
+                  <input class="common-field__input common-field__input--padding new-user__input common-field__input--show-password"
+                    id="new-password-repeat" type="password" required>
+                  <button class="common-field__show-password" type="button"><span class="visually-hidden">Показать/скрыть
+                      пароль</span></button>
                 </div>
               </div>
               <div class="common-checkbox new-user__checkbox">
@@ -127,6 +130,8 @@
       </div>
     </div>
   </main>
+  <script src="./vendor/focus-visible/focus-visible.min.js" defer></script>
+  <script src="./js/show-password.min.js" defer></script>
 </body>
 
 </html>

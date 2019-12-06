@@ -7,11 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Личный кабинет интернет-магазина обоев для стен, лепнины, красок и тканей piterra.ru">
   <meta name="format-detection" content="telephone=no">
-  <title>Мой профиль</title>
+  <title>Личный кабинет – мой профиль</title>
   <link rel="preload" href="fonts/OpenSans.woff2" as="font">
   <link rel="preload" href="fonts/PTSerif.woff2" as="font">
-
-  <link rel="stylesheet" href="./vendor/select2/select2.min.css">
+  <link rel="stylesheet" href="./vendor/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -48,21 +47,21 @@
             <div class="header__notifications common-list">
               <div class="common-list__title">
                 <span class="common-list__title-text">Уведомления</span>
-                <div class="header__notifications-settings">
+                <div class="header__notifications-settings notifications">
                   <img class="header__notifications-filter" src="img/icons/icon-settings.svg" alt="Настройки уведомлений">
-                  <ul class="header__notifications-list">
-                    <li class="header__notifications-item"><a href="#">Новости</a></li>
-                    <li class="header__notifications-item"><a href="#">Информационные письма</a></li>
-                    <li class="header__notifications-item"><a href="#">Прайсы</a></li>
-                    <li class="header__notifications-item"><a href="#">Каталоги</a></li>
-                    <li class="header__notifications-item"><a href="#">3D</a></li>
+                  <ul class="header__notifications-list notifications__list">
+                    <li class="notifications__item"><a href="#">Новости</a></li>
+                    <li class="notifications__item"><a href="#">Информационные письма</a></li>
+                    <li class="notifications__item"><a href="#">Прайсы</a></li>
+                    <li class="notifications__item"><a href="#">Каталоги</a></li>
+                    <li class="notifications__item"><a href="#">3D</a></li>
                   </ul>
                 </div>
               </div>
               <ul class="common-list__content">
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/1.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -71,7 +70,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/2.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">08/2018</span>
                     </div>
@@ -80,7 +79,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/6.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -89,7 +88,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/3.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -98,7 +97,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/4.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -107,7 +106,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/5.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -116,7 +115,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/8.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -124,7 +123,8 @@
                   </a>
                 </li>
               </ul>
-              <a class="common-list__more" href="#">Посмотреть все &rarr;</a>
+              <a class="common-list__more" href="#">Посмотреть все <img src="img/icons/icon-right.svg" alt="Больше"
+                  width="13" height="13"></a>
             </div>
           </li>
           <li class="header__action header__action--basket">
@@ -160,12 +160,12 @@
             <form action="#" method="post">
               <label class="visually-hidden" for="search">Поиск по артикулу</label>
               <input class="header__field" type="text" placeholder="Поиск по артикулу" id="search">
-              <img class="header__field-icon" src="img/icons/icon-search.svg" alt="Заглушка">
+              <img class="header__field-icon" src="img/icons/icon-search.svg" alt="Поиск">
             </form>
           </div>
           <div class="header__user">
-            <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
-            <a class="header__user-link" href="#"><span>Голодова Е. М.</span></a>
+            <img class="header__avatar" src="./img/user-base.svg" alt="Аватар" width="60" height="60">
+            <a class="header__user-link" href="user-settings.html"><span>Голодова Е. М.</span></a>
           </div>
         </div>
         <button class="header__sign-out" type="button" aria-label="Выход">
@@ -178,7 +178,7 @@
     <!-- меню в мобильной версии -->
     <div class="header__menu">
       <div class="header__menu-user">
-        <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
+        <img class="header__avatar" src="./img/user-photo.jpg" alt="Аватар" width="60" height="60">
         <div>
           <span class="header__user-name">Голодова Екатерина</span>
           <a class="header__profile-link" href="#">Мой профиль</a>
@@ -213,32 +213,44 @@
           alt="Выйти">Выйти из профиля</button>
     </div>
   </header>
+
   <main>
     <div class="main-breadcrumbs">
       <div class="main-breadcrumbs__container container">
         <ul class="main-breadcrumbs__list">
-          <li class="main-breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="main-breadcrumbs__item"><a href="/">Главная</a></li>
           <li class="main-breadcrumbs__item main-breadcrumbs__item--active">Личный кабинет</li>
         </ul>
       </div>
     </div>
+
     <div class="common-page">
+      <div class="common-heading-sm">
+        <a class="common-heading-sm__link" href="history-order.html" title="Вернуться назад"><img src="img/icons/icon-arrow-left.svg"
+            alt="Назад"></a>
+        <h1 class="common-heading-sm__title">Мой профиль</h1>
+      </div>
       <div class="common-page__container container">
         <div class="common-page__sidebar sidebar">
           <div class="sidebar__content">
             <div class="sidebar__header">
-              <a class="sidebar__header-title" href="#">Личный кабинет</a>
+              <a class="sidebar__header-title" href="home.html">Личный кабинет</a>
             </div>
             <ul class="sidebar__list">
-              <li class="sidebar__item">
-                <a href="history.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Товары"><span>Заказ
-                    товара</span></a>
+              <li class="sidebar__item sidebar__item--more">
+                <a href="order-booking.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Товары"><span>Заказ
+                    товара</span><img class="sidebar__more" src="./img/icons/icon-up.svg" alt="Показать/скрыть сабменю"></a>
+                <ul class="sidebar__sublist">
+                  <li class="sidebar__subitem"><a href="order-booking.html">Заказ</a></li>
+                  <li class="sidebar__subitem"><a href="history.html">История</a></li>
+                  <li class="sidebar__subitem"><a href="activity.html">Активность</a></li>
+                </ul>
               </li>
               <li class="sidebar__item">
                 <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-catalog.svg" alt="Заказ каталогов"><span>Заказ
                     каталогов</span></a>
               </li>
-              <li class="sidebar__item sidebar__item--active">
+              <li class="sidebar__item">
                 <a href="price-list.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-price.svg" alt="Прайсы"><span>Прайсы</span><span
                     class="sidebar__notify-number">1</span></a>
               </li>
@@ -259,8 +271,8 @@
               </li>
             </ul>
             <div class="sidebar__user">
-              <img class="sidebar__avatar" src="https://via.placeholder.com/45x45" alt="Заглушка">
-              <a class="sidebar__user-name" href="#">Голодова Екатерина</a>
+              <img class="sidebar__avatar" src="img/user-photo.jpg" alt="Аватар">
+              <a class="sidebar__user-name" href="user-settings.html">Голодова Екатерина</a>
               <button class="sidebar__sign-out" type="button" aria-label="Выход">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                   <path fill="#ffffff" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z" /></svg>
@@ -268,123 +280,151 @@
             </div>
           </div>
         </div>
-        <section class="common-page__content account-content">
-          <div class="breadcrumbs breadcrumbs--no-margin">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
-              <li class="breadcrumbs__item"><a href="#">Профиль</a></li>
-              <li class="breadcrumbs__item"><a href="#">Мой профиль</a></li>
+
+        <div class="common-page__content">
+          <div class="common-list-sm">
+            <ul class="common-list-sm__info">
+              <li class="common-list-sm__item">
+                <a class="common-list-sm__tracking" href="profile-information.html" title="Личные данные">
+                  <span class="common-list-sm__caption">Личные данные</span><img src="img/icons/icon-arrow-right.svg"
+                    width="6" alt="Вернуться назад">
+                </a>
+              </li>
+              <li class="common-list-sm__item">
+                <a class="common-list-sm__tracking" href="profile-password.html" title="Изменить пароль">
+                  <span class="common-list-sm__caption">Изменить пароль</span><img src="img/icons/icon-arrow-right.svg"
+                    width="6" alt="Вернуться назад">
+                </a>
+              </li>
+              <li class="common-list-sm__item">
+                <a class="common-list-sm__tracking" href="profile-address.html" title="Адрес доставки">
+                  <span class="common-list-sm__caption">Адрес доставки</span><img src="img/icons/icon-arrow-right.svg"
+                    width="6" alt="Вернуться назад">
+                </a>
+              </li>
             </ul>
           </div>
           <h1 class="visually-hidden">Настройки пользователя</h1>
-          <div class="account-content__flex-wrapper">
-            <section class="account-info section-line">
-              <h2 class="account-info__title">Личная информация</h2>
-              <form class="account-info__form" action="#" method="post">
-                <div class="account-info__input-block">
-                  <div class="account-info__block">
-                    <div class="common-field">
-                      <label class="common-field__label common-label account-info__label" for="name">Имя</label>
-                      <input class="common-field__input account-info__input" id="name" type="text" placeholder="Екатерина"
-                        required>
+          <div class="account-content">
+            <div class="breadcrumbs breadcrumbs--no-margin">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Личный кабинет</a></li>
+                <li class="breadcrumbs__item"><a href="#">Прайсы</a></li>
+                <li class="breadcrumbs__item breadcrumbs__item--active"><a>Мой профиль</a></li>
+                <li class="breadcrumbs__item"><a href="#">Мой профиль</a></li>
+              </ul>
+            </div>
+            <div class="account-content__flex-wrapper">
+              <section class="account-info">
+                <h2 class="account-info__title title-line">Личная информация</h2>
+                <form class="account-info__form" action="#" method="post">
+                  <div class="account-info__input-block">
+                    <div class="account-info__block">
+                      <div class="common-field">
+                        <label class="common-field__label common-label account-info__label" for="name">Имя</label>
+                        <input class="common-field__input account-info__input" id="name" type="text" placeholder="Екатерина"
+                          required>
+                      </div>
+                    </div>
+                    <div class="account-info__block">
+                      <div class="common-field">
+                        <label class="common-field__label common-label account-info__label" for="surname">Фамилия</label>
+                        <input class="common-field__input account-info__input" id="surname" type="text" placeholder="Голодова"
+                          required>
+                      </div>
+                    </div>
+                    <div class="account-info__block">
+                      <div class="common-field">
+                        <label class="common-field__label common-label account-info__label" for="email">E-mail</label>
+                        <input class="common-field__input account-info__input" id="email" type="email" placeholder="EGolodova@piterra.ru"
+                          required>
+                      </div>
+                    </div>
+                    <div class="account-info__block account-info__block--no-margin">
+                      <div class="common-field">
+                        <label class="common-field__label common-label account-info__label" for="phone">Телефон</label>
+                        <input class="common-field__input account-info__input" id="phone" type="tel" placeholder="+7 (000) 000 00 00"
+                          required>
+                      </div>
                     </div>
                   </div>
                   <div class="account-info__block">
                     <div class="common-field">
-                      <label class="common-field__label common-label account-info__label" for="surname">Фамилия</label>
-                      <input class="common-field__input account-info__input" id="surname" type="text" placeholder="Голодова"
+                      <label class="common-field__label common-label account-info__label" for="country">Страна</label>
+                      <input class="common-field__input account-info__input" id="country" type="text" placeholder="Россия"
                         required>
                     </div>
                   </div>
                   <div class="account-info__block">
                     <div class="common-field">
-                      <label class="common-field__label common-label account-info__label" for="email">E-mail</label>
-                      <input class="common-field__input account-info__input" id="email" type="email" placeholder="egolodova@piterra.ru"
+                      <label class="common-field__label common-label account-info__label" for="city">Город</label>
+                      <input class="common-field__input account-info__input" id="city" type="text" placeholder="Санкт-Петербург"
                         required>
                     </div>
                   </div>
-                  <div class="account-info__block account-info__block--no-margin">
+                  <div class="account-info__block account-info__block--big-margin">
                     <div class="common-field">
-                      <label class="common-field__label common-label account-info__label" for="phone">Телефон</label>
-                      <input class="common-field__input account-info__input" id="phone" type="phone" placeholder="+7 (953) 000 00 00"
+                      <label class="common-field__label common-label account-info__label" for="address">Адрес доставки</label>
+                      <input class="common-field__input account-info__input" id="address" type="text" placeholder="Text"
                         required>
                     </div>
                   </div>
-                </div>
-                <div class="account-info__block">
-                  <div class="common-field">
-                    <label class="common-field__label common-label account-info__label" for="city">Город</label>
-                    <input class="common-field__input account-info__input" id="city" type="text" placeholder="Санкт-Петербург"
-                      required>
-                  </div>
-                </div>
-                <div class="account-info__block">
-                  <div class="common-field">
-                    <label class="common-field__label common-label account-info__label" for="country">Страна</label>
-                    <input class="common-field__input account-info__input" id="country" type="text" placeholder="Россия"
-                      required>
-                  </div>
-                </div>
-                <div class="account-info__block account-info__block--big-margin">
-                  <div class="common-field">
-                    <label class="common-field__label common-label account-info__label" for="address">Адрес доставки</label>
-                    <input class="common-field__input account-info__input" id="address" type="text" required>
-                  </div>
-                </div>
-                <button class="common-button account-info__button" type="submit">Сохранить изменения</button>
-              </form>
-
-            </section>
-            <div class="account-info__flex-child">
-              <section class="user-image section-line">
-                <div class="user-image__flex-wrapper">
-                  <h2 class="user-image__title">Голодова Екатерина</h2>
-                  <button class="user-image__button user-image__button--more"><span class="visually-hidden">Сменить
-                      фото</span></button>
-                </div>
-                <a href="" class="user-image__button user-image__button--reload">Сменить фото</a>
-                <img class="user-image__img" src="https://via.placeholder.com/179x179" alt="Фотография профиля" width="179"
-                  height="179">
-              </section>
-              <section class="password-replacement section-line">
-                <h2 class="password-replacement__title">Смена пароля</h2>
-                <form class="password-replacement__form" action="#" method="POST">
-                  <div class="password-replacement__block">
-                    <div class="common-field">
-                      <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-security password-replacement__label"
-                        for="password">Пароль</label>
-                      <input class="common-field__input common-field__input--padding password-replacement__input" id="password"
-                        type="password" placeholder="**********" required>
-                    </div>
-                  </div>
-                  <div class="password-replacement__block">
-                    <div class="common-field">
-                      <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-security password-replacement__label"
-                        for="new-password">Новый пароль</label>
-                      <input class="common-field__input common-field__input--padding password-replacement__input" id="new-password"
-                        type="password" required>
-                    </div>
-                  </div>
-                  <div class="password-replacement__block password-replacement__block--big-margin">
-                    <div class="common-field">
-                      <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-hide password-replacement__label"
-                        for="new-password-repeat">Повторите новый пароль</label>
-                      <input class="common-field__input common-field__input--padding password-replacement__input" id="new-password-repeat"
-                        type="password" required>
-                    </div>
-                  </div>
-                  <div class="common-checkbox password-replacement__checkbox">
-                    <input class="visually-hidden" id="remember" type="checkbox" name="remember-me" required>
-                    <label class="common-checkbox__label common-label new-user__label" for="remember">
-                      Запомнить меня на этом компьютере
-                    </label>
-                  </div>
-                  <button class="common-button password-replacement__button" type="submit">сохранить изменения</button>
+                  <button class="common-button account-info__button" type="submit">Сохранить изменения</button>
                 </form>
               </section>
+              <div class="account-content__flex-child">
+                <section class="user-image">
+                  <div class="user-image__flex-wrapper title-line">
+                    <h2 class="user-image__title">Голодова Екатерина</h2>
+                    <button class="user-image__button user-image__button--more"><span class="visually-hidden">Сменить
+                        фото</span></button>
+                  </div>
+                  <a href="" class="user-image__button user-image__button--reload">Сменить фото</a>
+                  <img class="user-image__img" src="img/user-photo.jpg" alt="Фотография профиля" width="179" height="179">
+                </section>
+                <section class="password-replacement">
+                  <h2 class="password-replacement__title title-line">Смена пароля</h2>
+                  <form class="password-replacement__form" action="#" method="POST">
+                    <div class="password-replacement__block">
+                      <div class="common-field">
+                        <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-security common-label--icon-opacity password-replacement__label"
+                          for="password">Пароль</label>
+                        <input class="common-field__input common-field__input--padding password-replacement__input" id="password"
+                          type="password" placeholder="**********" required>
+                      </div>
+                    </div>
+                    <div class="password-replacement__block">
+                      <div class="common-field">
+                        <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-security password-replacement__label"
+                          for="new-password">Новый пароль</label>
+                        <input class="common-field__input common-field__input--padding password-replacement__input" id="new-password"
+                          type="password" required>
+                      </div>
+                    </div>
+                    <div class="password-replacement__block password-replacement__block--big-margin">
+                      <div class="common-field">
+                        <label class="common-field__label common-label common-label--icon common-label--icon-password common-label--icon-hide password-replacement__label"
+                          for="new-password-repeat">Повторите новый пароль</label>
+                        <input class="common-field__input common-field__input--padding password-replacement__input common-field__input--show-password"
+                          id="new-password-repeat" type="password" required>
+                        <button class="common-field__show-password" type="button"><span class="visually-hidden">Показать/скрыть
+                            пароль</span></button>
+                      </div>
+                    </div>
+                    <div class="common-checkbox password-replacement__checkbox">
+                      <input class="visually-hidden" id="remember" type="checkbox" name="remember-me" required>
+                      <label class="common-checkbox__label common-label password-replacement__label password-replacement__label--checkbox"
+                        for="remember">
+                        Запомнить меня на этом компьютере
+                      </label>
+                    </div>
+                    <button class="common-button password-replacement__button" type="submit">сохранить изменения</button>
+                  </form>
+                </section>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   </main>
@@ -408,11 +448,10 @@
     </div>
   </footer>
 
-  <script src="./vendor/jquery/jquery.min.js"></script>
-  <script src="./vendor/select2/select2.min.js"></script>
-  <script src="js/form-select.min.js"></script>
-  <script src="js/menu.min.js"></script>
-  <script src="js/show-reload-photo.js"></script>
+  <script src="./vendor/focus-visible/focus-visible.min.js" defer></script>
+  <script src="js/menu.min.js" defer></script>
+  <script src="js/sidebar.min.js" defer></script>
+  <script src="js/show-reload-photo.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Play Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.67619048,0.377142857 C1.36190476,0.167619048 0.942857143,0.0628571429 0.628571429,0.272380952 C0.20952381,0.481904762 0,0.796190476 0,1.2152381 L0,20.072381 C0,20.4914286 0.20952381,20.8057143 0.628571429,21.0152381 C0.733333333,21.12 0.838095238,21.12 1.04761905,21.12 C1.25714286,21.12 1.46666667,21.0152381 1.67619048,20.9104762 L14.247619,11.4819048 C14.5619048,11.272381 14.6666667,10.9580952 14.6666667,10.6438095 C14.6666667,10.3295238 14.5619048,10.0152381 14.247619,9.80571429 L1.67619048,0.377142857 L1.67619048,0.377142857 Z" id="path-1"></path>
+        <filter x="-44.3%" y="-30.6%" width="215.9%" height="180.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="22" cy="22" r="22"></circle>
+        <filter x="-11.4%" y="-11.4%" width="131.8%" height="131.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.09 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.6">
+        <g id="Piterra/mobile/product-card_ALL" transform="translate(-137.000000, -1378.000000)">
+            <g id="Group-3" transform="translate(16.000000, 1335.000000)">
+                <g id="Play-Icon" transform="translate(123.000000, 45.000000)">
+                    <g>
+                        <g id="Play-icon" transform="translate(17.160000, 11.440000)">
+                            <g id="media-24px-glyph-1_button-play">
+                                <g id="Shape">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Oval-1">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <circle stroke="#F9FAFC" stroke-width="3" stroke-linejoin="square" fill-opacity="0" fill="#D8D8D8" fill-rule="evenodd" cx="22" cy="22" r="20.5"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

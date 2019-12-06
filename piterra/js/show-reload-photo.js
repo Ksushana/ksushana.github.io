@@ -7,7 +7,7 @@
   window.addEventListener('click', function (evt) {
     var target = evt.target;
     if (target === button) {
-      popup.style.display = 'block';
+      popup.style.display = 'flex';
     } else {
       popup.style.display = 'none';
     }

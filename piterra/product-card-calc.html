@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Личный кабинет интернет-магазина обоев для стен, лепнины, красок и тканей piterra.ru">
+  <meta name="format-detection" content="telephone=no">
+  <title>Личный кабинет</title>
+  <link rel="preload" href="fonts/OpenSans.woff2" as="font">
+  <link rel="preload" href="fonts/PTSerif.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <main>
+    <div class="pc-calc">
+      <div class="common-heading-sm">
+        <a class="common-heading-sm__link" href="product-card-page.html" title="Вернуться назад"><img
+            src="img/icons/icon-arrow-left.svg" alt="Назад"></a>
+        <h1 class="pc-mobile__header">Калькулятор обоев</h1>
+      </div>
+      <div class="pc-calc__block">
+        <ul class="pc-calc__tabs">
+          <li class="pc-calc__tab pc-calc__tab--wall pc-calc__tab--active"><a href="#" id="calc-wall">стена</a></li>
+          <li class="pc-calc__tab pc-calc__tab--room"><a href="#" id="calc-room">помещение</a></li>
+          <li class="pc-calc__tab--info visually-hidden"><a href="product-card-info.html"></a></li>
+        </ul>
+        <div class="pc-calc__item pc-calc__item--wall pc-calc__item--active">
+          <p class="pc-calc__note">расчет производится в метрах</p>
+          <form>
+            <div>
+              <p>
+                <input id="width" value="5" type="number"
+                  oninput="javascript: if (this.value.length > 2) this.value = this.value.slice(0, 2);">
+                <label for="width">ширина</label>
+              </p>
+              <p>
+                <input id="height" value="4" type="number"
+                  oninput="javascript: if (this.value.length > 2) this.value = this.value.slice(0, 2);">
+                <label for="height">высота</label>
+              </p>
+            </div>
+            <hr>
+            <button type="submit" name="submit">расчитать</button>
+          </form>
+        </div>
+        <div class="pc-calc__item pc-calc__item--room">
+          <p class="pc-calc__note">расчет производится в метрах</p>
+          <form>
+            <div>
+              <p>
+                <input id="width1" value="4" type="number"
+                  oninput="javascript: if (this.value.length > 2) this.value = this.value.slice(0, 2);">
+                <label for="width1">ширина<br> стены 1</label>
+              </p>
+              <p>
+                <input id="width2" value="5" type="number"
+                  oninput="javascript: if (this.value.length > 2) this.value = this.value.slice(0, 2);">
+                <label for="width2">ширина<br> стены 2</label>
+              </p>
+              <p>
+                <input id="height1" value="5" type="number"
+                  oninput="javascript: if (this.value.length > 2) this.value = this.value.slice(0, 2);">
+                <label for="height1">высота</label>
+              </p>
+            </div>
+            <hr>
+            <button type="submit" name="submit">расчитать</button>
+          </form>
+        </div>
+      </div>
+      <section class="pc-calc__results visually-hidden">
+        <div class="pc-calc__results-block">
+          <p>количество рулонов</p>
+          <span>27</span>
+        </div>
+        <table class="pc-calc__results-table">
+          <tr>
+            <th>Общая площадь стен:</th>
+            <td>70 ( м2 )</td>
+          </tr>
+          <tr>
+            <th>Периметр помещения:</th>
+            <td>12 ( м.пог. )</td>
+          </tr>
+          <tr>
+            <th>Высота одного полотна:</th>
+            <td>3.1 ( м.пог. )</td>
+          </tr>
+          <tr>
+            <th>Количество полотен:</th>
+            <td>14</td>
+          </tr>
+          <tr>
+            <th>Общий метраж обоев:</th>
+            <td>43 ( м.пог. )</td>
+          </tr>
+          <tr>
+            <th>Длина рулона:</th>
+            <td>1.00 м.пог.</td>
+          </tr>
+          <tr>
+            <th>Количество полотен в рулоне:</th>
+            <td>0</td>
+          </tr>
+        </table>
+
+      </section>
+
+    </div>
+    <div class="sticky-buttons">
+      <button class="sticky-button sticky-button--click">купить в 1 клик</button>
+      <button class="sticky-button sticky-button--cart">добавить в корзину</button>
+    </div>
+  </main>
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/moment/moment.min.js"></script>
+  <script src="./vendor/moment/locale/ru.js"></script>
+  <script src="./vendor/select2/select2.min.js"></script>
+  <script src="./vendor/daterangepicker/daterangepicker.min.js"></script>
+  <script src="./vendor/swiper/swiper.min.js"></script>
+  <script src="./vendor/accordion/jquery-ui.js"></script>
+  <script src="./vendor/focus-visible/focus-visible.min.js" defer></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/accordion.min.js"></script>
+  <script src="js/quantity.min.js"></script>
+  <script src="js/tabs.min.js"></script>
+  <script src="js/show-more.min.js"></script>
+  <script src="js/additional-services.min.js"></script>
+  <script src="js/datarange.min.js"></script>
+  <script src="js/form-select-filters.min.js" defer></script>
+  <script src="js/calculator.min.js"></script>
+</body>

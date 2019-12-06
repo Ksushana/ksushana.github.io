@@ -47,21 +47,21 @@
             <div class="header__notifications common-list">
               <div class="common-list__title">
                 <span class="common-list__title-text">Уведомления</span>
-                <div class="header__notifications-settings">
+                <div class="header__notifications-settings notifications">
                   <img class="header__notifications-filter" src="img/icons/icon-settings.svg" alt="Настройки уведомлений">
-                  <ul class="header__notifications-list">
-                    <li class="header__notifications-item"><a href="#">Новости</a></li>
-                    <li class="header__notifications-item"><a href="#">Информационные письма</a></li>
-                    <li class="header__notifications-item"><a href="#">Прайсы</a></li>
-                    <li class="header__notifications-item"><a href="#">Каталоги</a></li>
-                    <li class="header__notifications-item"><a href="#">3D</a></li>
+                  <ul class="header__notifications-list notifications__list">
+                    <li class="notifications__item"><a href="#">Новости</a></li>
+                    <li class="notifications__item"><a href="#">Информационные письма</a></li>
+                    <li class="notifications__item"><a href="#">Прайсы</a></li>
+                    <li class="notifications__item"><a href="#">Каталоги</a></li>
+                    <li class="notifications__item"><a href="#">3D</a></li>
                   </ul>
                 </div>
               </div>
               <ul class="common-list__content">
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/1.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -70,7 +70,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/2.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">08/2018</span>
                     </div>
@@ -79,7 +79,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/6.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -88,7 +88,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/3.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -97,7 +97,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/4.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -106,7 +106,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/5.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">27</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -115,7 +115,7 @@
                 </li>
                 <li>
                   <a class="common-list__link" href="#">
-                    <img class="common-list__img" src="https://via.placeholder.com/53x53" alt="Заглушка">
+                    <img class="common-list__img" src="./img/collection/8.jpg" alt="Заглушка">
                     <div class="common-list__date">
                       <span class="common-list__day">12</span><span class="common-list__month">12/2018</span>
                     </div>
@@ -123,7 +123,8 @@
                   </a>
                 </li>
               </ul>
-              <a class="common-list__more" href="#">Посмотреть все &rarr;</a>
+              <a class="common-list__more" href="#">Посмотреть все <img src="img/icons/icon-right.svg" alt="Больше"
+                  width="13" height="13"></a>
             </div>
           </li>
           <li class="header__action header__action--basket">
@@ -159,12 +160,12 @@
             <form action="#" method="post">
               <label class="visually-hidden" for="search">Поиск по артикулу</label>
               <input class="header__field" type="text" placeholder="Поиск по артикулу" id="search">
-              <img class="header__field-icon" src="img/icons/icon-search.svg" alt="Заглушка">
+              <img class="header__field-icon" src="img/icons/icon-search.svg" alt="Поиск">
             </form>
           </div>
           <div class="header__user">
-            <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
-            <a class="header__user-link" href="#"><span>Голодова Е. М.</span></a>
+            <img class="header__avatar" src="./img/user-base.svg" alt="Аватар" width="60" height="60">
+            <a class="header__user-link" href="user-settings.html"><span>Голодова Е. М.</span></a>
           </div>
         </div>
         <button class="header__sign-out" type="button" aria-label="Выход">
@@ -177,7 +178,7 @@
     <!-- меню в мобильной версии -->
     <div class="header__menu">
       <div class="header__menu-user">
-        <img class="header__avatar" src="https://via.placeholder.com/60x60" alt="Заглушка аватар">
+        <img class="header__avatar" src="./img/user-photo.jpg" alt="Аватар" width="60" height="60">
         <div>
           <span class="header__user-name">Голодова Екатерина</span>
           <a class="header__profile-link" href="#">Мой профиль</a>
@@ -217,28 +218,31 @@
     <div class="main-breadcrumbs">
       <div class="main-breadcrumbs__container container">
         <ul class="main-breadcrumbs__list">
-          <li class="main-breadcrumbs__item"><a href="#">Главная</a></li>
+          <li class="main-breadcrumbs__item"><a href="/">Главная</a></li>
           <li class="main-breadcrumbs__item main-breadcrumbs__item--active">Личный кабинет</li>
         </ul>
       </div>
     </div>
 
     <div class="common-page">
-      <div class="history__heading">
-        <a class="history__heading-link" href="history.html" title="Вернуться назад"><img src="img/icons/icon-example.svg"
-            alt="Назад"></a>
-        <h1 class="history__heading-title">Мой профиль</h1>
+      <div class="common-heading-sm">
+        <a class="common-heading-sm__link" href="#" title="Вернуться назад"><img src="img/icons/icon-arrow-left.svg" alt="Назад"></a>
+        <h1 class="common-heading-sm__title">Мой профиль</h1>
       </div>
       <div class="common-page__container container">
         <div class="common-page__sidebar sidebar">
           <div class="sidebar__content">
             <div class="sidebar__header">
-              <a class="sidebar__header-title" href="#">Личный кабинет</a>
+              <a class="sidebar__header-title" href="home.html">Личный кабинет</a>
             </div>
             <ul class="sidebar__list">
-              <li class="sidebar__item sidebar__item--active">
-                <a href="history.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Товары"><span>Заказ
-                    товара</span></a>
+              <li class="sidebar__item sidebar__item--more">
+                <a href="order-booking.html" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-product.svg" alt="Товары"><span>Заказ товара</span><img class="sidebar__more" src="./img/icons/icon-up.svg" alt="Показать/скрыть сабменю"></a>
+                <ul class="sidebar__sublist">
+                  <li class="sidebar__subitem"><a href="order-booking.html">Заказ</a></li>
+                  <li class="sidebar__subitem"><a href="history.html">История</a></li>
+                  <li class="sidebar__subitem"><a href="activity.html">Активность</a></li>
+                </ul>
               </li>
               <li class="sidebar__item">
                 <a href="#" rel="noopener"><img class="sidebar__icon" src="img/icons/icon-catalog.svg" alt="Заказ каталогов"><span>Заказ
@@ -265,8 +269,8 @@
               </li>
             </ul>
             <div class="sidebar__user">
-              <img class="sidebar__avatar" src="https://via.placeholder.com/45x45" alt="Заглушка">
-              <a class="sidebar__user-name" href="#">Голодова Екатерина</a>
+              <img class="sidebar__avatar" src="img/user-photo.jpg" alt="Аватар">
+              <a class="sidebar__user-name" href="user-settings.html">Голодова Екатерина</a>
               <button class="sidebar__sign-out" type="button" aria-label="Выход">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                   <path fill="#ffffff" d="M13 18v2H0V0h13v2H2v16h11zM6 9h10l-3.2-3.3 1.4-1.4 5.7 5.7-5.7 5.7-1.4-1.4L16 11H6V9z" /></svg>
@@ -275,24 +279,24 @@
           </div>
         </div>
 
-        <div class="common-page__content history-order">
-          <ul class="history-order__info">
-            <li class="history-order__item">
-              <a class="history-order__tracking" href="№" title="Личные данные">
-                <span class="history-order__caption">Личные данные</span><img src="img/icons/icon-arrow-right.svg"
-                  width="6">
+        <div class="common-page__content common-list-sm">
+          <ul class="common-list-sm__info">
+            <li class="common-list-sm__item">
+              <a class="common-list-sm__tracking" href="profile-information.html" title="Личные данные">
+                <span class="common-list-sm__caption">Личные данные</span><img src="img/icons/icon-arrow-right.svg"
+                  width="6" alt="Вернуться назад">
               </a>
             </li>
-            <li class="history-order__item">
-              <a class="history-order__tracking" href="№" title="Изменить пароль">
-                <span class="history-order__caption">Изменить пароль</span><img src="img/icons/icon-arrow-right.svg"
-                  width="6">
+            <li class="common-list-sm__item">
+              <a class="common-list-sm__tracking" href="profile-password.html" title="Изменить пароль">
+                <span class="common-list-sm__caption">Изменить пароль</span><img src="img/icons/icon-arrow-right.svg"
+                  width="6" alt="Вернуться назад">
               </a>
             </li>
-            <li class="history-order__item">
-              <a class="history-order__tracking" href="№" title="Адрес доставки">
-                <span class="history-order__caption">Адрес доставки</span><img src="img/icons/icon-arrow-right.svg"
-                  width="6">
+            <li class="common-list-sm__item">
+              <a class="common-list-sm__tracking" href="profile-address.html" title="Адрес доставки">
+                <span class="common-list-sm__caption">Адрес доставки</span><img src="img/icons/icon-arrow-right.svg"
+                  width="6" alt="Вернуться назад">
               </a>
             </li>
           </ul>
@@ -320,7 +324,9 @@
     </div>
   </footer>
 
+  <script src="./vendor/focus-visible/focus-visible.min.js" defer></script>
   <script src="js/menu.min.js" defer></script>
+  <script src="js/sidebar.min.js" defer></script>
 </body>
 
 </html>

@@ -16,6 +16,12 @@
       evt.stopPropagation();
     });
 
+    modalSend.addEventListener('click', function () {
+      window.modals.closeModal(modalSend);
+      window.modals.closeModal(modalHistory);
+      modalSend.removeEventListener('click', window.bodyClickHandler(modalSend));
+    });
+
     modalCloseButton.addEventListener('click', function (evt) {
       evt.stopPropagation();
       window.modals.closeModal(modalSend);
@@ -29,6 +35,7 @@
 
     window.addEventListener('keydown', function (evt) {
       if (evt.keyCode === KEYCODES.ESC && modalSend.classList.contains('modal--show')) {
+        document.body.style.overflow = 'auto';
         window.modals.closeModal(modalSend);
         window.modals.closeModal(modalHistory);
       }
