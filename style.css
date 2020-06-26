@@ -693,6 +693,7 @@ body {
 @media (max-width: 950px) {
   .container {
     max-width: 950px;
+    min-width: 100vw;
   }
 
   .main-page__header {
@@ -715,5 +716,31 @@ body {
 
   .intro {
     display: none;
+  }
+
+  .about-me__list {
+    flex-direction: column;
+  }
+
+  .about-me__list-item {
+    width: 100%;
+  }
+
+  .about-me__skills {
+    flex-direction: column;
+  }
+
+  .project-list {
+    flex-direction: column;
+  }
+
+  .project-list__item {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill__list {
+    width: 100%;
   }
 }
