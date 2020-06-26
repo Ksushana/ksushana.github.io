@@ -489,14 +489,21 @@ body {
 .project-list__item--cat .project-list__item-photo{
   background-image: url("./img/cat-energy.png");
 }
+
 .project-list__item--shtirliz .project-list__item-photo{
-  background-image: url("./img/shtirliz.png");
+  background-image: url("./img/shtirliz.jpg");
 }
+
 .project-list__item--yasno .project-list__item-photo{
   background-image: url("./img/yasno.png");
 }
+
 .project-list__item--9sense .project-list__item-photo{
   background-image: url("./img/9sense.jpg");
+}
+
+.project-list__item--finolab .project-list__item-photo{
+  background-image: url("./img/finolab.svg");
 }
 
 .project-list__item--keksogram .project-list__item-photo{

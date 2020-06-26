@@ -44,3 +44,5 @@ function addEscListener(serificate) {
 smallSerificates.forEach(function(smallCertificate) {
   addSmallCertificateClickListener(smallCertificate);
 });
+
+
