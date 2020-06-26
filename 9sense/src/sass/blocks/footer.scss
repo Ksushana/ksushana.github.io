@@ -1,0 +1,52 @@
+.footer {
+  font-size: size(16px);
+  line-height: size(16px);
+  letter-spacing: 0.02em;
+  color: $color-grey-footer;
+  display: flex;
+  padding: 0 size(64px) size(20px);
+  justify-content: space-between;
+
+  p {
+    padding-right: size(43px);
+    margin-top: size(10px);
+  }
+
+  .footer__whatsapp {
+    color: $color-black-bigtext;
+    display: inline-block;
+    margin: size(14px) 0;
+    align-self: center;
+    position: relative;
+    font-size: size(18px);
+    line-height: size(24px);
+    margin-top: size(6px);
+
+    @include mobile {
+      display: none;
+    }
+
+    svg {
+      position: absolute;
+      left: size(-26px);
+      top: size(1px);
+      width: size(18px);
+      height: size(18px);
+    }
+  }
+
+  @include mobile {
+    font-size: size(12px);
+    line-height: size(24px);
+    padding: size(32px) size(16px) size(20px);
+
+    p {
+      padding-right: size(18px);
+    }
+  }
+}
+
+.footer--italics {
+  font-style: italic;
+  font-family: "NCTLarkspur-Italic", Arial, sans-serif;
+}

@@ -1,0 +1,129 @@
+.location {
+  font-weight: normal;
+  font-size: size(48px);
+  line-height: size(60px);
+  text-align: center;
+  transition: color 2s;
+  color: $color-grey-light;
+  display: flex;
+  padding: size(70px) size(296px) 0;
+  min-height: size(670px);
+  letter-spacing: 0.02em;
+
+  img,
+  .location__mobile-address,
+  .location__mobile-whatsapp,
+  span.location__address-mobile {
+    display: none;
+  }
+
+  p {
+    height: fit-content;
+    margin: auto;
+  }
+
+  .location__desktop-address {
+    display: inline-block;
+    font-size: size(16px);
+    line-height: size(16px);
+    letter-spacing: 0.01em;
+    position: relative;
+    top: size(-5px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: size(2px);
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &--dark {
+    color: $color-black-bigtext;
+  }
+
+  &--italics {
+    font-style: italic;
+    font-family: "NCTLarkspur-Italic", Arial, sans-serif;
+  }
+
+  @include mobile {
+    font-size: size(24px);
+    line-height: size(36px);
+    text-align: left;
+
+    padding: size(18px) size(87px) 0 size(17px);
+    min-height: size(400px);
+    align-items: center;
+    padding-right: size(29px);
+    padding-top: size(184px);
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      margin: 0 0 size(15px);
+      padding-top: size(31px);
+    }
+
+    a.location__mobile-address {
+      display: inline-block;
+      font-size: size(16px);
+      line-height: size(20px);
+      text-align: left;
+      letter-spacing: 0.02em;
+
+      svg {
+        transform: rotate(-45deg);
+        width: size(15px);
+        height: size(8px);
+        padding: 0 size(5px);
+        fill: $color-grey-link;
+      }
+    }
+
+    .location__img-cover {
+      position: relative;
+    }
+
+    img {
+      display: block;
+      width: size(378px);
+      height: size(425px);
+      margin: 0 auto;
+      padding-top: size(68px);
+      padding-bottom: size(117px);
+    }
+
+    .location__address {
+      position: absolute;
+      display: inline;
+      font-size: size(18px);
+      line-height: size(26px);
+      width: 50%;
+      text-align: center;
+      top: 44.5%;
+      right: 25%;
+
+      span {
+        display: inline;
+      }
+
+      a {
+        display: inline-block;
+        position: relative;
+        padding-left: size(28px);
+        font-size: size(18px);
+        line-height: size(26px);
+        letter-spacing: 0.01em;
+
+        svg {
+          position: absolute;
+          width: size(18px);
+          height: size(18px);
+          left: size(1px);
+          top: size(5px);
+          transform: rotate(0);
+        }
+      }
+    }
+  }
+}

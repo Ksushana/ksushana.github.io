@@ -1,0 +1,81 @@
+.text-block {
+  font-weight: normal;
+  font-size: size(48px);
+  line-height: size(60px);
+  text-align: center;
+  transition: color 2s;
+  color: $color-black-bigtext;
+  display: flex;
+  box-sizing: border-box;
+
+  min-height: size(700px);
+
+  @include mobile {
+    font-size: size(24px);
+    line-height: size(36px);
+
+    text-align: left;
+  }
+
+  &--tech {
+    padding: size(80px) size(220px) 0;
+    color: $color-grey-light;
+    transition: color 0.3s;
+
+    @include mobile {
+      padding: size(85px) size(17px) 0;
+      min-height: size(393px);
+      text-align: start;
+      align-items: center;
+    }
+
+    &.dark {
+      color: $color-black-bigtext;
+    }
+  }
+
+  &--smile {
+    padding: size(80px) size(360px) 0;
+    min-height: size(667px);
+
+    @include mobile {
+      padding: size(18px) size(87px) 0 size(17px);
+      min-height: size(380px);
+      align-items: center;
+
+      p {
+        padding-top: size(100px);
+      }
+    }
+  }
+
+  &--bright {
+    padding: size(80px) size(100px) 0;
+    min-height: size(637px);
+
+    @include mobile {
+      padding: size(18px) size(87px) 0 size(17px);
+      min-height: size(380px);
+      align-items: center;
+
+      p {
+        padding-top: size(100px);
+      }
+    }
+  }
+
+  p {
+    height: fit-content;
+    margin: auto;
+
+    @include mobile {
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &--italics {
+    font-style: italic;
+    font-family: "NCTLarkspur-Italic", Arial, sans-serif;
+  }
+}

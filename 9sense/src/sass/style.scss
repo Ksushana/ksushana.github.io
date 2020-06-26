@@ -1,0 +1,20 @@
+/* Vendor */
+@import "vendor/normalize";
+@import "vendor/swiper";
+@import "vendor/magnific";
+/* General */
+@import "general/variables";
+@import "general/functions";
+@import "general/mixins";
+@import "general/fonts";
+@import "general/global";
+/* Blocks */
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/text-block";
+@import "blocks/lab";
+@import "blocks/slider";
+@import "blocks/footer";
+@import "blocks/smile";
+@import "blocks/location";
+@import "blocks/scale";

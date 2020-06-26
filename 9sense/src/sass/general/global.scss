@@ -1,0 +1,116 @@
+html {
+  text-rendering: optimizeLegibility;
+  text-size-adjust: none;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: size-desktop($font-base);
+
+  @include mobile {
+    font-size: size-mobile($font-base);
+  }
+}
+
+body {
+  min-width: $width-min;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  @include text-main;
+  font-family: $font-family;
+  font-weight: 400;
+  color: $color-black-bigtext;
+  background-color: $color-black-font;
+
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+
+  &.dark {
+    background-color: $color-grey-light;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:not([href]) {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: size(80px) size(64px) size(35px);
+  position: relative;
+
+  .shadow {
+    background: linear-gradient(
+      180deg,
+      rgba(241, 241, 241, 0.6) 0%,
+      rgba(241, 241, 241, 0) 100%
+    );
+
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    pointer-events: none;
+
+    &.show {
+      background: linear-gradient(
+        180deg,
+        rgba(241, 241, 241, 0.6) 0%,
+        rgba(241, 241, 241, 0) 100%
+      );
+      opacity: 0.8;
+      transition: all 1s;
+      position: fixed;
+      content: "";
+      width: 100vw;
+      height: size(240px);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.small-text {
+  opacity: 1;
+}

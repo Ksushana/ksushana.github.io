@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nine Sense Clinic </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/HelveticaRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaItalic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__gradient"></div>
+    <div class="header__logo"><svg width="120" height="120" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg></div><button class="header__open">
+      <div class="header__open-button"></div>
+    </button><button class="header__close"></button>
+    <nav class="header__links" id="links">
+      <ul>
+        <li><a class="link-text header__link header__link--anchor" href="#about"><span>Омар Газаев</span></a></li>
+        <li><a class="link-text header__link header__link--anchor" href="#lab"><span>Лаборатория</span></a></li>
+        <li><a class="link-text header__link header__link--anchor" href="#works"><span>Работы</span></a></li>
+        <li><a class="link-text header__link header__link--loc" href="#location"><span>Локация</span></a></li>
+      </ul><button class="header__lang">En</button>
+    </nav>
+    <p class="header__turn"><span>Клиника эстетической стоматологии в Москве</span></p>
+    <div class="parallax-header header__phrase">
+      <p>Природа начинает, <span class="header__phrase--italics">искусство</span> направляет, опыт совершенствует</p>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="visually-hidden">Nine Sense Clinic</h1>
+      <div class="shadow"></div>
+      <section class="about scale scale--big" id="about">
+        <div class="about__container">
+          <div class="about__block"><button class="about__close"></button>
+            <h2>Омар Газаев</h2>
+            <h3>Специализация</h3>
+            <ul>
+              <li>Dr. Domenico Massironi, Италия</li>
+              <li>Dr. Christian Lex, Германия</li>
+              <li>Dr. Domenico Massironi, Италия</li>
+              <li>Dr. Christian Lex, Германия</li>
+            </ul>
+            <h3>Публикации</h3>
+            <ul class="about__works">
+              <li><a class="link-text" href="https://dentalmanufaktur-nuernberg.de/wordpress/wp-content/uploads/2017/08/qz_2013_03_s0280_scr-Kopie.pdf"><span>Ein Konzept der dentalen Kommunikationskultur So fern und doch so nah Alexander Miranskij, Omar Gazaev</span></a></li>
+              <li><a class="link-text" href="https://dentalmanufaktur-nuernberg.de/wordpress/wp-content/uploads/2017/08/qz_2014_09_s1164-Kopie.pdf"><span>Herstellung geschichteter Veneers bei inkongruenter Ausgangssituation Alexander Miranskij, Omar Gazaev</span></a></li>
+            </ul>
+            <div class="about__signature"><img src="img/sign2.png" width="155" height="64" alt="signature"></div>
+          </div>
+        </div>
+        <div class="about__mobile small-text">
+          <p>Омар Газаев, стоматолог</p><button>Специализация и публикации<svg width="20" height="10" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#arrow-1"></use>
+            </svg></button>
+        </div>
+      </section>
+      <section class="text-block text-block--tech parallax">
+        <h2 class="visually-hidden">Технологии</h2>
+        <p>Технологии не стоят на месте, вместо просто белого &ndash; <span class="text-block--italics">контролируемая</span> яркость</p>
+      </section>
+      <section class="lab scale scale--big" id="lab">
+        <h2 class="visually-hidden"></h2><img src="img/lab@1x.jpg" srcset="img/lab@2x.jpg 2x" width="1312" height="772" alt="lab">
+        <div class="lab__text small-text">
+          <p>Партнерство с немецкими и швейцарскими лабораториями.</p><svg width="17" height="12" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#swiss"></use>
+          </svg><svg width="17" height="12" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#german"></use>
+          </svg>
+        </div>
+      </section>
+      <section class="text-block text-block--dark text-block--smile parallax">
+        <h2 class="visually-hidden">Улыбайся</h2>
+        <p>Улыбайся &ndash; это символ твоей <span class="text-block--italics">уверенности</span></p>
+      </section>
+      <section class="smile scale scale--big">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/face-mobile@2x.jpg 2x"><img src="img/face@1x.jpg" srcset="img/face@2x.jpg 2x" width="1312" height="772" alt="Марина"></picture>
+        <p class="smile__text small-text">Марина, успела до свадьбы</p>
+      </section>
+      <section class="text-block text-block--dark text-block--bright parallax">
+        <h2 class="visually-hidden">Ярко</h2>
+        <p>Ярко, натурально, <span class="text-block--italics">персонально</span></p>
+      </section>
+      <section class="slider scale scale--big" id="works">
+        <div class="swiper-container slider-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slider__slide"><a class="slider__img" href="img/smile@2x.jpg"><img src="img/smile@1x.jpg" srcset="img/smile@2x.jpg 2x" width="1312" height="772" alt="Марина"></a></div>
+            <div class="swiper-slide slider__slide"><a class="slider__img" href="img/smile@2x.jpg"><img src="img/smile@1x.jpg" srcset="img/smile@2x.jpg 2x" width="1312" height="772" alt="Марина2"></a></div>
+            <div class="swiper-slide slider__slide"><a class="slider__img" href="img/smile@2x.jpg"><img src="img/smile@1x.jpg" srcset="img/smile@2x.jpg 2x" width="1312" height="772" alt="Марина3"></a></div>
+          </div>
+          <p class="slider__caption small-text"></p><button><svg width="24" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#lupa"></use>
+            </svg></button>
+          <div class="swiper-pagination small-text"></div>
+          <div class="swiper-button-prev slider__button slider-prev small-text"><svg width="20" height="10" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#arrow-prev"></use>
+            </svg></div>
+          <div class="swiper-button-next slider__button slider-next small-text"><svg width="20" height="10" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#arrow-1"></use>
+            </svg></div>
+        </div>
+      </section>
+      <section class="location location--dark parallax" id="location">
+        <h2 class="visually-hidden">Адрес</h2>
+        <p>Локация &ndash; <span class="location--italics">Патрики</span><br> Есть бесплатная парковка<a class="location__desktop-address" href="https://yandex.ru/maps/-/CKan624~">Большая Садовая ул., 5с2</a><a class="location__mobile-address" href="https://yandex.ru/maps/-/CKan624~">Посмотреть на карте<svg width="20" height="10" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#arrow-1"></use>
+            </svg></a></p>
+        <div class="location__img-cover"><img src="img/map@1x.png" srcset="img/map@2x.png 2x" width="378" height="425" alt="map">
+          <div class="location__address"><span class="location__address-mobile">Большая<br> Садовая ул., 5с2</span><a class="location__mobile-whatsapp" title="WhatsApp" href="whatsapp://send?phone=+79057161451">+7 905 716-14-51<svg width="18" height="18" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg></a></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Дизайн: <a href="#">genue.ru</a></p><a class="footer__whatsapp" title="WhatsApp" href="whatsapp://send?phone=+79057161451">+7 (905) 716-14-51<svg width="18" height="18" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#whatsapp"></use>
+      </svg></a>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.smile {
+  padding-top: size(54px);
+
+  @include mobile {
+    padding-top: size(52px);
+  }
+
+  img {
+    width: size(1312px);
+    height: size(772px);
+    object-fit: cover;
+
+    @include mobile {
+      width: 100%;
+      height: size(488px);
+      object-fit: cover;
+    }
+  }
+}
+
+.smile__text {
+  display: flex;
+  align-items: center;
+  color: $color-black-font;
+  font-size: size(16px);
+  line-height: size(24px);
+
+  letter-spacing: 0.02em;
+
+  @include mobile {
+    margin: size(8px) size(15px);
+  }
+
+  p {
+    margin: 0;
+    padding-right: size(21px);
+  }
+}

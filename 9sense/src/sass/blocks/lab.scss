@@ -1,0 +1,55 @@
+.lab {
+  padding-top: size(34px);
+
+  img {
+    width: size(1312px);
+    height: size(772px);
+
+    @include mobile {
+      object-fit: cover;
+      height: size(488px);
+      width: 100%;
+    }
+  }
+}
+
+.lab__text {
+  display: flex;
+  align-items: center;
+  color: $color-black-font;
+  font-size: size(16px);
+  line-height: size(24px);
+
+  letter-spacing: 0.02em;
+
+  padding-top: size(16px);
+
+  @include mobile {
+    padding: size(7px) size(16px);
+    width: 90%;
+    display: inline-block;
+
+    line-height: size(25px);
+  }
+
+  p {
+    margin: 0;
+    padding-right: size(12px);
+
+    @include mobile {
+      display: inline;
+      padding-right: 0;
+    }
+  }
+
+  svg {
+    padding-right: size(8px);
+    padding-top: size(3px);
+    width: size(17px);
+    height: size(12px);
+
+    @include mobile {
+      padding: size(7px) 0 0 size(8px);
+    }
+  }
+}

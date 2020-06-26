@@ -1,0 +1,152 @@
+.slider {
+  padding-top: size(70px);
+
+  @include mobile {
+    padding-top: size(54px);
+  }
+
+  img {
+    filter: grayscale(100%);
+    width: size(1312px);
+    height: size(772px);
+    transition: filter 0.5s;
+    object-fit: cover;
+    object-position: center;
+
+    &.color {
+      filter: none;
+    }
+
+    @include mobile {
+      width: 100%;
+      height: size(252px);
+    }
+  }
+
+  .swiper-pagination {
+    bottom: size(51px);
+    display: flex;
+    bottom: 0.8%;
+    left: 0;
+
+    outline: none;
+
+    @include mobile {
+      left: size(-13px);
+      bottom: 2%;
+    }
+
+    span {
+      background: $color-grey-dark;
+      opacity: 1;
+    }
+
+    span:first-child {
+      margin-left: auto;
+    }
+  }
+
+  span.swiper-pagination-bullet-active {
+    background-color: $color-black-dot;
+    opacity: 1;
+  }
+
+  .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 0 3px;
+    width: size(8px);
+    height: size(8px);
+    border-radius: 50%;
+
+    &:first-child {
+      margin-left: auto;
+    }
+
+    @include mobile {
+      width: size(6px);
+      height: size(6px);
+    }
+  }
+
+  p {
+    color: $color-black-font;
+    font-size: size(16px);
+    line-height: size(24px);
+    letter-spacing: 0.02em;
+    padding-top: size(16px);
+    margin: 0;
+    padding-right: size(21px);
+
+    @include mobile {
+      padding-left: size(17px);
+      padding-top: size(8px);
+    }
+  }
+
+  .swiper-container {
+    position: relative;
+
+    button {
+      display: none;
+      border: none;
+      background-color: transparent;
+
+      top: size(16px);
+      right: 0;
+      position: absolute;
+
+      @include mobile {
+        display: block;
+        z-index: 100;
+        pointer-events: none;
+        padding: 0 size(10px) 0 0;
+      }
+
+      svg {
+        width: size(24px);
+        height: size(24px);
+      }
+    }
+  }
+}
+
+.slider__button {
+  background-image: none;
+  z-index: 10;
+  bottom: size(-12px);
+  top: auto;
+  transition: opacity 0.4s;
+  outline: none;
+  background-size: size(27px) size(44px);
+  height: size(44px);
+
+  @include mobile {
+    display: none;
+  }
+
+  &.slider-prev {
+    left: size(625px);
+  }
+
+  &.slider-next {
+    right: size(618px);
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  svg {
+    width: size(20px);
+    height: size(10px);
+  }
+}
+
+.slider__slide {
+  position: relative;
+}
+
+.slider__img:hover {
+  opacity: 1;
+}

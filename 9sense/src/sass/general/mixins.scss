@@ -1,0 +1,40 @@
+@mixin desktop-only {
+  @media (min-width: $width-tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $width-tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin text-main {
+  font-size: size(20px);
+  line-height: 1.8;
+}
+
+@mixin font-face($name, $filename, $weight, $style: normal) {
+  @font-face {
+    font-family: $name;
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+    src:
+      url("../fonts/" + $filename + ".woff2") format("woff2"),
+      url("../fonts/" + $filename + ".woff") format("woff");
+  }
+}
