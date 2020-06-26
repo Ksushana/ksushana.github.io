@@ -712,12 +712,19 @@ body {
 
   .main-page__header {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-logo {
+    position: static;
+    margin: 0 auto;
   }
 
   .main-navigation__list {
     flex-direction: column;
     min-width: 320px;
-    padding-top: 70px;
+    padding-top: 0px;
   }
 
   .main-navigation__item {
