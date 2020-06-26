@@ -15,6 +15,10 @@
   font-display: block;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
 	margin: 0;
@@ -720,6 +724,7 @@ body {
 
   .about-me__list {
     flex-direction: column;
+    min-width: 100%;
   }
 
   .about-me__list-item {
@@ -728,10 +733,12 @@ body {
 
   .about-me__skills {
     flex-direction: column;
+    width: 100%;
   }
 
   .project-list {
     flex-direction: column;
+    width: 100%;
   }
 
   .project-list__item {
@@ -742,5 +749,6 @@ body {
 
   .skill__list {
     width: 100%;
+    box-sizing: border-box;
   }
 }
