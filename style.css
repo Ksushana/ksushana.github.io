@@ -753,6 +753,7 @@ body {
 
   .project-list__item {
     width: 80%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
   }
@@ -760,6 +761,20 @@ body {
   .skill__list {
     width: 100%;
     box-sizing: border-box;
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .skill__item {
+    width: 100%;
+  }
+
+  .skill__item a {
+    margin: 0 auto;
+  }
+
+  .contacts__form {
+    width: 100%;
   }
 
   h2 {
