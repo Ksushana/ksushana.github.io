@@ -763,6 +763,7 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
   }
 
   .skill__list {
@@ -790,5 +791,17 @@ body {
   .skill__header {
     font-size: 40px;
     line-height: 45px;
+  }
+
+  .skill__info {
+    display: none;
+  }
+
+  .project-list__item-photo {
+    margin: 0 auto;
+  }
+
+  .project-list__item-info {
+    width: 100%;
   }
 }
