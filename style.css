@@ -244,6 +244,8 @@ body {
 
 .about-me__moto {
   margin: 0 auto;
+  width: 80%;
+    text-align: center;
 }
 
 .about-me__list {
@@ -348,7 +350,7 @@ body {
   border: 2px solid #d45244;
   border-radius: 50%;
   left: 5px;
-  top: 32px;
+  top: 50%;
 }
 
 .portfolio {
@@ -695,6 +697,14 @@ body {
 }
 
 @media (max-width: 950px) {
+
+  .about-me__skills-list li {
+    padding: 0 20px;
+  }
+
+  .about-me__header {
+    font-size: 40px;
+  }
   .container {
     max-width: 950px;
     min-width: 100vw;
@@ -750,5 +760,9 @@ body {
   .skill__list {
     width: 100%;
     box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 40px;
   }
 }
