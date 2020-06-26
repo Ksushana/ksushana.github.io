@@ -723,7 +723,7 @@ body {
 
   .main-navigation__list {
     flex-direction: column;
-    min-width: 320px;
+    min-width: auto;
     padding-top: 0px;
   }
 
@@ -813,5 +813,9 @@ body {
     margin: 0 auto;
     font-size: 34px;
     line-height: 56px;
+  }
+
+  .about-me__skills-list {
+    padding-left: 13px;
   }
 }
