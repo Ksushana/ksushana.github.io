@@ -799,7 +799,7 @@ body {
   }
 
   .project-list__item-photo {
-    margin: 0 auto;
+    margin: 14px auto;
   }
 
   .project-list__item-info {
