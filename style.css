@@ -784,7 +784,11 @@ body {
     width: 100%;
   }
 
-  h2 {
+  .contacts__header,
+  .about-me__header,
+  .portfolio__header,
+  .skill__header {
     font-size: 40px;
+    line-height: 45px;
   }
 }
