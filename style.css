@@ -746,6 +746,7 @@ body {
 
   .about-me__list-item {
     width: 100%;
+    padding-top: 99px;
   }
 
   .about-me__skills {
@@ -803,5 +804,24 @@ body {
 
   .project-list__item-info {
     width: 100%;
+  }
+
+  .about-me__list-item::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d45244;
+    border: 5px solid #f5eee3;
+    box-shadow: 0px 0px 0px 5px #d45244;
+    top: 20px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    line-height: 56px;
+    text-align: center;
+    color: #f9ebd9;
   }
 }
