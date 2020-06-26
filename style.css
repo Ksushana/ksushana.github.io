@@ -411,7 +411,7 @@ body {
 
 .project-list__item {
   width: 400px;
-  height: 260px;
+  min-height: 260px;
   background-color: #e3dfd7;
   margin-bottom: 30px;
   border: 5px solid #ffffff;
