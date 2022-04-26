@@ -487,9 +487,21 @@ body {
   background-image: url("./img/rukami.jpg");
 }
 
+.project-list__item--chance .project-list__item-photo{
+  background-image: url("./img/chance.png");
+}
+
+.project-list__item--nplus1 .project-list__item-photo{
+  background-image: url("./img/nplus1.svg");
+}
+
 .project-list__item--sedona .project-list__item-photo{
   background-image: url("./img/sedona.svg");
   background-position: top;
+}
+
+.project-list__item--milab .project-list__item-photo{
+  background-image: url("./img/anim.svg");
 }
 
 .project-list__item--cat .project-list__item-photo{
@@ -618,6 +630,20 @@ body {
 
 .contacts__moto {
   margin: 0 auto;
+}
+
+.contacts__item {
+  margin: 0 auto;
+  color: white;
+}
+
+.contacts__item a {
+  color: inherit;
+  transform: opacity 0.2s;
+}
+
+.contacts__item a:hover {
+  opacity: 0.6;
 }
 
 .contacts__form {
