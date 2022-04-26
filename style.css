@@ -844,4 +844,14 @@ body {
   .about-me__skills-list {
     padding-left: 13px;
   }
+
+  .pop-up {
+    width: 100%;
+    top: 30px;
+    margin-left: -160px;
+  }
+
+  .pop-up img {
+    width: 320px;
+  }
 }
